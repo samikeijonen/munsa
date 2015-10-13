@@ -9,38 +9,60 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php hybrid_attr( 'post' ); ?>>
 
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+	<?php if ( is_single() ) : // If single. ?>
+	
+		<?php munsa_post_thumbnail(); ?>
+	
+		<header class="entry-header">
+			<?php the_title( '<h1 class="entry-title" ' . hybrid_get_attr( 'entry-title' ) . '>', '</h1>' ); ?>
+			<?php get_template_part( 'entry', 'meta' ); // Loads the entry-meta.php template. ?>
+		</header><!-- .entry-header -->
+		
+		<div class="entry-content" <?php hybrid_attr( 'entry-content' ); ?>>
+			
+			<?php the_content(); ?>
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php munsa_posted_on(); ?>
-		</div><!-- .entry-meta -->
+			<?php
+				wp_link_pages( array(
+					'before'    => '<div class="page-links">' . __( 'Pages:', 'munsa' ),
+					'after'     => '</div>',
+					'pagelink'  => '<span class="screen-reader-text">' . __( 'Page', 'munsa' ) . ' </span>%',
+					'separator' => '<span class="screen-reader-text">,</span> ',
+				) );
+			?>
+			
+		</div><!-- .entry-content -->
+		
+		<footer class="entry-footer">
+			<div class="footer-wrap">
+				<?php munsa_post_terms( array( 'taxonomy' => 'category', 'text' => __( '#%s', 'munsa' ), 'before' => '<div class="entry-categories"><span class="terms-title categories-title">' . esc_html__( 'Categories', 'munsa' ) . '</span>', 'after' => '</div>' ) ); ?>
+				<?php munsa_post_terms( array( 'taxonomy' => 'post_tag', 'text' => __( '#%s', 'munsa' ), 'before' => '<div class="entry-tags"><span class="terms-title tags-title">' . esc_html__( 'Tags', 'munsa' ) . '</span>', 'after' => '</div>' ) ); ?>
+			</div><!-- .footer-wrap -->
+		</footer><!-- .entry-footer -->
+		
+	<?php else : ?>
+	
+		<?php if ( has_post_thumbnail() ) : ?>
+			<div class="entry-thumbnail">
+				<?php munsa_post_thumbnail(); ?>
+			</div><!-- .entry-thumbnail -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+		
+		<div class="entry-inner">
+		
+			<header class="entry-header">
+				<?php the_title( sprintf( '<h2 class="entry-title" ' . hybrid_get_attr( 'entry-title' ) . '><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+				<?php get_template_part( 'entry', 'meta' ); // Loads the entry-meta.php template. ?>
+			</header><!-- .entry-header-info -->
+		
+			<div class="entry-summary" <?php hybrid_attr( 'entry-summary' ); ?>>
+				<?php the_excerpt(); ?>
+			</div><!-- .entry-summary -->
+			
+		</div><!-- .entry-inner -->
 
-	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'munsa' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-		?>
-
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'munsa' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php munsa_post_terms( array( 'taxonomy' => 'category', 'text' => __( '#%s', 'munsa' ) ) ); ?>
-		<?php munsa_post_terms( array( 'taxonomy' => 'post_tag', 'text' => __( '#%s', 'munsa' ), 'before' => '<br />' ) ); ?>
-	</footer><!-- .entry-footer -->
+	<?php endif; // End check single. ?>
 	
 </article><!-- #post-## -->

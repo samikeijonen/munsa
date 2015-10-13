@@ -4,176 +4,186 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Munsa 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-06-12 21:51:31+0000\n"
+"POT-Creation-Date: 2015-10-10 17:56+0300\n"
+"PO-Revision-Date: 2015-10-10 18:01+0300\n"
+"Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
+"Language-Team: \n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: grunt-wp-i18n 0.5.0\n"
-"Language: en_US\n"
+"X-Generator: Poedit 1.8.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "Ups! Tätä sivua ei löydy."
 
 #: 404.php:21
 msgid ""
-"It looks like nothing was found at this location. Maybe try one of the "
-"links below or a search?"
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
 msgstr ""
+"Näyttää siltä, että mitään ei löytynyt tästä osoitteesta. Koita navigoida "
+"alla olevista linkeistä tai etsiä haluamaasi."
 
 #: 404.php:30
 msgid "Most Used Categories"
-msgstr ""
+msgstr "Käytetyimmät kategoriat"
 
-#: 404.php:47
 #. translators: %1$s: smiley
+#: 404.php:47
 msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
+msgstr "Koita etsiä kuukausiarkistosta. %1$s"
 
 #: comment.php:30
 msgid "Your comment is awaiting moderation."
-msgstr ""
+msgstr "Kommenttisi odottaa hyväksymistä."
 
 #: comments.php:49
 msgid "Comment navigation"
-msgstr ""
+msgstr "Kommenttien selaus"
 
 #: comments.php:52
 msgid "Older Comments"
-msgstr ""
+msgstr "Vanhemmat kommentit"
 
 #: comments.php:53
 msgid "Newer Comments"
-msgstr ""
+msgstr "Uudemmat kommentit"
 
 #: comments.php:66
 msgid "Comments are closed."
-msgstr ""
+msgstr "Kommentointi on suljettu."
 
 #: footer.php:22
 msgid "https://wordpress.org/"
-msgstr ""
+msgstr "https://wordpress.org/"
 
 #: footer.php:22
 msgid "Proudly powered by %s"
-msgstr ""
+msgstr "Voimanlähteenä %s"
 
 #: footer.php:24
 msgid "Theme: %1$s by %2$s."
-msgstr ""
+msgstr "Teeman %1$s on tehnyt %2$s."
 
 #: footer.php:27
 msgid "Up"
-msgstr ""
+msgstr "Ylös"
 
 #: functions.php:52 menus/menu-primary.php:11
 msgid "Primary Menu"
-msgstr ""
+msgstr "Päävalikko"
 
 #: functions.php:53
 msgid "Social Links Menu"
-msgstr ""
+msgstr "Somevalikko"
 
 #: functions.php:123
 msgid ""
 "The main sidebar. It is displayed on the right side of the page as off "
 "canvas sidebar."
 msgstr ""
+"Päävimpainalue. Tähän liitetyt vimpaimet näkyvät sisällön oikealla puolella "
+"(off-canvas)."
 
 #: functions.php:133
 msgid "A sidebar located in the footer of the site."
-msgstr ""
+msgstr "Sivupalkki sijaitsee alapalkissa."
 
 #: header.php:28
 msgid "Site is loading"
-msgstr ""
+msgstr "Sivu latautuu"
 
 #: header.php:35
 msgid "Skip to content"
-msgstr ""
+msgstr "Hyppää sisältöön"
 
 #: index.php:48 search.php:34
 msgid "Previous page"
-msgstr ""
+msgstr "Edellinen sivu"
 
 #: index.php:49 search.php:35
 msgid "Next page"
-msgstr ""
+msgstr "Seuraava sivu"
 
 #: index.php:50 search.php:36 template-parts/content-image-left.php:28
 #: template-parts/content-image-right.php:28 template-parts/content-page.php:28
 #: template-parts/content.php:31
 msgid "Page"
-msgstr ""
+msgstr "Sivu"
 
 #: menus/menu-buttons.php:14
 msgid "Menu"
-msgstr ""
+msgstr "Valikko"
 
 #: menus/menu-buttons.php:18
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #: menus/menu-primary.php:13
 msgid "Close Menu"
-msgstr ""
+msgstr "Sulje valikko"
 
 #: menus/menu-social.php:11 menus/menu-social.php:12
 msgid "Social Menu"
-msgstr ""
+msgstr "Somevalikko"
 
 #: search.php:15
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Hakutulokset haulle %s"
 
 #: sidebar-primary.php:14
 msgid "Close Sidebar"
-msgstr ""
+msgstr "Sulje sivupalkki"
 
 #: single.php:26
 msgid "Next"
-msgstr ""
+msgstr "Seuraava"
 
 #: single.php:27
 msgid "Next post:"
-msgstr ""
+msgstr "Seuraava uutinen:"
 
 #: single.php:29
 msgid "Previous"
-msgstr ""
+msgstr "Edellinen"
 
 #: single.php:30
 msgid "Previous post:"
-msgstr ""
+msgstr "Edellinen uutinen:"
 
 #: template-parts/content-image-left.php:26
 #: template-parts/content-image-right.php:26 template-parts/content-page.php:26
 #: template-parts/content.php:29
 msgid "Pages:"
-msgstr ""
+msgstr "Sivut:"
 
 #: template-parts/content-none.php:15
 msgid "Nothing Found"
-msgstr ""
+msgstr "Mitään ei löytynyt"
 
 #: template-parts/content-none.php:22
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
+"Oletko valmis julkaisemaan ensimmäisen kirjoituksesi? <a href=\"%1$s"
+"\">Aloita tästä</a>."
 
 #: template-parts/content-none.php:27
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
+"Hakusi ei valitettavasti tuottanut yhtään tulosta. Yritä uudelleen eri "
+"hakusanoilla."
 
 #: template-parts/content-none.php:35
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr ""
+msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on apua."
 
 #: template-parts/content.php:40 template-parts/content.php:41
 msgid "#%s"
@@ -181,11 +191,11 @@ msgstr ""
 
 #: template-parts/content.php:40
 msgid "Categories"
-msgstr ""
+msgstr "Kategoriat"
 
 #: template-parts/content.php:41
 msgid "Tags"
-msgstr ""
+msgstr "Avainsanat"
 
 #. Theme Name of the plugin/theme
 msgid "Munsa"
@@ -193,70 +203,70 @@ msgstr ""
 
 #. Theme URI of the plugin/theme
 msgid "http://underscores.me/"
-msgstr ""
+msgstr "http://underscores.me/"
 
 #. Description of the plugin/theme
 msgid "Munsa WordPress theme"
-msgstr ""
+msgstr "Munsa WordPress-teema"
 
 #. Author of the plugin/theme
 msgid "Sami Keijonen"
-msgstr ""
+msgstr "Sami Keijonen"
 
 #. Author URI of the plugin/theme
 msgid "https://foxland.fi/"
-msgstr ""
+msgstr "https://foxland.fi/"
 
 #. Template Name of the plugin/theme
 msgid "Featured Image on the Left"
-msgstr ""
+msgstr "Artikkelikuva vasemmalla"
 
 #. Template Name of the plugin/theme
 msgid "Featured Image on the Right"
-msgstr ""
+msgstr "Artikkelikuva oikealla"
 
 #. Template Name of the plugin/theme
 msgid "Front Page"
-msgstr ""
+msgstr "Etusivu"
 
 #. Template Name of the plugin/theme
 msgid "Full Background Image"
-msgstr ""
+msgstr "Koko sivun taustakuva"
 
 #: comment.php:25
 msgctxt "%1%s is for comment date"
 msgid "%1$s"
-msgstr ""
+msgstr "%1$s"
 
 #: comments.php:29
 msgctxt "comments title"
 msgid "One comment"
 msgid_plural "%1$s comments"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Yksi kommentti"
+msgstr[1] "%1$s kommenttia"
 
 #: functions.php:122
 msgctxt "sidebar"
 msgid "Primary"
-msgstr ""
+msgstr "Päävalikko"
 
 #: functions.php:132
 msgctxt "sidebar"
 msgid "Subsidiary"
-msgstr ""
+msgstr "Sivupalkki alhaalla"
 
-#: functions.php:162
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
+#: functions.php:162
 msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:167
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.
+#: functions.php:167
 msgctxt "Montserrat font: on or off"
 msgid "on"
 msgstr ""
@@ -264,15 +274,15 @@ msgstr ""
 #: inc/template-tags.php:18
 msgctxt "Used before publish date."
 msgid "Posted on"
-msgstr ""
+msgstr "Kirjoitettu"
 
 #: inc/template-tags.php:26
 msgctxt "Used before post author name."
 msgid "Author"
-msgstr ""
+msgstr "Kirjoittaja"
 
-#: inc/template-tags.php:63
 #. Translators: Separates tags, categories, etc. when displaying a post.
+#: inc/template-tags.php:63
 msgctxt "taxonomy terms separator"
 msgid " #"
 msgstr ""
@@ -280,4 +290,4 @@ msgstr ""
 #: sidebar-primary.php:12
 msgctxt "Sidebar aria label"
 msgid "Primary Sidebar"
-msgstr ""
+msgstr "Sivupalkki"

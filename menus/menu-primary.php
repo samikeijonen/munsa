@@ -8,10 +8,10 @@
 	
 <?php if ( has_nav_menu( 'primary' ) ) : ?>
 
-	<button id="main-navigation-toggle" class="main-navigation-toggle menu-sidebar-toggle" aria-controls="menu-primary"><span id="main-navigation-button" class="main-navigation-button menu-sidebar-button genericon genericon-menu"><span class="screen-reader-text"><?php esc_html_e( 'Menu', 'munsa' ); ?></span></span></button>		
-	
 	<nav id="menu-primary" class="menu main-navigation menu-primary" role="navigation" aria-label="<?php esc_html_e( 'Primary Menu', 'munsa' ); ?>" <?php hybrid_attr( 'menu', 'primary' ); ?>>
 		
+		<button class="main-navigation-toggle main-navigation-close menu-sidebar-close menu-sidebar-toggle" aria-controls="menu-primary"><span id="main-navigation-button" class="main-navigation-button menu-sidebar-button genericon genericon-close"><span class="screen-reader-text"><?php esc_html_e( 'Close Menu', 'munsa' ); ?></span></span></button>
+
 			<div class="wrap">
 			
 				<?php

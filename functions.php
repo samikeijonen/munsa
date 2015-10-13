@@ -42,6 +42,11 @@ function munsa_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 1420, 9999, false );
+	
+	// Add custom image sizes.
+	add_image_size( 'munsa-medium', 720, 9999, false );
+	add_image_size( 'munsa-site-logo', 192, 192, true );
+	add_image_size( 'munsa-smaller', 125, 125, true );
 
 	// This theme uses wp_nav_menu() in two location.
 	register_nav_menus( array(
@@ -79,6 +84,14 @@ function munsa_setup() {
 		'default-image' => '',
 	) ) );
 	
+	// Add theme support for site logo.
+	add_theme_support( 'site-logo', array(
+		'size' => 'munsa-site-logo',
+	) );
+	
+	// Add theme support for responsive videos.
+	add_theme_support( 'jetpack-responsive-videos' );
+	
 	// Add editor styles.
 	add_editor_style( array( 'css/editor-style.css', munsa_fonts_url() ) );
 	
@@ -94,7 +107,7 @@ add_action( 'after_setup_theme', 'munsa_setup' );
  * @global int $content_width
  */
 function munsa_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'munsa_content_width', 1200 );
+	$GLOBALS['content_width'] = apply_filters( 'munsa_content_width', 720 );
 }
 add_action( 'after_setup_theme', 'munsa_content_width', 0 );
 
@@ -202,7 +215,7 @@ function munsa_scripts() {
 	wp_enqueue_script( 'velocity', get_template_directory_uri() . '/js/velocity.js', array(), '20150906', true );
 	
 	// Enqueue theme scripts.
-	wp_enqueue_script( 'munsa-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery', 'velocity' ), '20150906', true );
+	wp_enqueue_script( 'munsa-settings', get_template_directory_uri() . '/js/settings.js', array( 'jquery', 'velocity' ), '20150906', true );
 	
 	// Enqueue skip link focus fix.
 	wp_enqueue_script( 'munsa-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20150906', true );
@@ -212,6 +225,37 @@ function munsa_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'munsa_scripts' );
+
+/**
+ * Add extra post classes.
+ *
+ * @since  1.0.0
+ * @return array
+ */
+function munsa_post_class( $classes ) {
+	
+	// Add 'has-contact-info' class to Contact Info page template if contact info have been set.
+	if ( is_page_template( 'pages/contact-info.php' ) && munsa_has_contact_info() ) {
+		$classes[] = 'has-contact-info';
+	}
+    
+    return $classes;
+	
+}
+add_filter( 'post_class', 'munsa_post_class' );
+
+/**
+ * Use a template for individual comment output.
+ *
+ * @param object $comment Comment to display.
+ * @param int    $depth   Depth of comment.
+ * @param array  $args    An array of arguments.
+ *
+ * @since 1.0.0
+ */
+function munsa_comment_callback( $comment, $args, $depth ) {
+	include( locate_template( 'comment.php') );
+}
 
 /**
  * Implement the Custom Header feature.

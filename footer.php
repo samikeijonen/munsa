@@ -15,8 +15,14 @@
 			</div><!-- #primary -->
 		
 		</div><!-- #content -->
+		
+		<?php
+			if ( is_page_template( 'pages/front-page.php' ) ) :
+				get_template_part( 'misc/content', 'blog-posts' ); // Load blog posts for Front Page Template.
+			endif;
+		?>
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
+		<footer id="colophon" class="site-footer" role="contentinfo" <?php hybrid_attr( 'footer' ); ?>>
 			
 			<div class="site-info">
 				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'munsa' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'munsa' ), 'WordPress' ); ?></a>

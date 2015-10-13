@@ -5,34 +5,33 @@
  */
 ( function( $ ) {
 	
+	var body, page, scrollUp, mainNav, primarySidebar, menuToggle, menuButton, sidebarToggle, sidebarButton;
+	
+	// Set up vars.
+	page           = $( '#site-wrapper' );
+	scrollUp       = page.find( '#scroll-up' );
+	mainNav        = page.find( '#menu-primary' );
+	primarySidebar = page.find( '#sidebar-primary' );
+	menuToggle     = page.find( '.main-navigation-toggle' );
+	menuButton     = page.find( '#main-navigation-button' );
+	sidebarToggle  = page.find( '.sidebar-primary-toggle' );
+	sidebarButton  = page.find( '#sidebar-primary-button' );
+	
 	// Preload page and fade the content.
 	$( window ).load( function() { // makes sure the whole site is loaded
 		$( '#status' ).fadeOut(); // will first fade out the loading animation
 		$( '#preloader' ).delay( 350 ).fadeOut( 'slow' ); // will fade out the white DIV that covers the website.
 		//$( '#status' ).velocity( 'fadeOut', { delay: 0 });
 		//$( '#preloader' ).velocity( 'fadeOut', { delay: 350 });
-		
-		//$( 'body' ).delay( 350 ).css({ 'overflow':'visible' });
 	});
 	
-	/* Scroll up.
-	$( '#scroll-up' ).on( 'click', function( event ) {
-		$( '#site-wrapper' ).velocity( 'scroll', {
-			duration: 800,
-			delay: 500
+	// Back to top.
+	if ( scrollUp.length ) {
+		$( scrollUp ).click(function() {
+			$( 'html,body' ).animate( { scrollTop: 0 }, 600 );
+			return false;
 		});
-	} */
-	
-	var body, page, mainNav, primarySidebar, menuToggle, menuButton, sidebarToggle, sidebarButton;
-	
-	// Set up vars.
-	page           = $( '#site-wrapper' );
-	mainNav        = page.find( '#menu-primary' );
-	primarySidebar = page.find( '#sidebar-primary' );
-	menuToggle     = page.find( '#main-navigation-toggle' );
-	menuButton     = page.find( '#main-navigation-button' );
-	sidebarToggle  = page.find( '#sidebar-primary-toggle' );
-	sidebarButton  = page.find( '#sidebar-primary-button' );
+	}
 
 	/**
 	 * Set up the main navigation toggle. This sets

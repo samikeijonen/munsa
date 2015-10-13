@@ -11,9 +11,9 @@ get_header(); ?>
 
 	<?php if ( have_posts() ) : ?>
 
-		<header class="page-header">
-			<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'munsa' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-		</header><!-- .page-header -->
+		<header class="archive-header" <?php hybrid_attr( 'archive-header' ); ?>>
+			<h1 class="archive-title" <?php hybrid_attr( 'archive-title' ); ?>><?php printf( esc_html__( 'Search Results for: %s', 'munsa' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+		</header><!-- .archive-header -->
 
 		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -29,7 +29,13 @@ get_header(); ?>
 
 		<?php endwhile; ?>
 
-		<?php the_posts_navigation(); ?>
+		<?php
+			the_posts_pagination( array(
+				'prev_text'          => esc_html__( 'Previous page', 'munsa' ),
+				'next_text'          => esc_html__( 'Next page', 'munsa' ),
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . esc_html__( 'Page', 'munsa' ) . ' </span>',
+			) );
+		?>
 
 	<?php else : ?>
 

@@ -12,29 +12,21 @@ if ( ! function_exists( 'munsa_posted_on' ) ) :
  * Prints HTML with meta information for the current post-date/time and author.
  */
 function munsa_posted_on() {
-	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
-	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
-	}
 
-	$time_string = sprintf( $time_string,
+	// Set up entry date.
+	printf( '<span class="entry-date"><span class="screen-reader-text">%1$s </span><a href="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s"' . hybrid_get_attr( 'entry-published' ) . '>%4$s</time></a></span>',
+		_x( 'Posted on', 'Used before publish date.', 'munsa' ),
+		esc_url( get_permalink() ),
 		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() ),
-		esc_attr( get_the_modified_date( 'c' ) ),
-		esc_html( get_the_modified_date() )
+		esc_html( get_the_date() )
 	);
-
-	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'munsa' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+	
+	// Set up byline.
+	printf( '<span class="byline"><span class="entry-author" ' . hybrid_get_attr( 'entry-author' ) . '><span class="screen-reader-text">%1$s </span><a class="entry-author-link" href="%2$s" rel="author" itemprop="url"><span itemprop="name">%3$s</span></a></span></span>',
+		_x( 'Author', 'Used before post author name.', 'munsa' ),
+		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+		get_the_author()
 	);
-
-	$byline = sprintf(
-		esc_html_x( 'by %s', 'post author', 'munsa' ),
-		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-	);
-
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
 }
 endif;
@@ -43,7 +35,7 @@ endif;
  * This template tag is meant to replace template tags like `the_category()`, `the_terms()`, etc.  These core 
  * WordPress template tags don't offer proper translation and RTL support without having to write a lot of 
  * messy code within the theme's templates.  This is why theme developers often have to resort to custom 
- * functions to handle this (even the default WordPress themes do this).  Particularly, the core functions 
+ * functions to handle this (even the default WordPress themes do this). Particularly, the core functions 
  * don't allow for theme developers to add the terms as placeholders in the accompanying text (ex: "Posted in %s"). 
  * This funcion is a wrapper for the WordPress `get_the_terms_list()` function.  It uses that to build a 
  * better post terms list.
@@ -162,6 +154,60 @@ function munsa_post_thumbnail( $post_thumbnail = null ) {
 	<?php endif; // End is_singular()
 }
 endif;
+
+if ( ! function_exists( 'munsa_contact_info' ) ) :
+/**
+ * Display contact info from the Customizer.
+ *
+ * @since 1.0.0
+ */
+function munsa_contact_info() {
+	
+	// Bail if there is no contact info.
+	if ( ! munsa_has_contact_info() ) {
+		return;
+	}
+	
+	?>
+	
+	<div class="contact-info">
+		<ul class="contact-info-list">
+			<?php
+				if ( get_theme_mod( 'email' ) ) :
+					echo '<li class="contact-info-link contact-info-email"><a href="mailto:' . antispambot( sanitize_email( get_theme_mod( 'email' ) ) ) . '">' . antispambot( sanitize_email( get_theme_mod( 'email' ) ) ) . '</a></li>';
+				endif;
+				
+				if ( get_theme_mod( 'phone' ) ) :
+					echo '<li class="contact-info-link contact-info-phone"><a href="tel:' . sanitize_text_field( get_theme_mod( 'phone' ) ) . '">' . sanitize_text_field( get_theme_mod( 'phone' ) ) . '</a></li>';
+				endif;
+				
+				if ( get_theme_mod( 'address' ) ) :
+					echo '<li class="contact-info-link contact-info-address" >' . sanitize_text_field( get_theme_mod( 'address' ) ) . '</li>';
+				endif;
+			?>
+		</ul>
+	</div><!-- .contact-info -->
+	
+	<?php
+	
+}
+endif;
+
+/**
+ * Check have we set contact info in the Customizer.
+ *
+ * @since  1.0.0
+ * @return boolean
+ */
+function munsa_has_contact_info() {
+	
+	if ( ! get_theme_mod( 'email' ) && ! get_theme_mod( 'phone' ) && ! get_theme_mod( 'address' ) ) {
+		return false;
+	} else {
+		return true;
+	}
+	
+}
 
 /**
  * Returns true if a blog has more than 1 category.
