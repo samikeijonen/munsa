@@ -9,13 +9,53 @@
 	$wp_customize->add_section(
 		'front-page',
 		array(
-			'title'       => esc_html__( 'Front Page Settings', 'munsa' ),
+			'title'       => esc_html__( 'Front Page', 'munsa' ),
+			'description' => esc_html__( 'Select featured pages that will be displayed in Front Page Template.', 'munsa' ),
 			'priority'    => 20,
 			'panel'       => 'theme'
 		)
 	);
 	
+	/**
+	 * Fetured Page settings.
+	 *
+	 */
+	 
+	// Loop same setting couple of times.
+	$k = 1;
 	
+	while( $k < absint( apply_filters( 'munsa_how_many_pages', 5 ) ) ) {
+	
+		// Add the 'featured_page_*' setting.
+		$wp_customize->add_setting(
+			'featured_page_' . $k,
+			array(
+				'default'           => 0,
+				'sanitize_callback' => 'absint'
+			)
+		);
+	
+		// Add the 'featured_page_*' control.
+		$wp_customize->add_control(
+			'featured_page_' . $k,
+				array(
+					/* Translators: %s stands for number. For example Select page 1. */
+					'label'    => sprintf( esc_html__( 'Select page %s', 'munsa' ), $k ),
+					'section'  => 'front-page',
+					'type'     => 'dropdown-pages',
+					'priority' => $k+1
+				) 
+			);
+		
+		$k++; // Add one before loop ends.
+		
+	} // End while loop.
+	
+	/**
+	 * Blog area settings.
+	 *
+	 */
+		
 	// Add the blog area title setting.
 	$wp_customize->add_setting(
 		'blog_area_title',
@@ -76,7 +116,7 @@
 		)
 	);
 	
-	/* Add the setting for Callout image. */
+	// Add the setting for Callout image.
 	$wp_customize->add_setting(
 		'callout_image',
 		array(
@@ -84,7 +124,7 @@
 			'sanitize_callback' => 'esc_url_raw'
 		) );
 	
-	/* Add the Callout image link control. */
+	// Add the Callout image link control.
 	$wp_customize->add_control(
 		new WP_Customize_Image_Control(
 		$wp_customize,
@@ -98,7 +138,7 @@
 		)
 	);
 	
-	/* Add the callout image alt setting. */
+	// Add the callout image alt setting.
 	$wp_customize->add_setting(
 		'callout_image_alt',
 		array(
@@ -107,7 +147,7 @@
 		)
 	);
 	
-	/* Add the callout image alt control. */
+	// Add the callout image alt control.
 	$wp_customize->add_control(
 		'callout_image_alt',
 		array(
@@ -118,7 +158,7 @@
 		)
 	);
 	
-	/* Add the Callout image link setting. */
+	// Add the Callout image link setting.
 	$wp_customize->add_setting(
 		'callout_image_url',
 		array(
@@ -127,7 +167,7 @@
 		)
 	);
  	
-	/* Add the Callout image link control. */
+	// Add the Callout image link control.
 	$wp_customize->add_control(
 		'callout_image_url',
 		array(

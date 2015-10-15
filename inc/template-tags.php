@@ -210,6 +210,39 @@ function munsa_has_contact_info() {
 }
 
 /**
+ * Returns featured pages selected from the Customizer.
+ *
+ * @since  1.0.0
+ *
+ * @return array
+ */
+function munsa_featured_pages() {
+	
+	$k = 1;
+	
+	// Set empty array of featured pages.
+	$munsa_featured_pages = array();
+	
+	// Loop all the featured pages.
+	while ( $k < apply_filters( 'munsa_how_many_pages', 5 ) ) { // Begins the loop through found pages from customize settings. 
+	
+		$munsa_page_id = absint( get_theme_mod( 'featured_page_' . $k ) );
+			
+			// Add selected featured pages in array.
+			if ( 0 != $munsa_page_id || ! empty( $munsa_page_id ) ) { // Check if page is selected.
+				$munsa_featured_pages[] = $munsa_page_id;
+			}
+	
+		$k++;
+	
+	}
+	
+	// Return featured pages.
+	return $munsa_featured_pages;
+	
+}
+
+/**
  * Returns true if a blog has more than 1 category.
  *
  * @return bool

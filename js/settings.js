@@ -5,17 +5,18 @@
  */
 ( function( $ ) {
 	
-	var body, page, scrollUp, mainNav, primarySidebar, menuToggle, menuButton, sidebarToggle, sidebarButton;
+	var body, page, scrollUp, scrollToContent, mainNav, primarySidebar, menuToggle, menuButton, sidebarToggle, sidebarButton;
 	
 	// Set up vars.
-	page           = $( '#site-wrapper' );
-	scrollUp       = page.find( '#scroll-up' );
-	mainNav        = page.find( '#menu-primary' );
-	primarySidebar = page.find( '#sidebar-primary' );
-	menuToggle     = page.find( '.main-navigation-toggle' );
-	menuButton     = page.find( '#main-navigation-button' );
-	sidebarToggle  = page.find( '.sidebar-primary-toggle' );
-	sidebarButton  = page.find( '#sidebar-primary-button' );
+	page            = $( '#site-wrapper' );
+	scrollUp        = page.find( '#scroll-up' );
+	scrollToContent = page.find( '#scroll-to-content' );
+	mainNav         = page.find( '#menu-primary' );
+	primarySidebar  = page.find( '#sidebar-primary' );
+	menuToggle      = page.find( '.main-navigation-toggle' );
+	menuButton      = page.find( '#main-navigation-button' );
+	sidebarToggle   = page.find( '.sidebar-primary-toggle' );
+	sidebarButton   = page.find( '#sidebar-primary-button' );
 	
 	// Preload page and fade the content.
 	$( window ).load( function() { // makes sure the whole site is loaded
@@ -30,6 +31,14 @@
 		$( scrollUp ).click(function() {
 			$( 'html,body' ).animate( { scrollTop: 0 }, 600 );
 			return false;
+		});
+	}
+	
+	// Scroll to content on Front Page Template.
+	if ( scrollToContent.length ) {
+		smoothScroll.init({
+			speed: 800,
+			updateURL: false,
 		});
 	}
 

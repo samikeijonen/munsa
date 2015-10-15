@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Munsa 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-10-10 17:56+0300\n"
-"PO-Revision-Date: 2015-10-10 18:01+0300\n"
+"POT-Creation-Date: 2015-10-14 10:33+0300\n"
+"PO-Revision-Date: 2015-10-14 10:36+0300\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -56,31 +56,31 @@ msgstr "Uudemmat kommentit"
 msgid "Comments are closed."
 msgstr "Kommentointi on suljettu."
 
-#: footer.php:22
+#: footer.php:28
 msgid "https://wordpress.org/"
 msgstr "https://wordpress.org/"
 
-#: footer.php:22
+#: footer.php:28
 msgid "Proudly powered by %s"
 msgstr "Voimanlähteenä %s"
 
-#: footer.php:24
+#: footer.php:30
 msgid "Theme: %1$s by %2$s."
 msgstr "Teeman %1$s on tehnyt %2$s."
 
-#: footer.php:27
+#: footer.php:33
 msgid "Up"
 msgstr "Ylös"
 
-#: functions.php:52 menus/menu-primary.php:11
+#: functions.php:53 menus/menu-primary.php:11
 msgid "Primary Menu"
 msgstr "Päävalikko"
 
-#: functions.php:53
+#: functions.php:54
 msgid "Social Links Menu"
 msgstr "Somevalikko"
 
-#: functions.php:123
+#: functions.php:124
 msgid ""
 "The main sidebar. It is displayed on the right side of the page as off "
 "canvas sidebar."
@@ -88,7 +88,7 @@ msgstr ""
 "Päävimpainalue. Tähän liitetyt vimpaimet näkyvät sisällön oikealla puolella "
 "(off-canvas)."
 
-#: functions.php:133
+#: functions.php:134
 msgid "A sidebar located in the footer of the site."
 msgstr "Sivupalkki sijaitsee alapalkissa."
 
@@ -100,6 +100,89 @@ msgstr "Sivu latautuu"
 msgid "Skip to content"
 msgstr "Hyppää sisältöön"
 
+#. Template Name of the plugin/theme
+msgid "Contact Info"
+msgstr "Yhteystiedot"
+
+#: inc/customizer/contact.php:13
+msgid ""
+"Contact Info will be displayed in Contact Info and Front Page Templates."
+msgstr "Yhteystiedot näytetään sekä Yhteystiedot että Etusivu sivupohjissa."
+
+#: inc/customizer/contact.php:32
+msgid "Email"
+msgstr "Sähköposti"
+
+#: inc/customizer/contact.php:52
+msgid "Phone Number"
+msgstr "Puhelinnumero"
+
+#: inc/customizer/contact.php:72
+msgid "Address"
+msgstr "Osoite"
+
+#: inc/customizer/contact.php:92
+msgid "Hide from Front Page Template"
+msgstr "Piilota Etusivu-sivupohjasta"
+
+#: inc/customizer/contact.php:93
+msgid "Check this if you want to hide contact info from Front Page Template."
+msgstr "Valitse tämä, jos et halua näyttää yhteystietoja etusivulla."
+
+#. Template Name of the plugin/theme
+msgid "Front Page"
+msgstr "Etusivu"
+
+#: inc/customizer/front-page.php:13
+msgid "Select featured pages that will be displayed in Front Page Template."
+msgstr "Valitse sivut, jotka haluat näkyvät etusivulle nostettuna."
+
+#. Translators: %s stands for number. For example Select page 1.
+#: inc/customizer/front-page.php:43
+msgid "Select page %s"
+msgstr "Valitse sivu %s"
+
+#: inc/customizer/front-page.php:63 misc/content-blog-posts.php:26
+#: misc/content-blog-posts.php:31 misc/content-blog-posts.php:32
+msgid "Articles"
+msgstr "Artikkelit"
+
+#: inc/customizer/front-page.php:72
+msgid "Blog title"
+msgstr "Blogisivun otsikko"
+
+#: inc/customizer/front-page.php:92
+msgid "Blog URL"
+msgstr "Blogisivun URL"
+
+#: inc/customizer/front-page.php:112
+msgid "Blog URL text"
+msgstr "Blogisivun URL-teksti"
+
+#: inc/customizer/front-page.php:133
+msgid "Callout Image"
+msgstr "Callout-kuva"
+
+#: inc/customizer/front-page.php:134
+msgid ""
+"Add Callout Image which can be map or product image for example. Recommended "
+"width is 1920px."
+msgstr ""
+"Lisää Callout-kuva, joka voi esimerkiksi olla karttakuva tai tuotekuva. "
+"Suositeltu kuvan leveys on 1920px."
+
+#: inc/customizer/front-page.php:154
+msgid "Callout image alt text"
+msgstr "Callout-kuvan alt-teksti"
+
+#: inc/customizer/front-page.php:174
+msgid "Callout image URL"
+msgstr "Callout-kuvan URL"
+
+#: inc/customizer.php:19
+msgid "Theme Settings"
+msgstr "Teeman asetukset"
+
 #: index.php:48 search.php:34
 msgid "Previous page"
 msgstr "Edellinen sivu"
@@ -108,8 +191,8 @@ msgstr "Edellinen sivu"
 msgid "Next page"
 msgstr "Seuraava sivu"
 
-#: index.php:50 search.php:36 template-parts/content-image-left.php:28
-#: template-parts/content-image-right.php:28 template-parts/content-page.php:28
+#: index.php:50 misc/content-image-left.php:28 misc/content-image-right.php:28
+#: search.php:36 template-parts/content-page.php:28
 #: template-parts/content.php:31
 msgid "Page"
 msgstr "Sivu"
@@ -129,6 +212,15 @@ msgstr "Sulje valikko"
 #: menus/menu-social.php:11 menus/menu-social.php:12
 msgid "Social Menu"
 msgstr "Somevalikko"
+
+#: misc/content-front-page.php:26
+msgid "Scroll to Content"
+msgstr "Siirry sisältöön"
+
+#: misc/content-image-left.php:26 misc/content-image-right.php:26
+#: template-parts/content-page.php:26 template-parts/content.php:29
+msgid "Pages:"
+msgstr "Sivut:"
 
 #: search.php:15
 msgid "Search Results for: %s"
@@ -153,12 +245,6 @@ msgstr "Edellinen"
 #: single.php:30
 msgid "Previous post:"
 msgstr "Edellinen uutinen:"
-
-#: template-parts/content-image-left.php:26
-#: template-parts/content-image-right.php:26 template-parts/content-page.php:26
-#: template-parts/content.php:29
-msgid "Pages:"
-msgstr "Sivut:"
 
 #: template-parts/content-none.php:15
 msgid "Nothing Found"
@@ -185,15 +271,17 @@ msgid ""
 "searching can help."
 msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on apua."
 
-#: template-parts/content.php:40 template-parts/content.php:41
+#. Translators: #%s means text before category or tag.
+#: template-parts/content.php:41 template-parts/content.php:42
+#, fuzzy
 msgid "#%s"
-msgstr ""
+msgstr "#%s"
 
-#: template-parts/content.php:40
+#: template-parts/content.php:41
 msgid "Categories"
 msgstr "Kategoriat"
 
-#: template-parts/content.php:41
+#: template-parts/content.php:42
 msgid "Tags"
 msgstr "Avainsanat"
 
@@ -226,10 +314,6 @@ msgid "Featured Image on the Right"
 msgstr "Artikkelikuva oikealla"
 
 #. Template Name of the plugin/theme
-msgid "Front Page"
-msgstr "Etusivu"
-
-#. Template Name of the plugin/theme
 msgid "Full Background Image"
 msgstr "Koko sivun taustakuva"
 
@@ -245,12 +329,12 @@ msgid_plural "%1$s comments"
 msgstr[0] "Yksi kommentti"
 msgstr[1] "%1$s kommenttia"
 
-#: functions.php:122
+#: functions.php:123
 msgctxt "sidebar"
 msgid "Primary"
 msgstr "Päävalikko"
 
-#: functions.php:132
+#: functions.php:133
 msgctxt "sidebar"
 msgid "Subsidiary"
 msgstr "Sivupalkki alhaalla"
@@ -258,7 +342,7 @@ msgstr "Sivupalkki alhaalla"
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:162
+#: functions.php:163
 msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr ""
@@ -266,7 +350,7 @@ msgstr ""
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:167
+#: functions.php:168
 msgctxt "Montserrat font: on or off"
 msgid "on"
 msgstr ""

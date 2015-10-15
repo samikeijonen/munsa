@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php hybrid_attr( 'post' ); ?>>
 
-	<?php if ( is_single() ) : // If single. ?>
+	<?php if ( is_singular() ) : // If single. ?>
 	
 		<?php munsa_post_thumbnail(); ?>
 	
@@ -37,8 +37,9 @@
 		
 		<footer class="entry-footer">
 			<div class="footer-wrap">
-				<?php munsa_post_terms( array( 'taxonomy' => 'category', 'text' => __( '#%s', 'munsa' ), 'before' => '<div class="entry-categories"><span class="terms-title categories-title">' . esc_html__( 'Categories', 'munsa' ) . '</span>', 'after' => '</div>' ) ); ?>
-				<?php munsa_post_terms( array( 'taxonomy' => 'post_tag', 'text' => __( '#%s', 'munsa' ), 'before' => '<div class="entry-tags"><span class="terms-title tags-title">' . esc_html__( 'Tags', 'munsa' ) . '</span>', 'after' => '</div>' ) ); ?>
+				<?php /* Translators: #%s means text before category or tag. */ ?>
+				<?php munsa_post_terms( array( 'taxonomy' => 'category', 'text' => esc_html__( '#%s', 'munsa' ), 'before' => '<div class="entry-categories"><span class="terms-title categories-title">' . esc_html__( 'Categories', 'munsa' ) . '</span>', 'after' => '</div>' ) ); ?>
+				<?php munsa_post_terms( array( 'taxonomy' => 'post_tag', 'text' => esc_html__( '#%s', 'munsa' ), 'before' => '<div class="entry-tags"><span class="terms-title tags-title">' . esc_html__( 'Tags', 'munsa' ) . '</span>', 'after' => '</div>' ) ); ?>
 			</div><!-- .footer-wrap -->
 		</footer><!-- .entry-footer -->
 		

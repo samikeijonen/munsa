@@ -23,6 +23,10 @@
 	
 		<?php get_template_part( 'menus/menu', 'social' ); // Loads the menus/menu-social.php template. ?>
 	
+		<a id="scroll-to-content" class="scroll-to-content" data-scroll href="#featured-area">
+			<span class="screen-reader-text"><?php esc_html_e( 'Scroll to Content', 'munsa' ); ?></span>
+		</a>
+		
 	</div><!-- .entry-outer -->
 
 </div><!-- .featured-content -->

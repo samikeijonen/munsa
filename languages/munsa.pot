@@ -53,37 +53,37 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:22
+#: footer.php:28
 msgid "https://wordpress.org/"
 msgstr ""
 
-#: footer.php:22
+#: footer.php:28
 msgid "Proudly powered by %s"
 msgstr ""
 
-#: footer.php:24
+#: footer.php:30
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: footer.php:27
+#: footer.php:33
 msgid "Up"
 msgstr ""
 
-#: functions.php:52 menus/menu-primary.php:11
+#: functions.php:53 menus/menu-primary.php:11
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:53
+#: functions.php:54
 msgid "Social Links Menu"
 msgstr ""
 
-#: functions.php:123
+#: functions.php:124
 msgid ""
 "The main sidebar. It is displayed on the right side of the page as off "
 "canvas sidebar."
 msgstr ""
 
-#: functions.php:133
+#: functions.php:134
 msgid "A sidebar located in the footer of the site."
 msgstr ""
 
@@ -95,6 +95,86 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
+#. Template Name of the plugin/theme
+msgid "Contact Info"
+msgstr ""
+
+#: inc/customizer/contact.php:13
+msgid "Contact Info will be displayed in Contact Info and Front Page Templates."
+msgstr ""
+
+#: inc/customizer/contact.php:32
+msgid "Email"
+msgstr ""
+
+#: inc/customizer/contact.php:52
+msgid "Phone Number"
+msgstr ""
+
+#: inc/customizer/contact.php:72
+msgid "Address"
+msgstr ""
+
+#: inc/customizer/contact.php:92
+msgid "Hide from Front Page Template"
+msgstr ""
+
+#: inc/customizer/contact.php:93
+msgid "Check this if you want to hide contact info from Front Page Template."
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Front Page"
+msgstr ""
+
+#: inc/customizer/front-page.php:13
+msgid "Select featured pages that will be displayed in Front Page Template."
+msgstr ""
+
+#: inc/customizer/front-page.php:43
+#. Translators: %s stands for number. For example Select page 1.
+msgid "Select page %s"
+msgstr ""
+
+#: inc/customizer/front-page.php:63 misc/content-featured-areas.php:62
+#: misc/content-featured-areas.php:67 misc/content-featured-areas.php:68
+msgid "Articles"
+msgstr ""
+
+#: inc/customizer/front-page.php:72
+msgid "Blog title"
+msgstr ""
+
+#: inc/customizer/front-page.php:92
+msgid "Blog URL"
+msgstr ""
+
+#: inc/customizer/front-page.php:112
+msgid "Blog URL text"
+msgstr ""
+
+#: inc/customizer/front-page.php:133
+msgid "Callout Image"
+msgstr ""
+
+#: inc/customizer/front-page.php:134
+msgid ""
+"Add Callout Image which can be map or product image for example. "
+"Recommended width is 1920px."
+msgstr ""
+
+#: inc/customizer/front-page.php:154
+msgid "Callout image alt text"
+msgstr ""
+
+#: inc/customizer/front-page.php:174
+msgid "Callout image URL"
+msgstr ""
+
+#: inc/customizer.php:19
+msgid "Theme Settings"
+msgstr ""
+
 #: index.php:48 search.php:34
 msgid "Previous page"
 msgstr ""
@@ -103,8 +183,8 @@ msgstr ""
 msgid "Next page"
 msgstr ""
 
-#: index.php:50 search.php:36 template-parts/content-image-left.php:28
-#: template-parts/content-image-right.php:28 template-parts/content-page.php:28
+#: index.php:50 misc/content-image-left.php:28 misc/content-image-right.php:28
+#: search.php:36 template-parts/content-page.php:28
 #: template-parts/content.php:31
 msgid "Page"
 msgstr ""
@@ -123,6 +203,21 @@ msgstr ""
 
 #: menus/menu-social.php:11 menus/menu-social.php:12
 msgid "Social Menu"
+msgstr ""
+
+#: misc/content-featured-areas.php:114
+msgid ""
+"Set Front Page Template content in the Customizer. Or <a "
+"href=\"%1$s\">publish your first post here</a>."
+msgstr ""
+
+#: misc/content-front-page.php:27
+msgid "Scroll to Content"
+msgstr ""
+
+#: misc/content-image-left.php:26 misc/content-image-right.php:26
+#: template-parts/content-page.php:26 template-parts/content.php:29
+msgid "Pages:"
 msgstr ""
 
 #: search.php:15
@@ -149,12 +244,6 @@ msgstr ""
 msgid "Previous post:"
 msgstr ""
 
-#: template-parts/content-image-left.php:26
-#: template-parts/content-image-right.php:26 template-parts/content-page.php:26
-#: template-parts/content.php:29
-msgid "Pages:"
-msgstr ""
-
 #: template-parts/content-none.php:15
 msgid "Nothing Found"
 msgstr ""
@@ -175,15 +264,16 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: template-parts/content.php:40 template-parts/content.php:41
+#: template-parts/content.php:41 template-parts/content.php:42
+#. Translators: #%s means text before category or tag.
 msgid "#%s"
 msgstr ""
 
-#: template-parts/content.php:40
+#: template-parts/content.php:41
 msgid "Categories"
 msgstr ""
 
-#: template-parts/content.php:41
+#: template-parts/content.php:42
 msgid "Tags"
 msgstr ""
 
@@ -216,10 +306,6 @@ msgid "Featured Image on the Right"
 msgstr ""
 
 #. Template Name of the plugin/theme
-msgid "Front Page"
-msgstr ""
-
-#. Template Name of the plugin/theme
 msgid "Full Background Image"
 msgstr ""
 
@@ -235,17 +321,17 @@ msgid_plural "%1$s comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:122
+#: functions.php:123
 msgctxt "sidebar"
 msgid "Primary"
 msgstr ""
 
-#: functions.php:132
+#: functions.php:133
 msgctxt "sidebar"
 msgid "Subsidiary"
 msgstr ""
 
-#: functions.php:162
+#: functions.php:163
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
@@ -253,7 +339,7 @@ msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:167
+#: functions.php:168
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.

@@ -18,7 +18,7 @@
 		
 		<?php
 			if ( is_page_template( 'pages/front-page.php' ) ) :
-				get_template_part( 'misc/content', 'blog-posts' ); // Load blog posts for Front Page Template.
+				get_template_part( 'misc/content', 'featured-areas' ); // Load featured areas for Front Page Template.
 			endif;
 		?>
 
