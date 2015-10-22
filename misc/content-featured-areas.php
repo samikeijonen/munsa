@@ -17,12 +17,15 @@ $blog_content = new WP_Query( apply_filters( 'munsa_blog_posts_arguments', array
 	'posts_per_page' => 3,
 	'no_found_rows'  => true,
 ) ) );
+
+// Get featured pages.
+$munsa_featured_pages = munsa_featured_pages();
 	
 // Check if there is content we want to show.
-if ( $blog_content->have_posts() || ! empty( munsa_featured_pages() ) ) :
+if ( $blog_content->have_posts() || ! empty( $munsa_featured_pages ) ) :
 	
 	// Check do we have featured pages. This function returns page ID:s in an array.
-	if ( ! empty( munsa_featured_pages() ) ) :
+	if ( ! empty( $munsa_featured_pages ) ) :
 ?>
 
 		<div id="featured-pages-area" class="featured-pages-area front-page-area">
@@ -30,7 +33,7 @@ if ( $blog_content->have_posts() || ! empty( munsa_featured_pages() ) ) :
 
 				<?php
 	
-				foreach ( munsa_featured_pages() as $munsa_page_id ) : // Begins the loop through found pages from customize settings. ?>
+				foreach ( $munsa_featured_pages as $munsa_page_id ) : // Begins the loop through found pages from customize settings. ?>
 	
 					<?php $munsa_bg = munsa_get_post_thumbnail( $post_thumbnail = 'munsa-medium', $id = $munsa_page_id )?>
 			
@@ -108,6 +111,18 @@ if ( $blog_content->have_posts() || ! empty( munsa_featured_pages() ) ) :
 		endif; // End loop.
 		wp_reset_postdata(); // Reset post data.
 	?>
+	
+	<?php if ( $munsa_has_contact_info = munsa_has_contact_info() && ! get_theme_mod( 'hide_from_front_page' ) ) : ?>
+
+		<div id="contact-content-area" class="contact-content-area front-page-area">
+			<div class="contact-wrapper">
+	
+				<?php munsa_contact_info(); // This function is in inc/template-tags.php file. ?>
+				
+			</div><!-- .contact-wrapper -->
+		</div><!-- .contact-content-area -->
+		
+	<?php endif; ?>
 
 <?php elseif( current_user_can( 'publish_posts' ) ) : // If there are no content ?>
 	<p class="no-content">
