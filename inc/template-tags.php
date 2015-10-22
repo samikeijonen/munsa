@@ -164,7 +164,8 @@ if ( ! function_exists( 'munsa_contact_info' ) ) :
 function munsa_contact_info() {
 	
 	// Bail if there is no contact info.
-	if ( ! munsa_has_contact_info() ) {
+	$munsa_has_contact_info = munsa_has_contact_info();
+	if ( ! $munsa_has_contact_info ) {
 		return;
 	}
 	
