@@ -21,6 +21,8 @@
 				get_template_part( 'misc/content', 'featured-areas' ); // Load featured areas for Front Page Template.
 			endif;
 		?>
+		
+		<?php get_sidebar( 'footer' ); // Loads the sidebar-footer.php template. ?>
 
 		<footer id="colophon" class="site-footer" role="contentinfo" <?php hybrid_attr( 'footer' ); ?>>
 			

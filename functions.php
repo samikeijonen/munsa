@@ -120,18 +120,18 @@ function munsa_widgets_init() {
 
 	$sidebar_primary_args = array(
 		'id'            => 'primary',
-		'name'          => _x( 'Primary', 'sidebar', 'munsa' ),
-		'description'   => __( 'The main sidebar. It is displayed on the right side of the page as off canvas sidebar.', 'munsa' ),
+		'name'          => esc_html_x( 'Primary', 'sidebar', 'munsa' ),
+		'description'   => esc_html__( 'The main sidebar. It is displayed on the right side of the page as off canvas sidebar.', 'munsa' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>'
 	);
 	
-	$sidebar_subsidiary_args = array(
-		'id'            => 'subsidiary',
-		'name'          => _x( 'Subsidiary', 'sidebar', 'munsa' ),
-		'description'   => __( 'A sidebar located in the footer of the site.', 'munsa' ),
+	$sidebar_footer_args = array(
+		'id'            => 'footer',
+		'name'          => esc_html_x( 'Footer', 'sidebar', 'munsa' ),
+		'description'   => esc_html__( 'A sidebar located in the footer of the site.', 'munsa' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h3 class="widget-title">',
@@ -140,7 +140,7 @@ function munsa_widgets_init() {
 	
 	// Register sidebars.
 	register_sidebar( $sidebar_primary_args );
-	register_sidebar( $sidebar_subsidiary_args );
+	register_sidebar( $sidebar_footer_args );
 
 }
 add_action( 'widgets_init', 'munsa_widgets_init' );
