@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Munsa 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-10-14 10:33+0300\n"
-"PO-Revision-Date: 2015-10-14 10:36+0300\n"
+"POT-Creation-Date: 2015-10-22 11:12+0300\n"
+"PO-Revision-Date: 2015-10-22 11:22+0300\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -56,19 +56,19 @@ msgstr "Uudemmat kommentit"
 msgid "Comments are closed."
 msgstr "Kommentointi on suljettu."
 
-#: footer.php:28
+#: footer.php:30
 msgid "https://wordpress.org/"
 msgstr "https://wordpress.org/"
 
-#: footer.php:28
+#: footer.php:30
 msgid "Proudly powered by %s"
 msgstr "Voimanlähteenä %s"
 
-#: footer.php:30
+#: footer.php:32
 msgid "Theme: %1$s by %2$s."
 msgstr "Teeman %1$s on tehnyt %2$s."
 
-#: footer.php:33
+#: footer.php:35
 msgid "Up"
 msgstr "Ylös"
 
@@ -90,7 +90,7 @@ msgstr ""
 
 #: functions.php:134
 msgid "A sidebar located in the footer of the site."
-msgstr "Sivupalkki sijaitsee alapalkissa."
+msgstr "Tähän liitetyt vimpaimet näkyvät sisällön alapuolella."
 
 #: header.php:28
 msgid "Site is loading"
@@ -142,8 +142,8 @@ msgstr "Valitse sivut, jotka haluat näkyvät etusivulle nostettuna."
 msgid "Select page %s"
 msgstr "Valitse sivu %s"
 
-#: inc/customizer/front-page.php:63 misc/content-blog-posts.php:26
-#: misc/content-blog-posts.php:31 misc/content-blog-posts.php:32
+#: inc/customizer/front-page.php:63 misc/content-featured-areas.php:65
+#: misc/content-featured-areas.php:70 misc/content-featured-areas.php:71
 msgid "Articles"
 msgstr "Artikkelit"
 
@@ -213,7 +213,15 @@ msgstr "Sulje valikko"
 msgid "Social Menu"
 msgstr "Somevalikko"
 
-#: misc/content-front-page.php:26
+#: misc/content-featured-areas.php:129
+msgid ""
+"Set Front Page Template content in the Customizer. Or <a href=\"%1$s"
+"\">publish your first post here</a>."
+msgstr ""
+"Aseta etusivun asetukset mukauttimessa. Tai <a href=\"%1$s\">julkaise "
+"ensimmäinen artikkeli täällä</a>."
+
+#: misc/content-front-page.php:27
 msgid "Scroll to Content"
 msgstr "Siirry sisältöön"
 
@@ -332,12 +340,12 @@ msgstr[1] "%1$s kommenttia"
 #: functions.php:123
 msgctxt "sidebar"
 msgid "Primary"
-msgstr "Päävalikko"
+msgstr "Sivupalkki"
 
 #: functions.php:133
 msgctxt "sidebar"
-msgid "Subsidiary"
-msgstr "Sivupalkki alhaalla"
+msgid "Footer"
+msgstr "Alapalkki"
 
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
@@ -370,6 +378,11 @@ msgstr "Kirjoittaja"
 msgctxt "taxonomy terms separator"
 msgid " #"
 msgstr ""
+
+#: sidebar-footer.php:12
+msgctxt "Sidebar aria label"
+msgid "Footer Sidebar"
+msgstr "Sivupalkki alhaalla"
 
 #: sidebar-primary.php:12
 msgctxt "Sidebar aria label"

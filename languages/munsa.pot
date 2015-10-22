@@ -53,19 +53,19 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:28
+#: footer.php:30
 msgid "https://wordpress.org/"
 msgstr ""
 
-#: footer.php:28
+#: footer.php:30
 msgid "Proudly powered by %s"
 msgstr ""
 
-#: footer.php:30
+#: footer.php:32
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: footer.php:33
+#: footer.php:35
 msgid "Up"
 msgstr ""
 
@@ -136,8 +136,8 @@ msgstr ""
 msgid "Select page %s"
 msgstr ""
 
-#: inc/customizer/front-page.php:63 misc/content-featured-areas.php:62
-#: misc/content-featured-areas.php:67 misc/content-featured-areas.php:68
+#: inc/customizer/front-page.php:63 misc/content-featured-areas.php:65
+#: misc/content-featured-areas.php:70 misc/content-featured-areas.php:71
 msgid "Articles"
 msgstr ""
 
@@ -205,7 +205,7 @@ msgstr ""
 msgid "Social Menu"
 msgstr ""
 
-#: misc/content-featured-areas.php:114
+#: misc/content-featured-areas.php:129
 msgid ""
 "Set Front Page Template content in the Customizer. Or <a "
 "href=\"%1$s\">publish your first post here</a>."
@@ -328,7 +328,7 @@ msgstr ""
 
 #: functions.php:133
 msgctxt "sidebar"
-msgid "Subsidiary"
+msgid "Footer"
 msgstr ""
 
 #: functions.php:163
@@ -361,6 +361,11 @@ msgstr ""
 #. Translators: Separates tags, categories, etc. when displaying a post.
 msgctxt "taxonomy terms separator"
 msgid " #"
+msgstr ""
+
+#: sidebar-footer.php:12
+msgctxt "Sidebar aria label"
+msgid "Footer Sidebar"
 msgstr ""
 
 #: sidebar-primary.php:12
