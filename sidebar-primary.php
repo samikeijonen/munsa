@@ -12,9 +12,7 @@
 		<h2 class="screen-reader-text" id="sidebar-primary-header"><?php echo esc_html_x( 'Primary Sidebar', 'Sidebar aria label', 'munsa' ); ?></h2>
 		
 		<button class="sidebar-primary-toggle sidebar-primary-close menu-sidebar-close menu-sidebar-toggle" aria-controls="sidebar-primary">
-			<span id="sidebar-primary-close-button" class="sidebar-primary-close-button sidebar-primary-button menu-sidebar-button genericon genericon-close">
-				<span class="screen-reader-text"><?php esc_html_e( 'Close Sidebar', 'munsa' ); ?></span>
-			</span>
+			<span class="screen-reader-text"><?php esc_html_e( 'Close Sidebar', 'munsa' ); ?></span>
 		</button>
 		
 		<div class="wrap">

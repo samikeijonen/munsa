@@ -5,7 +5,7 @@
  */
 ( function( $ ) {
 	
-	var body, page, scrollUp, scrollToContent, mainNav, primarySidebar, menuToggle, menuButton, sidebarToggle, sidebarButton;
+	var body, page, scrollUp, scrollToContent, mainNav, primarySidebar, menuToggle, sidebarToggle;
 	
 	// Set up vars.
 	page            = $( '#site-wrapper' );
@@ -14,9 +14,7 @@
 	mainNav         = page.find( '#menu-primary' );
 	primarySidebar  = page.find( '#sidebar-primary' );
 	menuToggle      = page.find( '.main-navigation-toggle' );
-	menuButton      = page.find( '#main-navigation-button' );
 	sidebarToggle   = page.find( '.sidebar-primary-toggle' );
-	sidebarButton   = page.find( '#sidebar-primary-button' );
 	
 	// Preload page and fade the content.
 	$( window ).load( function() { // makes sure the whole site is loaded
@@ -64,15 +62,6 @@
 			$( 'body' ).toggleClass( 'main-navigation-open' );
 			mainNav.toggleClass( 'open' );
 			
-			// Add or remove class from button span element.
-			if ( menuButton.hasClass( 'genericon-menu' ) ) {
-				menuButton.removeClass( 'genericon-menu' );
-				menuButton.addClass( 'genericon-close' );
-			} else {
-				menuButton.removeClass( 'genericon-close' );
-				menuButton.addClass( 'genericon-menu' );			
-			}
-			
 			// If aria-expanded is false, set it to true. And vica versa.
 			$( menuToggle ).attr( 'aria-expanded', $( menuToggle ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
 		
@@ -104,15 +93,6 @@
 			$( 'body' ).toggleClass( 'sidebar-primary-open' );
 			primarySidebar.toggleClass( 'open' );
 			
-			// Add or remove class from button span element.
-			if ( sidebarButton.hasClass( 'genericon-menu' ) ) {
-				sidebarButton.removeClass( 'genericon-menu' );
-				sidebarButton.addClass( 'genericon-close' );
-			} else {
-				sidebarButton.removeClass( 'genericon-close' );
-				sidebarButton.addClass( 'genericon-menu' );			
-			}
-			
 			// If aria-expanded is false, set it to true. And vica versa.
 			$( sidebarToggle ).attr( 'aria-expanded', $( sidebarToggle ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
 		
@@ -129,13 +109,11 @@
 			if ( $( 'body' ).hasClass( 'main-navigation-open' ) ) {
 				$( 'html' ).removeClass( 'disable-scroll' );
 				$( 'body' ).removeClass( 'main-navigation-open' );
-				menuButton.addClass( 'genericon-menu' );
-				menuButton.removeClass( 'genericon-close' );
+				mainNav.removeClass( 'open' );
 			} else if ( $( 'body' ).hasClass( 'sidebar-primary-open' ) ) {
 				$( 'html' ).removeClass( 'disable-scroll' );
 				$( 'body' ).removeClass( 'sidebar-primary-open' );
-				sidebarButton.addClass( 'genericon-menu' );
-				sidebarButton.removeClass( 'genericon-close' );
+				primarySidebar.removeClass( 'open' );
 			}
 		}
 	});
