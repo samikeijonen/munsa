@@ -22,15 +22,13 @@
 	$( window ).load( function() { // makes sure the whole site is loaded
 		$( '#status' ).fadeOut(); // will first fade out the loading animation
 		$( '#preloader' ).delay( 350 ).fadeOut( 'slow' ); // will fade out the white DIV that covers the website.
-		//$( '#status' ).velocity( 'fadeOut', { delay: 0 });
-		//$( '#preloader' ).velocity( 'fadeOut', { delay: 350 });
 	});
 	
 	// Back to top.
 	if ( scrollUp.length ) {
-		$( scrollUp ).click(function() {
-			$( 'html,body' ).animate( { scrollTop: 0 }, 600 );
-			return false;
+		smoothScroll.init({
+			speed: 800,
+			updateURL: false,
 		});
 	}
 	
@@ -76,7 +74,7 @@
 			}
 			
 			// If aria-expanded is false, set it to true. And vica versa.
-			$( this ).attr( 'aria-expanded', $( this ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
+			$( menuToggle ).attr( 'aria-expanded', $( menuToggle ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
 		
 		});
 		
@@ -116,7 +114,7 @@
 			}
 			
 			// If aria-expanded is false, set it to true. And vica versa.
-			$( this ).attr( 'aria-expanded', $( this ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
+			$( sidebarToggle ).attr( 'aria-expanded', $( sidebarToggle ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
 		
 		});
 		

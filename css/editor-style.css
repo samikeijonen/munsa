@@ -15,7 +15,18 @@ body#tinymce {
 
 .wp-caption-text,
 body .wp-caption-dd {
-	font-size: 0.85em;
-	margin: 6px 0 1em 0;
+	font-size: 1em;
+	font-style: italic;
+	margin: 0.8075em 0;
 	text-align: center;
+}
+
+.mce-item-table,
+.mce-item-table td,
+.mce-item-table th,
+.mce-item-table caption {
+	border: none;
+}
+.mce-item-table tr {
+	border-bottom: 1px solid #dedede;
 }

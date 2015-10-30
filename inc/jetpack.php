@@ -13,9 +13,10 @@
  */
 function munsa_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
-		'container' => 'main',
-		'render'    => 'munsa_infinite_scroll_render',
-		'footer'    => 'page',
+		'container'      => 'main',
+		'render'         => 'munsa_infinite_scroll_render',
+		'footer'         => 'page',
+		'footer_widgets' => 'footer',
 	) );
 } // end function munsa_jetpack_setup
 add_action( 'after_setup_theme', 'munsa_jetpack_setup' );
@@ -26,6 +27,6 @@ add_action( 'after_setup_theme', 'munsa_jetpack_setup' );
 function munsa_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
-		get_template_part( 'template-parts/content', get_post_format() );
+		get_template_part( 'template-parts/content', ( post_type_supports( get_post_type(), 'post-formats' ) ? get_post_format() : get_post_type() ) );
 	}
 } // end function munsa_infinite_scroll_render

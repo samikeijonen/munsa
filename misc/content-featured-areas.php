@@ -81,7 +81,7 @@ if ( $blog_content->have_posts() || ! empty( $munsa_featured_pages ) ) :
 					endif; // End featured are title and link
 				?>
 						
-				<div class="blog-posts-wrapper">
+				<div class="blog-posts-wrapper" itemscope="itemscope" itemtype="http://schema.org/Blog">
 					<?php while ( $blog_content->have_posts() ) : $blog_content->the_post(); ?>
 						
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php hybrid_attr( 'post' ); ?>>

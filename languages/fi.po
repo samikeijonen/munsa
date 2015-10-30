@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Munsa 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-10-22 11:12+0300\n"
-"PO-Revision-Date: 2015-10-22 11:22+0300\n"
+"POT-Creation-Date: 2015-10-29 11:39+0200\n"
+"PO-Revision-Date: 2015-10-29 11:43+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -56,21 +56,21 @@ msgstr "Uudemmat kommentit"
 msgid "Comments are closed."
 msgstr "Kommentointi on suljettu."
 
-#: footer.php:30
+#: footer.php:32
 msgid "https://wordpress.org/"
 msgstr "https://wordpress.org/"
 
-#: footer.php:30
+#: footer.php:32
 msgid "Proudly powered by %s"
 msgstr "Voimanlähteenä %s"
 
-#: footer.php:32
+#: footer.php:34
 msgid "Theme: %1$s by %2$s."
 msgstr "Teeman %1$s on tehnyt %2$s."
 
-#: footer.php:35
-msgid "Up"
-msgstr "Ylös"
+#: footer.php:39
+msgid "Back to top"
+msgstr "Takaisin ylös"
 
 #: functions.php:53 menus/menu-primary.php:11
 msgid "Primary Menu"
@@ -80,7 +80,7 @@ msgstr "Päävalikko"
 msgid "Social Links Menu"
 msgstr "Somevalikko"
 
-#: functions.php:124
+#: functions.php:118
 msgid ""
 "The main sidebar. It is displayed on the right side of the page as off "
 "canvas sidebar."
@@ -88,7 +88,7 @@ msgstr ""
 "Päävimpainalue. Tähän liitetyt vimpaimet näkyvät sisällön oikealla puolella "
 "(off-canvas)."
 
-#: functions.php:134
+#: functions.php:128
 msgid "A sidebar located in the footer of the site."
 msgstr "Tähän liitetyt vimpaimet näkyvät sisällön alapuolella."
 
@@ -159,29 +159,21 @@ msgstr "Blogisivun URL"
 msgid "Blog URL text"
 msgstr "Blogisivun URL-teksti"
 
-#: inc/customizer/front-page.php:133
-msgid "Callout Image"
-msgstr "Callout-kuva"
-
-#: inc/customizer/front-page.php:134
-msgid ""
-"Add Callout Image which can be map or product image for example. Recommended "
-"width is 1920px."
-msgstr ""
-"Lisää Callout-kuva, joka voi esimerkiksi olla karttakuva tai tuotekuva. "
-"Suositeltu kuvan leveys on 1920px."
-
-#: inc/customizer/front-page.php:154
-msgid "Callout image alt text"
-msgstr "Callout-kuvan alt-teksti"
-
-#: inc/customizer/front-page.php:174
-msgid "Callout image URL"
-msgstr "Callout-kuvan URL"
-
 #: inc/customizer.php:19
 msgid "Theme Settings"
 msgstr "Teeman asetukset"
+
+#: inc/widgets.php:21
+msgid "Display Contact Info from the Customizer."
+msgstr "Näyttää yhteystiedot, jotka olet asettanut Mukauttimessa."
+
+#: inc/widgets.php:34
+msgid "Munsa: Contact Info"
+msgstr "Munsa: Yhteystiedot"
+
+#: inc/widgets.php:101
+msgid "Title:"
+msgstr "Otsikko:"
 
 #: index.php:48 search.php:34
 msgid "Previous page"
@@ -191,21 +183,21 @@ msgstr "Edellinen sivu"
 msgid "Next page"
 msgstr "Seuraava sivu"
 
-#: index.php:50 misc/content-image-left.php:28 misc/content-image-right.php:28
-#: search.php:36 template-parts/content-page.php:28
-#: template-parts/content.php:31
+#: index.php:50 pages/featured-image-left.php:32
+#: pages/featured-image-right.php:32 search.php:36
+#: template-parts/content-page.php:28 template-parts/content.php:31
 msgid "Page"
 msgstr "Sivu"
 
-#: menus/menu-buttons.php:14
+#: menus/menu-buttons.php:16
 msgid "Menu"
 msgstr "Valikko"
 
-#: menus/menu-buttons.php:18
+#: menus/menu-buttons.php:24
 msgid "Info"
 msgstr "Info"
 
-#: menus/menu-primary.php:13
+#: menus/menu-primary.php:15
 msgid "Close Menu"
 msgstr "Sulje valikko"
 
@@ -221,20 +213,20 @@ msgstr ""
 "Aseta etusivun asetukset mukauttimessa. Tai <a href=\"%1$s\">julkaise "
 "ensimmäinen artikkeli täällä</a>."
 
-#: misc/content-front-page.php:27
-msgid "Scroll to Content"
-msgstr "Siirry sisältöön"
-
-#: misc/content-image-left.php:26 misc/content-image-right.php:26
+#: pages/featured-image-left.php:30 pages/featured-image-right.php:30
 #: template-parts/content-page.php:26 template-parts/content.php:29
 msgid "Pages:"
 msgstr "Sivut:"
+
+#: pages/front-page.php:31
+msgid "Scroll to Content"
+msgstr "Siirry sisältöön"
 
 #: search.php:15
 msgid "Search Results for: %s"
 msgstr "Hakutulokset haulle %s"
 
-#: sidebar-primary.php:14
+#: sidebar-primary.php:16
 msgid "Close Sidebar"
 msgstr "Sulje sivupalkki"
 
@@ -281,7 +273,6 @@ msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on ap
 
 #. Translators: #%s means text before category or tag.
 #: template-parts/content.php:41 template-parts/content.php:42
-#, fuzzy
 msgid "#%s"
 msgstr "#%s"
 
@@ -337,12 +328,12 @@ msgid_plural "%1$s comments"
 msgstr[0] "Yksi kommentti"
 msgstr[1] "%1$s kommenttia"
 
-#: functions.php:123
+#: functions.php:117
 msgctxt "sidebar"
 msgid "Primary"
 msgstr "Sivupalkki"
 
-#: functions.php:133
+#: functions.php:127
 msgctxt "sidebar"
 msgid "Footer"
 msgstr "Alapalkki"
@@ -350,7 +341,7 @@ msgstr "Alapalkki"
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:163
+#: functions.php:157
 msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr ""
@@ -358,7 +349,7 @@ msgstr ""
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:168
+#: functions.php:162
 msgctxt "Montserrat font: on or off"
 msgid "on"
 msgstr ""
@@ -379,6 +370,21 @@ msgctxt "taxonomy terms separator"
 msgid " #"
 msgstr ""
 
+#: searchform.php:11 searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr "Haku:"
+
+#: searchform.php:12
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Haku &hellip;"
+
+#: searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr "Hae"
+
 #: sidebar-footer.php:12
 msgctxt "Sidebar aria label"
 msgid "Footer Sidebar"
@@ -388,3 +394,22 @@ msgstr "Sivupalkki alhaalla"
 msgctxt "Sidebar aria label"
 msgid "Primary Sidebar"
 msgstr "Sivupalkki"
+
+#~ msgid "Up"
+#~ msgstr "Ylös"
+
+#~ msgid "Callout Image"
+#~ msgstr "Callout-kuva"
+
+#~ msgid ""
+#~ "Add Callout Image which can be map or product image for example. "
+#~ "Recommended width is 1920px."
+#~ msgstr ""
+#~ "Lisää Callout-kuva, joka voi esimerkiksi olla karttakuva tai tuotekuva. "
+#~ "Suositeltu kuvan leveys on 1920px."
+
+#~ msgid "Callout image alt text"
+#~ msgstr "Callout-kuvan alt-teksti"
+
+#~ msgid "Callout image URL"
+#~ msgstr "Callout-kuvan URL"

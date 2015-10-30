@@ -38,8 +38,45 @@
 		
 		<?php get_template_part( 'menus/menu', 'primary' ); // Loads the menus/menu-primary.php template. ?>
 		
-		<?php get_template_part( 'misc/content', 'header' ); // Loads the template-parts/content-header.php template. ?>
+		<?php
+			// Get Featured image.
+			$munsa_bg = munsa_get_post_thumbnail( $post_thumbnail = 'full' );
+		?>
 
+		<?php if ( is_page_template( 'pages/front-page.php' ) || is_page_template( 'pages/full-background-image.php' ) ) : ?>
+			<div class="featured-content"<?php if ( has_post_thumbnail() ) echo ' style="background-image:url(' . esc_url( $munsa_bg ) . ');"' ?>>
+		<?php endif; ?>
+		
+		<header id="masthead" class="site-header" role="banner" <?php hybrid_attr( 'header' ); ?>>
+		
+			<div class="site-branding">
+			
+				<?php do_action( 'munsa_open_branding' ); ?>
+			
+				<?php if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
+			
+				<?php if ( is_front_page() && is_home() ) : ?>
+					<h1 class="site-title" <?php hybrid_attr( 'site-title' ); ?>><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<?php else : ?>
+					<p class="site-title" <?php hybrid_attr( 'site-title' ); ?>><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<?php endif; ?>
+				
+				<p class="site-description" <?php hybrid_attr( 'site-description' ); ?>><?php bloginfo( 'description' ); ?></p>
+			
+				<?php do_action( 'munsa_close_branding' ); ?>
+			
+			</div><!-- .site-branding -->
+			
+		</header><!-- #masthead -->
+		
+		<?php if ( get_header_image() && ! ( is_page_template( 'pages/front-page.php' ) || is_page_template( 'pages/full-background-image.php' ) ) ) : ?>
+			<div class="munsa-header-wrapper">
+				<a class="munsa-header-image" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
+				</a>
+			</div><!-- .munsa-header-wrapper -->
+		<?php endif; // End header image check. ?>
+		
 		<div id="content" class="site-content">
 		
 			<div id="primary" class="content-area">

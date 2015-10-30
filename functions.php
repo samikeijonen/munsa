@@ -44,8 +44,8 @@ function munsa_setup() {
 	set_post_thumbnail_size( 1420, 9999, false );
 	
 	// Add custom image sizes.
-	add_image_size( 'munsa-medium', 820, 9999, false );
-	add_image_size( 'munsa-site-logo', 192, 192, true );
+	add_image_size( 'munsa-medium', 920, 9999, false );
+	add_image_size( 'munsa-site-logo', 9999, 192, false );
 	add_image_size( 'munsa-smaller', 125, 125, true );
 
 	// This theme uses wp_nav_menu() in two location.
@@ -77,12 +77,6 @@ function munsa_setup() {
 		'quote',
 		'link',
 	) );
-
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'munsa_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
 	
 	// Add theme support for site logo.
 	add_theme_support( 'site-logo', array(
@@ -107,7 +101,7 @@ add_action( 'after_setup_theme', 'munsa_setup' );
  * @global int $content_width
  */
 function munsa_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'munsa_content_width', 720 );
+	$GLOBALS['content_width'] = apply_filters( 'munsa_content_width', 1008 );
 }
 add_action( 'after_setup_theme', 'munsa_content_width', 0 );
 
@@ -211,16 +205,11 @@ function munsa_scripts() {
 	// Enqueue active theme styles.
 	wp_enqueue_style( 'munsa-style', get_stylesheet_uri() );
 	
-	// Enqueue velocity.js.
-	wp_enqueue_script( 'velocity', get_template_directory_uri() . '/js/velocity.js', array(), '20150906', true );
-	
-	// Enqueue smooth scroll in Front Page Template.
-	if ( is_page_template( 'pages/front-page.php' ) ) {
-		wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/js/smooth-scroll.js', array(), '20150906', true );
-	}
+	// Enqueue smooth scroll.
+	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/js/smooth-scroll.js', array(), '20150906', true );
 	
 	// Enqueue theme scripts.
-	wp_enqueue_script( 'munsa-settings', get_template_directory_uri() . '/js/settings.js', array( 'jquery', 'velocity' ), '20150906', true );
+	wp_enqueue_script( 'munsa-settings', get_template_directory_uri() . '/js/settings.js', array( 'jquery', 'smooth-scroll' ), '20150906', true );
 	
 	// Enqueue skip link focus fix.
 	wp_enqueue_script( 'munsa-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20150906', true );
@@ -268,6 +257,11 @@ function munsa_comment_callback( $comment, $args, $depth ) {
 require get_template_directory() . '/inc/custom-header.php';
 
 /**
+ * Implement the Custom Background feature.
+ */
+require get_template_directory() . '/inc/custom-background.php';
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
@@ -291,3 +285,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load Schema.org file.
  */
 require get_template_directory() . '/inc/schema.php';
+
+/**
+ * Load Widgets file.
+ */
+require get_template_directory() . '/inc/widgets.php';

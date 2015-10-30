@@ -53,20 +53,20 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:30
+#: footer.php:32
 msgid "https://wordpress.org/"
 msgstr ""
 
-#: footer.php:30
+#: footer.php:32
 msgid "Proudly powered by %s"
 msgstr ""
 
-#: footer.php:32
+#: footer.php:34
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: footer.php:35
-msgid "Up"
+#: footer.php:39
+msgid "Back to top"
 msgstr ""
 
 #: functions.php:53 menus/menu-primary.php:11
@@ -77,13 +77,13 @@ msgstr ""
 msgid "Social Links Menu"
 msgstr ""
 
-#: functions.php:124
+#: functions.php:118
 msgid ""
 "The main sidebar. It is displayed on the right side of the page as off "
 "canvas sidebar."
 msgstr ""
 
-#: functions.php:134
+#: functions.php:128
 msgid "A sidebar located in the footer of the site."
 msgstr ""
 
@@ -153,26 +153,20 @@ msgstr ""
 msgid "Blog URL text"
 msgstr ""
 
-#: inc/customizer/front-page.php:133
-msgid "Callout Image"
-msgstr ""
-
-#: inc/customizer/front-page.php:134
-msgid ""
-"Add Callout Image which can be map or product image for example. "
-"Recommended width is 1920px."
-msgstr ""
-
-#: inc/customizer/front-page.php:154
-msgid "Callout image alt text"
-msgstr ""
-
-#: inc/customizer/front-page.php:174
-msgid "Callout image URL"
-msgstr ""
-
 #: inc/customizer.php:19
 msgid "Theme Settings"
+msgstr ""
+
+#: inc/widgets.php:21
+msgid "Display Contact Info from the Customizer."
+msgstr ""
+
+#: inc/widgets.php:34
+msgid "Munsa: Contact Info"
+msgstr ""
+
+#: inc/widgets.php:101
+msgid "Title:"
 msgstr ""
 
 #: index.php:48 search.php:34
@@ -183,21 +177,21 @@ msgstr ""
 msgid "Next page"
 msgstr ""
 
-#: index.php:50 misc/content-image-left.php:28 misc/content-image-right.php:28
-#: search.php:36 template-parts/content-page.php:28
-#: template-parts/content.php:31
+#: index.php:50 pages/featured-image-left.php:32
+#: pages/featured-image-right.php:32 search.php:36
+#: template-parts/content-page.php:28 template-parts/content.php:31
 msgid "Page"
 msgstr ""
 
-#: menus/menu-buttons.php:14
+#: menus/menu-buttons.php:16
 msgid "Menu"
 msgstr ""
 
-#: menus/menu-buttons.php:18
+#: menus/menu-buttons.php:24
 msgid "Info"
 msgstr ""
 
-#: menus/menu-primary.php:13
+#: menus/menu-primary.php:15
 msgid "Close Menu"
 msgstr ""
 
@@ -211,20 +205,20 @@ msgid ""
 "href=\"%1$s\">publish your first post here</a>."
 msgstr ""
 
-#: misc/content-front-page.php:27
-msgid "Scroll to Content"
-msgstr ""
-
-#: misc/content-image-left.php:26 misc/content-image-right.php:26
+#: pages/featured-image-left.php:30 pages/featured-image-right.php:30
 #: template-parts/content-page.php:26 template-parts/content.php:29
 msgid "Pages:"
+msgstr ""
+
+#: pages/front-page.php:31
+msgid "Scroll to Content"
 msgstr ""
 
 #: search.php:15
 msgid "Search Results for: %s"
 msgstr ""
 
-#: sidebar-primary.php:14
+#: sidebar-primary.php:16
 msgid "Close Sidebar"
 msgstr ""
 
@@ -321,17 +315,17 @@ msgid_plural "%1$s comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:123
+#: functions.php:117
 msgctxt "sidebar"
 msgid "Primary"
 msgstr ""
 
-#: functions.php:133
+#: functions.php:127
 msgctxt "sidebar"
 msgid "Footer"
 msgstr ""
 
-#: functions.php:163
+#: functions.php:157
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
@@ -339,7 +333,7 @@ msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:168
+#: functions.php:162
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.
@@ -361,6 +355,21 @@ msgstr ""
 #. Translators: Separates tags, categories, etc. when displaying a post.
 msgctxt "taxonomy terms separator"
 msgid " #"
+msgstr ""
+
+#: searchform.php:11 searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:12
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:14
+msgctxt "submit button"
+msgid "Search"
 msgstr ""
 
 #: sidebar-footer.php:12

@@ -47,7 +47,7 @@
 	
 		<?php if ( has_post_thumbnail() ) : ?>
 			<div class="entry-thumbnail">
-				<?php munsa_post_thumbnail(); ?>
+				<?php munsa_post_thumbnail( $post_thumbnail = 'munsa-medium' ); ?>
 			</div><!-- .entry-thumbnail -->
 		<?php endif; ?>
 		

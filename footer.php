@@ -24,6 +24,8 @@
 		
 		<?php get_sidebar( 'footer' ); // Loads the sidebar-footer.php template. ?>
 
+		<?php get_sidebar( 'primary' ); // Loads the sidebar-primary.php template. ?>
+		
 		<footer id="colophon" class="site-footer" role="contentinfo" <?php hybrid_attr( 'footer' ); ?>>
 			
 			<div class="site-info">
@@ -31,14 +33,14 @@
 				<span class="sep"> | </span>
 				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'munsa' ), 'Munsa', '<a href="https://foxland.fi/" rel="designer">Foxland</a>' ); ?>
 			</div><!-- .site-info -->
+			
+			<?php get_template_part( 'menus/menu', 'social' ); // Loads the menus/menu-social.php template. ?>
 				
-			<a href="#site-wrapper" id="scroll-up" class="scroll-up"><?php esc_html_e( 'Up', 'munsa' ); ?></a>
+			<a href="#site-wrapper" id="scroll-up" class="scroll-up" data-scroll><span class="scroll-up-wrapper"><?php esc_html_e( 'Back to top', 'munsa' ); ?></span></a>
 		
 		</footer><!-- #colophon -->
 		
 	</div><!-- #page -->
-	
-	<?php get_sidebar( 'primary' ); // Loads the sidebar-primary.php template. ?>
 	
 </div><!-- #site-wrapper -->
 
