@@ -1,14 +1,14 @@
 /*
 Theme Name: Munsa
-Theme URI: http://underscores.me/
+Theme URI: https://theme.wordpress.com/themes/munsa/
 Author: Sami Keijonen
 Author URI: https://foxland.fi/
-Description: Munsa WordPress theme
+Description: Munsa is a minimal theme for photobloggers or artists with a clean and fresh responsive design.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: munsa
-Tags: white, light
+Tags: black, white, light, one-column, fluid-layout, responsive-layout, accessibility-ready, custom-background, custom-header, custom-menu, editor-style, featured-images, infinite-scroll, site-logo, theme-options, translation-ready, art, artwork, blog, design, fashion, photoblogging, photography, travel, clean, light, minimal, simple
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -23,35 +23,35 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
-# Preloader
-# Genericons
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Layout
-# Content
-    ## Header
-    ## Posts and pages
-	## Asides
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
-# Animations
+1.  Normalize
+2.  Preloader
+3.  Genericons
+4.  Typography
+5.  Elements
+6.  Forms
+7.  Navigation
+      7.1 Links
+      7.2 Menus
+8.  Accessibility
+9.  Alignments
+10. Clearings
+11. Widgets
+12. Layout
+13. Content
+      13.1 Header
+      13.2 Posts and pages
+      13.3 Asides
+      13.4 Comments
+14. Infinite scroll
+15. Media
+      15.1 Captions
+      15.2 Galleries
+16. Animations
 --------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
-# Normalize
+1. Normalize
 --------------------------------------------------------------*/
 
 html {
@@ -270,7 +270,7 @@ th {
 
 
 /*--------------------------------------------------------------
-# Preloader
+2. Preloader
 --------------------------------------------------------------*/
 
 .js .preloader {
@@ -298,7 +298,7 @@ th {
 
 
 /*--------------------------------------------------------------
-# Genericons
+3. Genericons
 --------------------------------------------------------------*/
 
 .menu-sidebar-toggle:before,
@@ -380,7 +380,7 @@ th {
 
 
 /*--------------------------------------------------------------
-# Typography
+4. Typography
 --------------------------------------------------------------*/
 
 body,
@@ -537,7 +537,7 @@ big {
 
 
 /*--------------------------------------------------------------
-# Elements
+5. Elements
 --------------------------------------------------------------*/
 
 html {
@@ -668,7 +668,7 @@ img {
 }
 
 .site-logo {
-	max-height: 196px;
+	max-height: 192px;
 }
 
 /* Tables. */
@@ -722,7 +722,7 @@ th {
 
 
 /*--------------------------------------------------------------
-# Forms
+6. Forms
 --------------------------------------------------------------*/
 
 button,
@@ -899,10 +899,10 @@ textarea,
 
 
 /*--------------------------------------------------------------
-# Navigation
+7. Navigation
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-## Links
+7.1 Links
 --------------------------------------------------------------*/
 
 a,
@@ -938,7 +938,7 @@ a:active {
 }
 
 /*--------------------------------------------------------------
-## Menus
+7.2 Menus
 --------------------------------------------------------------*/
 
 .main-navigation ul {
@@ -1453,7 +1453,7 @@ a:active {
 
 
 /*--------------------------------------------------------------
-# Accessibility
+8. Accessibility
 --------------------------------------------------------------*/
 
 /* Text meant only for screen readers. */
@@ -1500,7 +1500,7 @@ a:active {
 
 
 /*--------------------------------------------------------------
-# Alignments
+9. Alignments
 --------------------------------------------------------------*/
 
 .alignleft {
@@ -1559,7 +1559,7 @@ a:active {
 
 
 /*--------------------------------------------------------------
-# Clearings
+10. Clearings
 --------------------------------------------------------------*/
 
 .clear:before,
@@ -1589,7 +1589,7 @@ a:active {
 
 
 /*--------------------------------------------------------------
-# Widgets
+11. Widgets
 --------------------------------------------------------------*/
 
 .widget {
@@ -1658,7 +1658,7 @@ a:active {
 
 
 /*--------------------------------------------------------------
-# Layout
+12. Layout
 --------------------------------------------------------------*/
 
 /* This is to make footer sticky at the bottom when there is not much content. */
@@ -1750,11 +1750,11 @@ a:active {
 
 
 /*--------------------------------------------------------------
-# Content
+13. Content
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-## Header
+13.1 Header
 --------------------------------------------------------------*/
 
 .site-header {
@@ -1800,7 +1800,7 @@ a:active {
 
 
 /*--------------------------------------------------------------
-## Posts and pages
+13.2 Posts and pages
 --------------------------------------------------------------*/
 
 .sticky {
@@ -2207,7 +2207,7 @@ a:active {
 
 
 /*--------------------------------------------------------------
-## Asides
+13.3 Asides
 --------------------------------------------------------------*/
 
 .blog .format-aside .entry-title,
@@ -2217,7 +2217,7 @@ a:active {
 
 
 /*--------------------------------------------------------------
-## Comments
+13.4 Comments
 --------------------------------------------------------------*/
 
 .comments-area {
@@ -2397,7 +2397,7 @@ ol.comment-list dl dl {
 
 
 /*--------------------------------------------------------------
-# Infinite scroll
+14. Infinite scroll
 --------------------------------------------------------------*/
 
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
@@ -2437,7 +2437,7 @@ body #infinite-handle span {
 
 
 /*--------------------------------------------------------------
-# Media
+15. Media
 --------------------------------------------------------------*/
 
 .page-content .wp-smiley,
@@ -2458,7 +2458,7 @@ object {
 
 
 /*--------------------------------------------------------------
-## Captions
+15.1 Captions
 --------------------------------------------------------------*/
 
 .wp-caption {
@@ -2483,7 +2483,7 @@ object {
 
 
 /*--------------------------------------------------------------
-## Galleries
+15.2 Galleries
 --------------------------------------------------------------*/
 
 .gallery {
@@ -2535,7 +2535,7 @@ object {
 
 
 /*--------------------------------------------------------------
-## Animations
+16. Animations
 --------------------------------------------------------------*/
 
 /*!
