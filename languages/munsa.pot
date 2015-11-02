@@ -53,23 +53,23 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:32
+#: footer.php:30
 msgid "https://wordpress.org/"
 msgstr ""
 
-#: footer.php:32
+#: footer.php:30
 msgid "Proudly powered by %s"
 msgstr ""
 
-#: footer.php:34
+#: footer.php:32
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: footer.php:39
+#: footer.php:37
 msgid "Back to top"
 msgstr ""
 
-#: functions.php:53 menus/menu-primary.php:11
+#: functions.php:53 menus/menu-primary.php:15
 msgid "Primary Menu"
 msgstr ""
 
@@ -165,7 +165,7 @@ msgstr ""
 msgid "Munsa: Contact Info"
 msgstr ""
 
-#: inc/widgets.php:101
+#: inc/widgets.php:94
 msgid "Title:"
 msgstr ""
 
@@ -183,15 +183,11 @@ msgstr ""
 msgid "Page"
 msgstr ""
 
-#: menus/menu-buttons.php:16
+#: menus/menu-primary.php:12
 msgid "Menu"
 msgstr ""
 
-#: menus/menu-buttons.php:24
-msgid "Info"
-msgstr ""
-
-#: menus/menu-primary.php:15
+#: menus/menu-primary.php:18
 msgid "Close Menu"
 msgstr ""
 
@@ -218,7 +214,11 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: sidebar-primary.php:16
+#: sidebar-primary.php:12
+msgid "Info"
+msgstr ""
+
+#: sidebar-primary.php:19
 msgid "Close Sidebar"
 msgstr ""
 
@@ -276,11 +276,13 @@ msgid "Munsa"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://underscores.me/"
+msgid "https://theme.wordpress.com/themes/munsa/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Munsa WordPress theme"
+msgid ""
+"Munsa is a minimal theme for photobloggers or artists with a clean and "
+"fresh responsive design."
 msgstr ""
 
 #. Author of the plugin/theme
@@ -377,7 +379,7 @@ msgctxt "Sidebar aria label"
 msgid "Footer Sidebar"
 msgstr ""
 
-#: sidebar-primary.php:12
+#: sidebar-primary.php:16
 msgctxt "Sidebar aria label"
 msgid "Primary Sidebar"
 msgstr ""
