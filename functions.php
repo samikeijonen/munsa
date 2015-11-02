@@ -228,8 +228,11 @@ add_action( 'wp_enqueue_scripts', 'munsa_scripts' );
  */
 function munsa_post_class( $classes ) {
 	
+	// Check contact info.
+	$munsa_has_contact_info = munsa_has_contact_info();
+	
 	// Add 'has-contact-info' class to Contact Info page template if contact info have been set.
-	if ( is_page_template( 'pages/contact-info.php' ) && munsa_has_contact_info() ) {
+	if ( is_page_template( 'pages/contact-info.php' ) && $munsa_has_contact_info ) {
 		$classes[] = 'has-contact-info';
 	}
     
@@ -237,6 +240,39 @@ function munsa_post_class( $classes ) {
 	
 }
 add_filter( 'post_class', 'munsa_post_class' );
+
+
+/**
+ * Add an HTML class to MediaElement.js container elements to aid styling.
+ *
+ * Extends the core _wpmejsSettings object to add a new feature via the
+ * MediaElement.js plugin API.
+ *
+ * @since  1.0.0
+ * @return void
+ */
+function munsa_mejs_add_container_class() {
+	
+	// Check do we have media element.
+	if ( ! wp_script_is( 'mediaelement', 'done' ) ) {
+		return;
+	}
+
+	?>
+	<script>
+	(function() {
+		var settings = window._wpmejsSettings || {};
+		settings.features = settings.features || mejs.MepDefaults.features;
+		settings.features.push( 'exampleclass' );
+
+		MediaElementPlayer.prototype.buildexampleclass = function( player ) {
+			player.container.addClass( 'munsa-mejs-container' );
+		};
+	})();
+	</script>
+	<?php
+}
+add_action( 'wp_print_footer_scripts', 'munsa_mejs_add_container_class' );
 
 /**
  * Use a template for individual comment output.
