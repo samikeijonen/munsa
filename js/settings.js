@@ -53,6 +53,7 @@
 		
 		// Add an initial values for the attribute.
 		menuToggle.attr( 'aria-expanded', 'false' );
+		mainNav.attr( 'aria-expanded', 'false' );
 	
 		menuToggle.on( 'click', function( event ) {
 			
@@ -69,7 +70,6 @@
 				$( mainNav ).addClass( 'fadeIn' );
 				$( mainNav ).removeClass( 'fadeOut' );
 				$( mainNavWrap ).addClass( 'fadeInDown' );
-				//$( mainNavWrap ).removeClass( 'fadeOutUp' );
 				
 			} else {
 				
@@ -79,13 +79,13 @@
 				
 				$( mainNav ).addClass( 'fadeOut' );
 				$( mainNav ).removeClass( 'fadeIn' );
-				//$( mainNavWrap ).addClass( 'fadeOutUp' );
 				$( mainNavWrap ).removeClass( 'fadeInDown' );
 				
 			}
 			
 			// If aria-expanded is false, set it to true. And vica versa.
 			$( menuToggle ).attr( 'aria-expanded', $( menuToggle ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
+			$( mainNav ).attr( 'aria-expanded', $( mainNav ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
 		
 		});
 		
@@ -104,6 +104,7 @@
 		
 		// Add an initial values for the attribute.
 		sidebarToggle.attr( 'aria-expanded', 'false' );
+		primarySidebar.attr( 'aria-expanded', 'false' );
 	
 		sidebarToggle.on( 'click', function( event ) {
 			
@@ -137,6 +138,7 @@
 			
 			// If aria-expanded is false, set it to true. And vica versa.
 			$( sidebarToggle ).attr( 'aria-expanded', $( sidebarToggle ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
+			$( primarySidebar ).attr( 'aria-expanded', $( primarySidebar ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
 		
 		});
 		
@@ -160,7 +162,6 @@
 				
 				$( mainNav ).addClass( 'fadeOut' );
 				$( mainNav ).removeClass( 'fadeIn' );
-				//$( mainNavWrap ).addClass( 'fadeOutUp' );
 				$( mainNavWrap ).removeClass( 'fadeInDown' );
 				
 			} else if ( $( 'body' ).hasClass( 'sidebar-primary-open' ) ) {
