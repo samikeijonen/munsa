@@ -9,7 +9,7 @@
 <?php if ( is_active_sidebar( 'primary' ) ) : // If the sidebar has widgets. ?>
 
 	<button class="sidebar-primary-toggle menu-sidebar-toggle" aria-controls="sidebar-primary">
-		<span class="screen-reader-text"><?php esc_html_e( 'Info', 'munsa' ); ?></span>
+		<span class="screen-reader-text"><?php esc_html_e( 'Sidebar', 'munsa' ); ?></span>
 	</button>
 
 	<aside id="sidebar-primary" class="sidebar-primary sidebar animated" role="complementary" tabindex="0" <?php hybrid_attr( 'sidebar', 'primary' ); ?>>
