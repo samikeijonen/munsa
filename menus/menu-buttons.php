@@ -17,7 +17,7 @@
 		<?php endif; // End check for main menu. ?>
 
 		<?php if ( is_active_sidebar( 'primary' ) ) : ?>
-			<button class="sidebar-primary-toggle menu-sidebar-toggle" aria-controls="sidebar-primary">
+			<button class="sidebar-primary-toggle menu-sidebar-toggle" aria-controls="sidebar-primary" data-toggle="modal" data-backdrop="false" data-target="#sidebar-primary">
 				<span class="screen-reader-text"><?php esc_html_e( 'Info', 'munsa' ); ?></span>
 			</button>
 		<?php endif; // End check for sidebar. ?>

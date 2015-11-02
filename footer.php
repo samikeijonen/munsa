@@ -23,8 +23,6 @@
 		?>
 		
 		<?php get_sidebar( 'footer' ); // Loads the sidebar-footer.php template. ?>
-
-		<?php get_sidebar( 'primary' ); // Loads the sidebar-primary.php template. ?>
 		
 		<footer id="colophon" class="site-footer" role="contentinfo" <?php hybrid_attr( 'footer' ); ?>>
 			

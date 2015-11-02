@@ -34,10 +34,6 @@
 		
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'munsa' ); ?></a>
 		
-		<?php get_template_part( 'menus/menu', 'buttons' ); // Loads the menus/menu-buttons.php template. ?>
-		
-		<?php get_template_part( 'menus/menu', 'primary' ); // Loads the menus/menu-primary.php template. ?>
-		
 		<?php
 			// Get Featured image.
 			$munsa_bg = munsa_get_post_thumbnail( $post_thumbnail = 'full' );
@@ -68,6 +64,12 @@
 			</div><!-- .site-branding -->
 			
 		</header><!-- #masthead -->
+		
+		<?php get_template_part( 'menus/menu', 'buttons' ); // Loads the menus/menu-buttons.php template. ?>
+		
+		<?php get_template_part( 'menus/menu', 'primary' ); // Loads the menus/menu-primary.php template. ?>
+		
+		<?php get_sidebar( 'primary' ); // Loads the sidebar-primary.php template. ?>
 		
 		<?php if ( get_header_image() && ! ( is_page_template( 'pages/front-page.php' ) || is_page_template( 'pages/full-background-image.php' ) ) ) : ?>
 			<div class="munsa-header-wrapper">
