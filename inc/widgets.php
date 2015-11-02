@@ -42,9 +42,7 @@ class Munsa_Contact_Info_Widget extends WP_Widget {
 	 *
 	 * @since 1.0.0
 	 */
-	function widget( $args, $instance ) {
-		
-		extract( $args );
+	function widget( $sidebar, $instance ) {
 		
 		// Bail if there is no contact info.
 		$munsa_has_contact_info = munsa_has_contact_info();
@@ -53,18 +51,18 @@ class Munsa_Contact_Info_Widget extends WP_Widget {
 		}
 
 		// Open the before widget HTML.
-		echo $before_widget;
+		echo $sidebar['before_widget'];
 
 		// Output the widget title.
 		if ( $instance['title'] ) {
-			echo $before_title . apply_filters( 'widget_title',  $instance['title'], $instance, $this->id_base ) . $after_title;
+			echo $sidebar['before_title'] . apply_filters( 'widget_title',  $instance['title'], $instance, $this->id_base ) . $sidebar['after_title'];
 		}
 		
 		// Display Contact Info.
 		munsa_contact_info();
 
 		// Close the after widget HTML.
-		echo $after_widget;
+		echo $sidebar['after_widget'];
 	}
 
 	/**
