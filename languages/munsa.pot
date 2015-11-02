@@ -165,7 +165,7 @@ msgstr ""
 msgid "Munsa: Contact Info"
 msgstr ""
 
-#: inc/widgets.php:94
+#: inc/widgets.php:92
 msgid "Title:"
 msgstr ""
 
@@ -215,7 +215,7 @@ msgid "Search Results for: %s"
 msgstr ""
 
 #: sidebar-primary.php:12
-msgid "Info"
+msgid "Sidebar"
 msgstr ""
 
 #: sidebar-primary.php:19

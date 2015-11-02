@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Munsa 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-11-02 11:01+0200\n"
-"PO-Revision-Date: 2015-11-02 11:03+0200\n"
+"POT-Creation-Date: 2015-11-02 13:29+0200\n"
+"PO-Revision-Date: 2015-11-02 13:29+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -171,7 +171,7 @@ msgstr "Näyttää yhteystiedot, jotka olet asettanut Mukauttimessa."
 msgid "Munsa: Contact Info"
 msgstr "Munsa: Yhteystiedot"
 
-#: inc/widgets.php:94
+#: inc/widgets.php:92
 msgid "Title:"
 msgstr "Otsikko:"
 
@@ -223,8 +223,8 @@ msgid "Search Results for: %s"
 msgstr "Hakutulokset haulle %s"
 
 #: sidebar-primary.php:12
-msgid "Info"
-msgstr "Info"
+msgid "Sidebar"
+msgstr "Sivupalkki"
 
 #: sidebar-primary.php:19
 msgid "Close Sidebar"
