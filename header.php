@@ -65,7 +65,7 @@
 			
 		</header><!-- #masthead -->
 		
-		<?php get_template_part( 'menus/menu', 'buttons' ); // Loads the menus/menu-buttons.php template. ?>
+		<?php // get_template_part( 'menus/menu', 'buttons' ); // Loads the menus/menu-buttons.php template. ?>
 		
 		<?php get_template_part( 'menus/menu', 'primary' ); // Loads the menus/menu-primary.php template. ?>
 		
