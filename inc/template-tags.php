@@ -179,7 +179,7 @@ function munsa_contact_info() {
 				endif;
 				
 				if ( get_theme_mod( 'phone' ) ) :
-					echo '<li class="contact-info-link contact-info-phone"><a href="tel:' . sanitize_text_field( get_theme_mod( 'phone' ) ) . '">' . sanitize_text_field( get_theme_mod( 'phone' ) ) . '</a></li>';
+					echo '<li class="contact-info-link contact-info-phone"><a href="tel:' . preg_replace( '/\s+/', '', sanitize_text_field( get_theme_mod( 'phone' ) ) ) . '">' . sanitize_text_field( get_theme_mod( 'phone' ) ) . '</a></li>';
 				endif;
 				
 				if ( get_theme_mod( 'address' ) ) :
