@@ -14,7 +14,7 @@ if ( ! function_exists( 'munsa_posted_on' ) ) :
 function munsa_posted_on() {
 
 	// Set up entry date.
-	printf( '<span class="entry-date"><span class="screen-reader-text">%1$s </span><a href="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s"' . hybrid_get_attr( 'entry-published' ) . '>%4$s</time></a></span>',
+	printf( '<span class="entry-date"><span class="screen-reader-text">%1$s </span><a href="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" ' . hybrid_get_attr( 'entry-published' ) . '>%4$s</time></a></span>',
 		_x( 'Posted on', 'Used before publish date.', 'munsa' ),
 		esc_url( get_permalink() ),
 		esc_attr( get_the_date( 'c' ) ),
