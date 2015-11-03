@@ -77,13 +77,13 @@ msgstr ""
 msgid "Social Links Menu"
 msgstr ""
 
-#: functions.php:118
+#: functions.php:121
 msgid ""
 "The main sidebar. It is displayed on the right side of the page as off "
 "canvas sidebar."
 msgstr ""
 
-#: functions.php:128
+#: functions.php:131
 msgid "A sidebar located in the footer of the site."
 msgstr ""
 
@@ -115,7 +115,7 @@ msgstr ""
 msgid "Address"
 msgstr ""
 
-#: inc/customizer/contact.php:92
+#: inc/customizer/contact.php:92 inc/customizer/social-menu.php:31
 msgid "Hide from Front Page Template"
 msgstr ""
 
@@ -161,6 +161,25 @@ msgstr ""
 msgid "Blog URL text"
 msgstr ""
 
+#: inc/customizer/social-menu.php:12 menus/menu-social.php:11
+#: menus/menu-social.php:12
+msgid "Social Menu"
+msgstr ""
+
+#: inc/customizer/social-menu.php:32
+msgid "Check this if you want to hide Social Menu from Front Page Template."
+msgstr ""
+
+#: inc/customizer/social-menu.php:52
+msgid "Hide from Full Background Image Template"
+msgstr ""
+
+#: inc/customizer/social-menu.php:53
+msgid ""
+"Check this if you want to hide Social Menu info from Full Background Image "
+"Template."
+msgstr ""
+
 #: inc/customizer.php:19
 msgid "Theme Settings"
 msgstr ""
@@ -201,10 +220,6 @@ msgstr ""
 msgid "Close Menu"
 msgstr ""
 
-#: menus/menu-social.php:11 menus/menu-social.php:12
-msgid "Social Menu"
-msgstr ""
-
 #: misc/content-featured-areas.php:129
 msgid ""
 "Set Front Page Template content in the Customizer. Or <a "
@@ -218,7 +233,7 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: pages/front-page.php:31
+#: pages/front-page.php:35
 msgid "Scroll to Content"
 msgstr ""
 
@@ -334,17 +349,17 @@ msgid_plural "%1$s comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:117
+#: functions.php:120
 msgctxt "sidebar"
 msgid "Primary"
 msgstr ""
 
-#: functions.php:127
+#: functions.php:130
 msgctxt "sidebar"
 msgid "Footer"
 msgstr ""
 
-#: functions.php:157
+#: functions.php:160
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
@@ -352,7 +367,7 @@ msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:162
+#: functions.php:165
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.
