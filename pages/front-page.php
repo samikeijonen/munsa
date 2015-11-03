@@ -25,8 +25,12 @@ get_header(); ?>
 
 			</article><!-- #post-## -->
 	
-			<?php get_template_part( 'menus/menu', 'social' ); // Loads the menus/menu-social.php template. ?>
-	
+			<?php
+				if ( ! get_theme_mod( 'hide_sm_from_front_page' ) ) :
+					get_template_part( 'menus/menu', 'social' ); // Loads the menus/menu-social.php template.
+				endif;
+			?>
+			
 			<a id="scroll-to-content" class="scroll-to-content" data-scroll href="#featured-area">
 				<span class="screen-reader-text"><?php esc_html_e( 'Scroll to Content', 'munsa' ); ?></span>
 			</a>

@@ -25,7 +25,11 @@ get_header(); ?>
 
 			</article><!-- #post-## -->
 	
-			<?php get_template_part( 'menus/menu', 'social' ); // Loads the menus/menu-social.php template. ?>
+			<?php
+				if ( ! get_theme_mod( 'hide_sm_from_full_bg_page' ) ) :
+					get_template_part( 'menus/menu', 'social' ); // Loads the menus/menu-social.php template.
+				endif;
+			?>
 	
 		</div><!-- .entry-outer -->
 	
