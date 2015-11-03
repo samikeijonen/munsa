@@ -38,6 +38,7 @@
 				<?php edit_comment_link( null, '<p class="comment-meta">', '</p>' ); ?>
 		
 			</div><!-- .comment-content-wrapper -->
+			
 		</div><!-- .comment-content -->
 		
 	</article><!-- .comment-body -->
