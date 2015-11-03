@@ -232,7 +232,7 @@ function munsa_post_class( $classes ) {
 	$munsa_has_contact_info = munsa_has_contact_info();
 	
 	// Add 'has-contact-info' class to Contact Info page template if contact info have been set.
-	if ( is_page_template( 'pages/contact-info.php' ) && $munsa_has_contact_info ) {
+	if ( is_page_template( 'pages/contact-info.php' ) && $munsa_has_contact_info && ! get_theme_mod( 'hide_from_contact_page' ) ) {
 		$classes[] = 'has-contact-info';
 	}
 	

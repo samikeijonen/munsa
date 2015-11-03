@@ -76,7 +76,7 @@
 		)
 	);
 	
-	// Add hide from front page setting.
+	// Hide from front page setting.
 	$wp_customize->add_setting(
 		'hide_from_front_page',
 		array(
@@ -85,7 +85,7 @@
 		)
 	);
 	
-	// Add hide from front page control.
+	// Hide from front page control.
 	$wp_customize->add_control(
 		'hide_from_front_page',
 		array(
@@ -93,6 +93,27 @@
 			'description' => esc_html__( 'Check this if you want to hide contact info from Front Page Template.', 'munsa' ),
 			'section'     => 'contact',
 			'priority'    => 40,
+			'type'        => 'checkbox'
+		)
+	);
+	
+	// Hide from contact page setting.
+	$wp_customize->add_setting(
+		'hide_from_contact_page',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'munsa_sanitize_checkbox'
+		)
+	);
+	
+	// Hide from contact page control.
+	$wp_customize->add_control(
+		'hide_from_contact_page',
+		array(
+			'label'       => esc_html__( 'Hide from Contact Page Template', 'munsa' ),
+			'description' => esc_html__( 'Check this if you want to hide contact info from Contact Page Template.', 'munsa' ),
+			'section'     => 'contact',
+			'priority'    => 50,
 			'type'        => 'checkbox'
 		)
 	);

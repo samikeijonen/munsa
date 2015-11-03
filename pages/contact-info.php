@@ -17,7 +17,11 @@ get_header(); ?>
 				<?php the_title( '<h1 class="entry-title" ' . hybrid_get_attr( 'entry-title' ) . '>', '</h1>' ); ?>
 			</header><!-- .entry-header -->
 	
-			<?php munsa_contact_info(); // This function is in inc/template-tags.php file. ?>
+			<?php 
+				if ( ! get_theme_mod( 'hide_from_contact_page' ) ) :
+					munsa_contact_info(); // Show contact info if it's not hidden. This function is in inc/template-tags.php file.
+				endif;
+			?>
 			
 			<div class="entry-inner">
 
