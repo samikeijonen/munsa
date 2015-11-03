@@ -16,6 +16,7 @@ if ( ! function_exists( 'munsa_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function munsa_setup() {
+	
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
@@ -153,12 +154,12 @@ function munsa_fonts_url() {
 	$subsets   = 'latin,latin-ext';
 
 	/* translators: If there are characters in your language that are not supported by Merriweather, translate this to 'off'. Do not translate into your own language. */
-	if ( 'off' !== _x( 'on', 'Merriweather font: on or off', 'munsa' ) ) {
+	if ( 'off' !== esc_attr_x( 'on', 'Merriweather font: on or off', 'munsa' ) ) {
 		$fonts[] = 'Merriweather:300,400,700,900,300italic,400italic,700italic,900italic';
 	}
 
 	/* translators: If there are characters in your language that are not supported by Montserrat, translate this to 'off'. Do not translate into your own language. */
-	if ( 'off' !== _x( 'on', 'Montserrat font: on or off', 'munsa' ) ) {
+	if ( 'off' !== esc_attr_x( 'on', 'Montserrat font: on or off', 'munsa' ) ) {
 		$fonts[] = 'Montserrat:400,700';
 	}
 
@@ -246,6 +247,11 @@ add_filter( 'post_class', 'munsa_post_class' );
  *
  * Extends the core _wpmejsSettings object to add a new feature via the
  * MediaElement.js plugin API.
+ *
+ * @author     Brady Vercher
+ * @copyright  Brady Vercher
+ * @link       http://www.cedaro.com/blog/customizing-mediaelement-wordpress/
+ * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *
  * @since  1.0.0
  * @return void
