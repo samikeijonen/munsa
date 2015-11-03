@@ -45,11 +45,7 @@ if ( post_password_required() ) {
 
 		<?php
 			// Check for comment navigation.
-			if( function_exists( 'the_comments_navigation' ) ) : // Function from WP 4.4.
-			
-				the_comments_navigation();
-		
-			elseif ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
+			if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		
 				<nav id="comment-nav-below" class="comment-nav-below navigation comment-navigation" role="navigation">
 					<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'munsa' ); ?></h2>
