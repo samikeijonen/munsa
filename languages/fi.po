@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Munsa 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-11-02 13:29+0200\n"
-"PO-Revision-Date: 2015-11-02 13:29+0200\n"
+"POT-Creation-Date: 2015-11-03 08:53+0200\n"
+"PO-Revision-Date: 2015-11-03 08:56+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -80,7 +80,7 @@ msgstr "Päävalikko"
 msgid "Social Links Menu"
 msgstr "Somevalikko"
 
-#: functions.php:118
+#: functions.php:117
 msgid ""
 "The main sidebar. It is displayed on the right side of the page as off "
 "canvas sidebar."
@@ -88,7 +88,7 @@ msgstr ""
 "Päävimpainalue. Tähän liitetyt vimpaimet näkyvät sisällön oikealla puolella "
 "(off-canvas)."
 
-#: functions.php:128
+#: functions.php:127
 msgid "A sidebar located in the footer of the site."
 msgstr "Tähän liitetyt vimpaimet näkyvät sisällön alapuolella."
 
@@ -185,7 +185,9 @@ msgstr "Seuraava sivu"
 
 #: index.php:50 pages/featured-image-left.php:32
 #: pages/featured-image-right.php:32 search.php:36
-#: template-parts/content-page.php:28 template-parts/content.php:31
+#: template-parts/content-audio.php:29 template-parts/content-gallery.php:29
+#: template-parts/content-page.php:28 template-parts/content-video.php:29
+#: template-parts/content.php:31
 msgid "Page"
 msgstr "Sivu"
 
@@ -210,7 +212,9 @@ msgstr ""
 "ensimmäinen artikkeli täällä</a>."
 
 #: pages/featured-image-left.php:30 pages/featured-image-right.php:30
-#: template-parts/content-page.php:26 template-parts/content.php:29
+#: template-parts/content-audio.php:27 template-parts/content-gallery.php:27
+#: template-parts/content-page.php:26 template-parts/content-video.php:27
+#: template-parts/content.php:29
 msgid "Pages:"
 msgstr "Sivut:"
 
@@ -246,6 +250,24 @@ msgstr "Edellinen"
 msgid "Previous post:"
 msgstr "Edellinen uutinen:"
 
+#. Translators: #%s means text before category or tag.
+#: template-parts/content-audio.php:39 template-parts/content-audio.php:40
+#: template-parts/content-gallery.php:39 template-parts/content-gallery.php:40
+#: template-parts/content-video.php:39 template-parts/content-video.php:40
+#: template-parts/content.php:41 template-parts/content.php:42
+msgid "#%s"
+msgstr "#%s"
+
+#: template-parts/content-audio.php:39 template-parts/content-gallery.php:39
+#: template-parts/content-video.php:39 template-parts/content.php:41
+msgid "Categories"
+msgstr "Kategoriat"
+
+#: template-parts/content-audio.php:40 template-parts/content-gallery.php:40
+#: template-parts/content-video.php:40 template-parts/content.php:42
+msgid "Tags"
+msgstr "Avainsanat"
+
 #: template-parts/content-none.php:15
 msgid "Nothing Found"
 msgstr "Mitään ei löytynyt"
@@ -271,19 +293,6 @@ msgid ""
 "searching can help."
 msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on apua."
 
-#. Translators: #%s means text before category or tag.
-#: template-parts/content.php:41 template-parts/content.php:42
-msgid "#%s"
-msgstr "#%s"
-
-#: template-parts/content.php:41
-msgid "Categories"
-msgstr "Kategoriat"
-
-#: template-parts/content.php:42
-msgid "Tags"
-msgstr "Avainsanat"
-
 #. Theme Name of the plugin/theme
 msgid "Munsa"
 msgstr "Munsa"
@@ -294,11 +303,11 @@ msgstr "https://theme.wordpress.com/themes/munsa/"
 
 #. Description of the plugin/theme
 msgid ""
-"Munsa is a minimal theme for photobloggers or artists with a clean and fresh "
-"responsive design."
+"Munsa is a minimal theme for creative people like photobloggers and artists. "
+"It has a clean and fresh responsive design."
 msgstr ""
-"Munsa on minimaalinen, kevyt ja responsiivinen teema valokuvaajille ja "
-"artisteille."
+"Munsa on minimaalinen, tuore ja responsiivinen teema luoville ihmisille "
+"kuten valokuvaajille tai artisteille."
 
 #. Author of the plugin/theme
 msgid "Sami Keijonen"
@@ -332,12 +341,12 @@ msgid_plural "%1$s comments"
 msgstr[0] "Yksi kommentti"
 msgstr[1] "%1$s kommenttia"
 
-#: functions.php:117
+#: functions.php:116
 msgctxt "sidebar"
 msgid "Primary"
 msgstr "Sivupalkki"
 
-#: functions.php:127
+#: functions.php:126
 msgctxt "sidebar"
 msgid "Footer"
 msgstr "Alapalkki"
@@ -345,7 +354,7 @@ msgstr "Alapalkki"
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:157
+#: functions.php:156
 msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr ""
@@ -353,7 +362,7 @@ msgstr ""
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:162
+#: functions.php:161
 msgctxt "Montserrat font: on or off"
 msgid "on"
 msgstr ""

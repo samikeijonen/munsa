@@ -77,13 +77,13 @@ msgstr ""
 msgid "Social Links Menu"
 msgstr ""
 
-#: functions.php:118
+#: functions.php:117
 msgid ""
 "The main sidebar. It is displayed on the right side of the page as off "
 "canvas sidebar."
 msgstr ""
 
-#: functions.php:128
+#: functions.php:127
 msgid "A sidebar located in the footer of the site."
 msgstr ""
 
@@ -179,7 +179,9 @@ msgstr ""
 
 #: index.php:50 pages/featured-image-left.php:32
 #: pages/featured-image-right.php:32 search.php:36
-#: template-parts/content-page.php:28 template-parts/content.php:31
+#: template-parts/content-audio.php:29 template-parts/content-gallery.php:29
+#: template-parts/content-page.php:28 template-parts/content-video.php:29
+#: template-parts/content.php:31
 msgid "Page"
 msgstr ""
 
@@ -202,7 +204,9 @@ msgid ""
 msgstr ""
 
 #: pages/featured-image-left.php:30 pages/featured-image-right.php:30
-#: template-parts/content-page.php:26 template-parts/content.php:29
+#: template-parts/content-audio.php:27 template-parts/content-gallery.php:27
+#: template-parts/content-page.php:26 template-parts/content-video.php:27
+#: template-parts/content.php:29
 msgid "Pages:"
 msgstr ""
 
@@ -238,6 +242,24 @@ msgstr ""
 msgid "Previous post:"
 msgstr ""
 
+#: template-parts/content-audio.php:39 template-parts/content-audio.php:40
+#: template-parts/content-gallery.php:39 template-parts/content-gallery.php:40
+#: template-parts/content-video.php:39 template-parts/content-video.php:40
+#: template-parts/content.php:41 template-parts/content.php:42
+#. Translators: #%s means text before category or tag.
+msgid "#%s"
+msgstr ""
+
+#: template-parts/content-audio.php:39 template-parts/content-gallery.php:39
+#: template-parts/content-video.php:39 template-parts/content.php:41
+msgid "Categories"
+msgstr ""
+
+#: template-parts/content-audio.php:40 template-parts/content-gallery.php:40
+#: template-parts/content-video.php:40 template-parts/content.php:42
+msgid "Tags"
+msgstr ""
+
 #: template-parts/content-none.php:15
 msgid "Nothing Found"
 msgstr ""
@@ -258,19 +280,6 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: template-parts/content.php:41 template-parts/content.php:42
-#. Translators: #%s means text before category or tag.
-msgid "#%s"
-msgstr ""
-
-#: template-parts/content.php:41
-msgid "Categories"
-msgstr ""
-
-#: template-parts/content.php:42
-msgid "Tags"
-msgstr ""
-
 #. Theme Name of the plugin/theme
 msgid "Munsa"
 msgstr ""
@@ -281,8 +290,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Munsa is a minimal theme for photobloggers or artists with a clean and "
-"fresh responsive design."
+"Munsa is a minimal theme for creative people like photobloggers and "
+"artists. It has a clean and fresh responsive design."
 msgstr ""
 
 #. Author of the plugin/theme
@@ -317,17 +326,17 @@ msgid_plural "%1$s comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:117
+#: functions.php:116
 msgctxt "sidebar"
 msgid "Primary"
 msgstr ""
 
-#: functions.php:127
+#: functions.php:126
 msgctxt "sidebar"
 msgid "Footer"
 msgstr ""
 
-#: functions.php:157
+#: functions.php:156
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
@@ -335,7 +344,7 @@ msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:162
+#: functions.php:161
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.
