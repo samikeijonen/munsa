@@ -2125,9 +2125,9 @@ a:active {
 	.archive .has-post-thumbnail .entry-thumbnail,
 	.archive .has-post-thumbnail .entry-inner,
 	.post-navigation .nav-links .nav-previous,
-	.post-navigation .nav-links .nav-next,
+	.post-navigation .nav-links .nav-previous:not(:empty) + .nav-next:not(:empty),
 	.comment-navigation .nav-links .nav-previous,
-	.comment-navigation .nav-links .nav-next,
+	.comment-navigation .nav-links .nav-previous:not(:empty) + .nav-next:not(:empty),
 	.entry-categories,
 	.entry-tags,
 	.sidebar-footer > .wrap > * {
