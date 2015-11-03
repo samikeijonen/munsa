@@ -18,7 +18,7 @@ get_header(); ?>
 			</header><!-- .entry-header -->
 	
 			<?php munsa_contact_info(); // This function is in inc/template-tags.php file. ?>
-	
+			
 			<div class="entry-inner">
 
 				<div class="entry-content" <?php hybrid_attr( 'entry-content' ); ?>>

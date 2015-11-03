@@ -235,6 +235,11 @@ function munsa_post_class( $classes ) {
 	if ( is_page_template( 'pages/contact-info.php' ) && $munsa_has_contact_info ) {
 		$classes[] = 'has-contact-info';
 	}
+	
+	// Add 'no-content' class to Contact Info page template if content is empty.
+	if ( is_page_template( 'pages/contact-info.php' ) && '' == trim( get_post_field( 'post_content', get_the_ID() ) ) ) {
+		$classes[] = 'no-content';
+	}
     
     return $classes;
 	
