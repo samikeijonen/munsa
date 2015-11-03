@@ -86,6 +86,9 @@ function munsa_setup() {
 	// Add theme support for responsive videos.
 	add_theme_support( 'jetpack-responsive-videos' );
 	
+	// Add excerpt to pages.
+	add_post_type_support( 'page', 'excerpt' );
+	
 	// Add editor styles.
 	add_editor_style( array( 'css/editor-style.css', munsa_fonts_url() ) );
 	
