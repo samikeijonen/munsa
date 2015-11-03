@@ -37,19 +37,19 @@ msgstr ""
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: comments.php:49
+#: comments.php:51
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:52
+#: comments.php:54
 msgid "Older Comments"
 msgstr ""
 
-#: comments.php:53
+#: comments.php:55
 msgid "Newer Comments"
 msgstr ""
 
-#: comments.php:66
+#: comments.php:70
 msgid "Comments are closed."
 msgstr ""
 
@@ -69,21 +69,21 @@ msgstr ""
 msgid "Back to top"
 msgstr ""
 
-#: functions.php:53 menus/menu-primary.php:15
+#: functions.php:54 menus/menu-primary.php:15
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:54
+#: functions.php:55
 msgid "Social Links Menu"
 msgstr ""
 
-#: functions.php:117
+#: functions.php:118
 msgid ""
 "The main sidebar. It is displayed on the right side of the page as off "
 "canvas sidebar."
 msgstr ""
 
-#: functions.php:127
+#: functions.php:128
 msgid "A sidebar located in the footer of the site."
 msgstr ""
 
@@ -121,6 +121,14 @@ msgstr ""
 
 #: inc/customizer/contact.php:93
 msgid "Check this if you want to hide contact info from Front Page Template."
+msgstr ""
+
+#: inc/customizer/contact.php:113
+msgid "Hide from Contact Page Template"
+msgstr ""
+
+#: inc/customizer/contact.php:114
+msgid "Check this if you want to hide contact info from Contact Page Template."
 msgstr ""
 
 #. Template Name of the plugin/theme
@@ -326,17 +334,17 @@ msgid_plural "%1$s comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:116
+#: functions.php:117
 msgctxt "sidebar"
 msgid "Primary"
 msgstr ""
 
-#: functions.php:126
+#: functions.php:127
 msgctxt "sidebar"
 msgid "Footer"
 msgstr ""
 
-#: functions.php:156
+#: functions.php:157
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
@@ -344,7 +352,7 @@ msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:161
+#: functions.php:162
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.

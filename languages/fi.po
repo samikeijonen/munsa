@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Munsa 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-11-03 08:53+0200\n"
-"PO-Revision-Date: 2015-11-03 08:56+0200\n"
+"POT-Creation-Date: 2015-11-03 15:16+0200\n"
+"PO-Revision-Date: 2015-11-03 15:17+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -40,19 +40,19 @@ msgstr "Koita etsiä kuukausiarkistosta. %1$s"
 msgid "Your comment is awaiting moderation."
 msgstr "Kommenttisi odottaa hyväksymistä."
 
-#: comments.php:49
+#: comments.php:51
 msgid "Comment navigation"
 msgstr "Kommenttien selaus"
 
-#: comments.php:52
+#: comments.php:54
 msgid "Older Comments"
 msgstr "Vanhemmat kommentit"
 
-#: comments.php:53
+#: comments.php:55
 msgid "Newer Comments"
 msgstr "Uudemmat kommentit"
 
-#: comments.php:66
+#: comments.php:70
 msgid "Comments are closed."
 msgstr "Kommentointi on suljettu."
 
@@ -72,15 +72,15 @@ msgstr "Teeman %1$s on tehnyt %2$s."
 msgid "Back to top"
 msgstr "Takaisin ylös"
 
-#: functions.php:53 menus/menu-primary.php:15
+#: functions.php:54 menus/menu-primary.php:15
 msgid "Primary Menu"
 msgstr "Päävalikko"
 
-#: functions.php:54
+#: functions.php:55
 msgid "Social Links Menu"
 msgstr "Somevalikko"
 
-#: functions.php:117
+#: functions.php:118
 msgid ""
 "The main sidebar. It is displayed on the right side of the page as off "
 "canvas sidebar."
@@ -88,7 +88,7 @@ msgstr ""
 "Päävimpainalue. Tähän liitetyt vimpaimet näkyvät sisällön oikealla puolella "
 "(off-canvas)."
 
-#: functions.php:127
+#: functions.php:128
 msgid "A sidebar located in the footer of the site."
 msgstr "Tähän liitetyt vimpaimet näkyvät sisällön alapuolella."
 
@@ -128,6 +128,14 @@ msgstr "Piilota Etusivu-sivupohjasta"
 #: inc/customizer/contact.php:93
 msgid "Check this if you want to hide contact info from Front Page Template."
 msgstr "Valitse tämä, jos et halua näyttää yhteystietoja etusivulla."
+
+#: inc/customizer/contact.php:113
+msgid "Hide from Contact Page Template"
+msgstr "Piilota Yhteystiedot-sivupohjasta"
+
+#: inc/customizer/contact.php:114
+msgid "Check this if you want to hide contact info from Contact Page Template."
+msgstr "Valitse tämä, jos et halua näyttää yhteystietoja Yhteystiedot-sivulla."
 
 #. Template Name of the plugin/theme
 msgid "Front Page"
@@ -341,12 +349,12 @@ msgid_plural "%1$s comments"
 msgstr[0] "Yksi kommentti"
 msgstr[1] "%1$s kommenttia"
 
-#: functions.php:116
+#: functions.php:117
 msgctxt "sidebar"
 msgid "Primary"
 msgstr "Sivupalkki"
 
-#: functions.php:126
+#: functions.php:127
 msgctxt "sidebar"
 msgid "Footer"
 msgstr "Alapalkki"
@@ -354,7 +362,7 @@ msgstr "Alapalkki"
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:156
+#: functions.php:157
 msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr ""
@@ -362,7 +370,7 @@ msgstr ""
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:161
+#: functions.php:162
 msgctxt "Montserrat font: on or off"
 msgid "on"
 msgstr ""
