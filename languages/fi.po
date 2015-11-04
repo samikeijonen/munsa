@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Munsa 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
 "POT-Creation-Date: 2015-11-03 20:54+0200\n"
-"PO-Revision-Date: 2015-11-03 20:56+0200\n"
+"PO-Revision-Date: 2015-11-04 09:29+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -143,7 +143,7 @@ msgstr "Etusivu"
 
 #: inc/customizer/front-page.php:13
 msgid "Select featured pages that will be displayed in Front Page Template."
-msgstr "Valitse sivut, jotka haluat näkyvät etusivulle nostettuna."
+msgstr "Valitse sivut, jotka haluat näkyvän etusivulle nostettuna."
 
 #. Translators: %s stands for number. For example Select page 1.
 #: inc/customizer/front-page.php:43
