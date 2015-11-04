@@ -38,14 +38,18 @@ if ( $blog_content->have_posts() || ! empty( $munsa_featured_pages ) ) :
 					<?php $munsa_bg = munsa_get_post_thumbnail( $post_thumbnail = 'munsa-medium', $id = $munsa_page_id )?>
 			
 					<article id="post-<?php echo $munsa_page_id; ?>" <?php post_class( $class = '', $post_id = $munsa_page_id ); ?> <?php hybrid_attr( 'post' ); ?>>
-				
-						<a href="<?php echo esc_url( get_permalink( $munsa_page_id ) ); ?>" rel="bookmark">
-							<div class="entry-bg-image"<?php if ( has_post_thumbnail( $munsa_page_id ) ) echo ' style="background-image:url(' . esc_url( $munsa_bg ) . ');"' ?>>
-								<header class="entry-header">
-									<h2 class="entry-title" <?php echo hybrid_get_attr( 'entry-title' ); ?>><?php echo get_the_title( $munsa_page_id ); ?></h2>
-								</header><!-- .entry-header -->
-							</div><!-- .entry-bg-image -->
-						</a>
+					
+						<div class="entry-wrapper">
+					
+							<a href="<?php echo esc_url( get_permalink( $munsa_page_id ) ); ?>" rel="bookmark">
+								<div class="entry-bg-image"<?php if ( has_post_thumbnail( $munsa_page_id ) ) echo ' style="background-image:url(' . esc_url( $munsa_bg ) . ');"' ?>>
+									<header class="entry-header">
+										<h2 class="entry-title" <?php echo hybrid_get_attr( 'entry-title' ); ?>><?php echo get_the_title( $munsa_page_id ); ?></h2>
+									</header><!-- .entry-header -->
+								</div><!-- .entry-bg-image -->
+							</a>
+							
+						</div><!-- .entry-wrapper -->
 					
 					</article><!-- .post-## -->
 		

@@ -225,7 +225,7 @@ function munsa_featured_pages() {
 	$munsa_featured_pages = array();
 	
 	// Loop all the featured pages.
-	while ( $k < apply_filters( 'munsa_how_many_pages', 5 ) ) { // Begins the loop through found pages from customize settings. 
+	while ( $k < apply_filters( 'munsa_how_many_pages', 7 ) ) { // Begins the loop through found pages from customize settings. 
 	
 		$munsa_page_id = absint( get_theme_mod( 'featured_page_' . $k ) );
 			

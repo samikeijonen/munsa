@@ -24,7 +24,7 @@
 	// Loop same setting couple of times.
 	$k = 1;
 	
-	while( $k < absint( apply_filters( 'munsa_how_many_pages', 5 ) ) ) {
+	while( $k < absint( apply_filters( 'munsa_how_many_pages', 7 ) ) ) {
 	
 		// Add the 'featured_page_*' setting.
 		$wp_customize->add_setting(
