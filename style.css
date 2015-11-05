@@ -1989,7 +1989,7 @@ a:active {
 .page-template-featured-image-left .entry-inner,
 .page-template-contact-info .entry.has-contact-info,
 .child-pages-wrapper,
-.contact-person,
+.child-page,
 .blog-wrapper,
 .blog-posts-wrapper .entry,
 .featured-pages-wrapper,
@@ -2014,9 +2014,9 @@ a:active {
 .page-template-contact-info .entry-header,
 .page-template-contact-info .entry .contact-info,
 .page-template-contact-info .has-contact-info .entry-inner,
-.contact-person,
-.contact-person .post-thumbnail,
-.contact-person .entry-person,
+.child-page,
+.child-page .post-thumbnail,
+.child-page .entry-child,
 .blog-wrapper > *,
 .blog-posts-wrapper .entry > *,
 .featured-pages-wrapper > *,
@@ -2034,7 +2034,7 @@ a:active {
 	width: 100%;
 }
 
-.contact-person,
+.child-page,
 .post-navigation .nav-links .nav-previous,
 .comment-navigation .nav-links .nav-previous,
 .entry-categories {
@@ -2047,7 +2047,7 @@ a:active {
 
 .blog-posts-wrapper .entry .post-thumbnail,
 .featured-pages-wrapper > .entry,
-.contact-person .post-thumbnail,
+.child-page .post-thumbnail,
 .entry-bg-image .entry-title {
 	margin-bottom: 0;
 }
@@ -2103,7 +2103,7 @@ a:active {
 	
 	.child-pages-wrapper,
 	.featured-pages-wrapper,
-	.contact-person,
+	.child-page,
 	.post-navigation .nav-links,
 	.comment-navigation .nav-links,
 	.footer-wrap,
@@ -2119,7 +2119,7 @@ a:active {
 	.page-template-featured-image-left .entry-content,
 	.page-template-contact-info .entry .contact-info,
 	.page-template-contact-info .has-contact-info .entry-inner,
-	.contact-person,
+	.child-page,
 	.blog-wrapper > *,
 	.featured-pages-wrapper > .entry,
 	.blog-posts-wrapper .entry > *,
@@ -2147,39 +2147,39 @@ a:active {
 		padding-left: 0;
 	}
 	
-	.contact-person {
+	.child-page {
 		margin-bottom: 3.6em;
 	}
 	
-	.contact-person .entry-person {
+	.child-page .entry-child {
 		padding-left: 1.8em;
 	}
 	
 	.blog-posts-wrapper .entry > .post-thumbnail,
-	.contact-person .post-thumbnail {
+	.child-page .post-thumbnail {
 		width: 125px;
 	}
 	
 	.blog-posts-wrapper .entry > .entry-header,
-	.contact-person .entry-person {
+	.child-page .entry-child {
 		-webkit-flex: 1;
 		    -ms-flex: 1;
 		        flex: 1; /* Take the rest of the width. */
 	}
 	
-	.contact-person .entry-person {
+	.child-page .entry-child {
 		width: auto;
 	}
 	
 	.blog-posts-wrapper .entry,
 	.blog-posts-wrapper .entry .post-thumbnail > img,
-	.contact-person .post-thumbnail > img {
+	.child-page .post-thumbnail > img {
 		margin-bottom: 0;
 	}
 	
 	.blog-posts-wrapper .entry .entry-title,
 	.blog-posts-wrapper .entry .entry-meta,
-	.entry-person .entry-title {
+	.entry-child .entry-title {
 		margin-bottom: 10px;
 		text-align: left;
 	}
