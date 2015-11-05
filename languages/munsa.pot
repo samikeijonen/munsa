@@ -144,8 +144,8 @@ msgstr ""
 msgid "Select page %s"
 msgstr ""
 
-#: inc/customizer/front-page.php:63 misc/content-featured-areas.php:65
-#: misc/content-featured-areas.php:70 misc/content-featured-areas.php:71
+#: inc/customizer/front-page.php:63 misc/content-featured-areas.php:69
+#: misc/content-featured-areas.php:74 misc/content-featured-areas.php:75
 msgid "Articles"
 msgstr ""
 
@@ -220,7 +220,7 @@ msgstr ""
 msgid "Close Menu"
 msgstr ""
 
-#: misc/content-featured-areas.php:129
+#: misc/content-featured-areas.php:133
 msgid ""
 "Set Front Page Template content in the Customizer. Or <a "
 "href=\"%1$s\">publish your first post here</a>."
@@ -323,6 +323,10 @@ msgstr ""
 
 #. Author URI of the plugin/theme
 msgid "https://foxland.fi/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Child Pages"
 msgstr ""
 
 #. Template Name of the plugin/theme

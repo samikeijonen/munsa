@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Munsa 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-11-03 20:54+0200\n"
-"PO-Revision-Date: 2015-11-04 09:29+0200\n"
+"POT-Creation-Date: 2015-11-04 14:49+0200\n"
+"PO-Revision-Date: 2015-11-04 14:49+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -150,8 +150,8 @@ msgstr "Valitse sivut, jotka haluat näkyvän etusivulle nostettuna."
 msgid "Select page %s"
 msgstr "Valitse sivu %s"
 
-#: inc/customizer/front-page.php:63 misc/content-featured-areas.php:65
-#: misc/content-featured-areas.php:70 misc/content-featured-areas.php:71
+#: inc/customizer/front-page.php:63 misc/content-featured-areas.php:69
+#: misc/content-featured-areas.php:74 misc/content-featured-areas.php:75
 msgid "Articles"
 msgstr "Artikkelit"
 
@@ -228,7 +228,7 @@ msgstr "Valikko"
 msgid "Close Menu"
 msgstr "Sulje valikko"
 
-#: misc/content-featured-areas.php:129
+#: misc/content-featured-areas.php:133
 msgid ""
 "Set Front Page Template content in the Customizer. Or <a href=\"%1$s"
 "\">publish your first post here</a>."
@@ -341,6 +341,10 @@ msgstr "Sami Keijonen"
 #. Author URI of the plugin/theme
 msgid "https://foxland.fi/"
 msgstr "https://foxland.fi/"
+
+#. Template Name of the plugin/theme
+msgid "Child Pages"
+msgstr "Alasivut"
 
 #. Template Name of the plugin/theme
 msgid "Featured Image on the Left"
