@@ -1633,8 +1633,8 @@ a:active {
 	margin-left: 0.5em;
 }
 
-.widget_nav_menu ul a,
-.widget_nav_menu ul a:visited,
+.widget ul a,
+.widget ul a:visited,
 .contact-info-list li,
 .contact-info-list a,
 .contact-info-list a:visited {
@@ -1646,13 +1646,13 @@ a:active {
 	text-transform: uppercase;
 }
 .contact-info-list li,
-.contact-info-list a {
+.contact-info-list li > a {
 	font-size: 1em;
 }
 
-.widget_nav_menu ul a:hover,
-.widget_nav_menu ul a:active,
-.widget_nav_menu ul a:focus,
+.widget ul a:hover,
+.widget ul a:active,
+.widget ul a:focus,
 .contact-info-list a:hover,
 .contact-info-list a:active,
 .contact-info-list a:focus {
