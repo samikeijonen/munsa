@@ -138,7 +138,7 @@ function munsa_post_thumbnail( $post_thumbnail = null ) {
 		$post_thumbnail = 'post-thumbnail';
 	}
 
-	if ( is_singular() && ! is_page_template( 'pages/contact-info.php' ) ) :
+	if ( is_singular() && ! is_page_template( 'pages/contact-info.php' ) && ! is_page_template( 'pages/child-pages.php' ) ) :
 	?>
 
 		<div class="post-thumbnail">
