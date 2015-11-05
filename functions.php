@@ -339,3 +339,8 @@ require get_template_directory() . '/inc/schema.php';
  * Load Widgets file.
  */
 require get_template_directory() . '/inc/widgets.php';
+
+/**
+ * Load archive filters file.
+ */
+require get_template_directory() . '/inc/archive-filters.php';
