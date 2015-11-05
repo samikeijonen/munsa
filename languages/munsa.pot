@@ -95,6 +95,10 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
+#: inc/archive-filters.php:39
+msgid "Search results for &#8220;%s&#8221;"
+msgstr ""
+
 #. Template Name of the plugin/theme
 msgid "Contact Info"
 msgstr ""
@@ -115,19 +119,27 @@ msgstr ""
 msgid "Address"
 msgstr ""
 
-#: inc/customizer/contact.php:92 inc/customizer/social-menu.php:31
-msgid "Hide from Front Page Template"
+#: inc/customizer/contact.php:92
+msgid "Address link URL"
 msgstr ""
 
 #: inc/customizer/contact.php:93
-msgid "Check this if you want to hide contact info from Front Page Template."
+msgid "Enter for example Google Map link URL."
 msgstr ""
 
-#: inc/customizer/contact.php:113
-msgid "Hide from Contact Page Template"
+#: inc/customizer/contact.php:113 inc/customizer/social-menu.php:31
+msgid "Hide from Front Page Template"
 msgstr ""
 
 #: inc/customizer/contact.php:114
+msgid "Check this if you want to hide contact info from Front Page Template."
+msgstr ""
+
+#: inc/customizer/contact.php:134
+msgid "Hide from Contact Page Template"
+msgstr ""
+
+#: inc/customizer/contact.php:135
 msgid "Check this if you want to hide contact info from Contact Page Template."
 msgstr ""
 

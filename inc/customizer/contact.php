@@ -76,6 +76,27 @@
 		)
 	);
 	
+	// Add the address link setting.
+	$wp_customize->add_setting(
+		'address_link',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'esc_url_raw'
+		)
+	);
+	
+	// Add the address link control.
+	$wp_customize->add_control(
+		'address_link',
+		array(
+			'label'       => esc_html__( 'Address link URL', 'munsa' ),
+			'description' => esc_html__( 'Enter for example Google Map link URL.', 'munsa' ),
+			'section'     => 'contact',
+			'priority'    => 40,
+			'type'        => 'url'
+		)
+	);
+	
 	// Hide from front page setting.
 	$wp_customize->add_setting(
 		'hide_from_front_page',

@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Munsa 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-11-04 14:49+0200\n"
-"PO-Revision-Date: 2015-11-04 14:49+0200\n"
+"POT-Creation-Date: 2015-11-05 10:30+0200\n"
+"PO-Revision-Date: 2015-11-05 10:32+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -100,6 +100,10 @@ msgstr "Sivu latautuu"
 msgid "Skip to content"
 msgstr "Hyppää sisältöön"
 
+#: inc/archive-filters.php:39
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Hakutulokset haulle &#8221;%s&#8221;"
+
 #. Template Name of the plugin/theme
 msgid "Contact Info"
 msgstr "Yhteystiedot"
@@ -121,19 +125,27 @@ msgstr "Puhelinnumero"
 msgid "Address"
 msgstr "Osoite"
 
-#: inc/customizer/contact.php:92 inc/customizer/social-menu.php:31
+#: inc/customizer/contact.php:92
+msgid "Address link URL"
+msgstr "Osoitteen linkki"
+
+#: inc/customizer/contact.php:93
+msgid "Enter for example Google Map link URL."
+msgstr "Kirjoita esimerkiksi linkki Googlen karttapalveluun."
+
+#: inc/customizer/contact.php:113 inc/customizer/social-menu.php:31
 msgid "Hide from Front Page Template"
 msgstr "Piilota Etusivu-sivupohjasta"
 
-#: inc/customizer/contact.php:93
+#: inc/customizer/contact.php:114
 msgid "Check this if you want to hide contact info from Front Page Template."
 msgstr "Valitse tämä, jos et halua näyttää yhteystietoja etusivulla."
 
-#: inc/customizer/contact.php:113
+#: inc/customizer/contact.php:134
 msgid "Hide from Contact Page Template"
 msgstr "Piilota Yhteystiedot-sivupohjasta"
 
-#: inc/customizer/contact.php:114
+#: inc/customizer/contact.php:135
 msgid "Check this if you want to hide contact info from Contact Page Template."
 msgstr "Valitse tämä, jos et halua näyttää yhteystietoja Yhteystiedot-sivulla."
 

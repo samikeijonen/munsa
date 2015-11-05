@@ -182,8 +182,12 @@ function munsa_contact_info() {
 					echo '<li class="contact-info-link contact-info-phone"><a href="tel:' . preg_replace( '/\s+/', '', sanitize_text_field( get_theme_mod( 'phone' ) ) ) . '">' . sanitize_text_field( get_theme_mod( 'phone' ) ) . '</a></li>';
 				endif;
 				
-				if ( get_theme_mod( 'address' ) ) :
+				if ( get_theme_mod( 'address' ) && ! get_theme_mod( 'address_link' ) ) :
 					echo '<li class="contact-info-link contact-info-address" >' . sanitize_text_field( get_theme_mod( 'address' ) ) . '</li>';
+				endif;
+				
+				if ( get_theme_mod( 'address' ) && get_theme_mod( 'address_link' ) ) :
+					echo '<li class="contact-info-link contact-info-address" ><a href="' . esc_url( get_theme_mod( 'address_link' ) ) . '">' . sanitize_text_field( get_theme_mod( 'address' ) ) . '</a></li>';
 				endif;
 			?>
 		</ul>
