@@ -27,6 +27,10 @@ add_action( 'after_setup_theme', 'munsa_jetpack_setup' );
 function munsa_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
-		get_template_part( 'template-parts/content', ( post_type_supports( get_post_type(), 'post-formats' ) ? get_post_format() : get_post_type() ) );
+		if ( is_search() ) :
+			get_template_part( 'template-parts/content', 'search' );
+		else :
+			get_template_part( 'template-parts/content', ( post_type_supports( get_post_type(), 'post-formats' ) ? get_post_format() : get_post_type() ) );
+		endif;
 	}
 } // end function munsa_infinite_scroll_render
