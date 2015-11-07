@@ -87,6 +87,11 @@ msgstr ""
 msgid "A sidebar located in the footer of the site."
 msgstr ""
 
+#: functions.php:261
+#. Translators: The %s is the post title shown to screen readers.
+msgid "Continue reading %s"
+msgstr ""
+
 #: header.php:28
 msgid "Site is loading"
 msgstr ""

@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Munsa 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-11-05 10:30+0200\n"
-"PO-Revision-Date: 2015-11-05 10:32+0200\n"
+"POT-Creation-Date: 2015-11-07 10:55+0200\n"
+"PO-Revision-Date: 2015-11-07 10:56+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -91,6 +91,11 @@ msgstr ""
 #: functions.php:131
 msgid "A sidebar located in the footer of the site."
 msgstr "Tähän liitetyt vimpaimet näkyvät sisällön alapuolella."
+
+#. Translators: The %s is the post title shown to screen readers.
+#: functions.php:261
+msgid "Continue reading %s"
+msgstr "Jatka lukemista %s"
 
 #: header.php:28
 msgid "Site is loading"

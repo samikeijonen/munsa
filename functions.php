@@ -249,6 +249,23 @@ function munsa_post_class( $classes ) {
 }
 add_filter( 'post_class', 'munsa_post_class' );
 
+/**
+ * Change [...] to just "..." with screen reader text.
+ *
+ * @since  1.0.0
+ * @return void
+ */
+function munsa_excerpt_more() {
+
+	/* Translators: The %s is the post title shown to screen readers. */
+	$text = '<span class="screen-reader-text">' . sprintf( esc_attr__( 'Continue reading %s', 'munsa' ), get_the_title() ) . '</span>';
+	$more = sprintf( ' <a href="%s" class="more-link">&hellip; %s</a>', esc_url( get_permalink() ), $text );
+
+	return $more;
+
+}
+add_filter( 'excerpt_more', 'munsa_excerpt_more' );
+
 
 /**
  * Add an HTML class to MediaElement.js container elements to aid styling.
