@@ -8,7 +8,7 @@
 
 <?php if ( has_nav_menu( 'social' ) ) : // Check if there's a menu assigned to the 'social' location. ?>
 	
-	<nav id="menu-social" class="menu-social social-navigation menu" role="navigation" aria-label="<?php esc_attr_e( 'Social Menu', 'munsa' ); ?>" <?php hybrid_attr( 'menu', 'social' ); ?>>
+	<nav class="menu-social social-navigation menu" role="navigation" aria-label="<?php esc_attr_e( 'Social Menu', 'munsa' ); ?>" <?php hybrid_attr( 'menu', 'social' ); ?>>
 		<h2 class="screen-reader-text"><?php esc_attr_e( 'Social Menu', 'munsa' ); ?></h2>
 		
 		<?php wp_nav_menu(
@@ -20,6 +20,6 @@
 				'fallback_cb'    => '',
 			)
 		); ?>
-	</nav><!-- #menu-social -->
+	</nav><!-- .menu-social -->
 
 <?php endif; // End check for menu. ?>
