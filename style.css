@@ -1108,7 +1108,7 @@ a:active {
 @media screen and (max-width: 782px) {
 	
 	.admin-bar .menu-sidebar-toggle {
-		top: 76px; /* Admin bar height is 46px. 30 + 46 = 62 */
+		top: 76px; /* Admin bar height is 46px. 30 + 46 = 76 */
 	}
 	
 }
