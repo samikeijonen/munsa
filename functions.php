@@ -213,6 +213,12 @@ function munsa_scripts() {
 	
 	// Enqueue theme scripts.
 	wp_enqueue_script( 'munsa-settings', get_template_directory_uri() . '/js/settings.js', array( 'jquery', 'smooth-scroll' ), '20150906', true );
+	wp_localize_script( 'munsa-settings', 'screenReaderText', array(
+		'expandMenu'      => '<span class="screen-reader-text">' . esc_html__( 'Expand menu', 'munsa' ) . '</span>',
+		'collapseMenu'    => '<span class="screen-reader-text">' . esc_html__( 'Collapse menu', 'munsa' ) . '</span>',
+		'expandSidebar'   => '<span class="screen-reader-text">' . esc_html__( 'Expand sidebar', 'munsa' ) . '</span>',
+		'collapseSidebar' => '<span class="screen-reader-text">' . esc_html__( 'Collapse sidebar', 'munsa' ) . '</span>',
+	) );
 	
 	// Enqueue skip link focus fix.
 	wp_enqueue_script( 'munsa-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20150906', true );

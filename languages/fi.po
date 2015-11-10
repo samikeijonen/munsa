@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Munsa 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-11-07 10:55+0200\n"
-"PO-Revision-Date: 2015-11-07 10:56+0200\n"
+"POT-Creation-Date: 2015-11-10 10:19+0200\n"
+"PO-Revision-Date: 2015-11-10 10:22+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -72,7 +72,7 @@ msgstr "Teeman %1$s on tehnyt %2$s."
 msgid "Back to top"
 msgstr "Takaisin ylös"
 
-#: functions.php:54 menus/menu-primary.php:15
+#: functions.php:54 menus/menu-primary.php:13
 msgid "Primary Menu"
 msgstr "Päävalikko"
 
@@ -92,8 +92,24 @@ msgstr ""
 msgid "A sidebar located in the footer of the site."
 msgstr "Tähän liitetyt vimpaimet näkyvät sisällön alapuolella."
 
+#: functions.php:217 menus/menu-primary.php:11
+msgid "Expand menu"
+msgstr "Avaa valikko"
+
+#: functions.php:218 menus/menu-primary.php:15
+msgid "Collapse menu"
+msgstr "Sulje valikko"
+
+#: functions.php:219 sidebar-primary.php:11
+msgid "Expand sidebar"
+msgstr "Avaa sivupalkki"
+
+#: functions.php:220 sidebar-primary.php:16
+msgid "Collapse sidebar"
+msgstr "Sulje sivupalkki"
+
 #. Translators: The %s is the post title shown to screen readers.
-#: functions.php:261
+#: functions.php:267
 msgid "Continue reading %s"
 msgstr "Jatka lukemista %s"
 
@@ -237,14 +253,6 @@ msgstr "Seuraava sivu"
 msgid "Page"
 msgstr "Sivu"
 
-#: menus/menu-primary.php:12
-msgid "Menu"
-msgstr "Valikko"
-
-#: menus/menu-primary.php:18
-msgid "Close Menu"
-msgstr "Sulje valikko"
-
 #: misc/content-featured-areas.php:133
 msgid ""
 "Set Front Page Template content in the Customizer. Or <a href=\"%1$s"
@@ -267,14 +275,6 @@ msgstr "Siirry sisältöön"
 #: search.php:15
 msgid "Search Results for: %s"
 msgstr "Hakutulokset haulle %s"
-
-#: sidebar-primary.php:12
-msgid "Sidebar"
-msgstr "Sivupalkki"
-
-#: sidebar-primary.php:19
-msgid "Close Sidebar"
-msgstr "Sulje sivupalkki"
 
 #: single.php:26
 msgid "Next"
@@ -403,7 +403,7 @@ msgstr "Alapalkki"
 #: functions.php:160
 msgctxt "Merriweather font: on or off"
 msgid "on"
-msgstr ""
+msgstr "alle"
 
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
@@ -449,7 +449,7 @@ msgctxt "Sidebar aria label"
 msgid "Footer Sidebar"
 msgstr "Sivupalkki alhaalla"
 
-#: sidebar-primary.php:16
+#: sidebar-primary.php:14
 msgctxt "Sidebar aria label"
 msgid "Primary Sidebar"
 msgstr "Sivupalkki"

@@ -1,11 +1,11 @@
 /**
- * Monsa JavaScript file.
+ * Munsa JavaScript file.
  *
  * Set up the navigation and sidebar toggles.
  */
 ( function( $ ) {
 	
-	var body, page, scrollUp, scrollToContent, mainNav, mainNavWrap, primarySidebar, primarySidebarWrap, menuToggle, sidebarToggle;
+	var body, page, scrollUp, scrollToContent, mainNav, mainNavWrap, primarySidebar, primarySidebarWrap, menuButton, menuToggle, sidebarButton, sidebarToggle;
 	
 	// Set up vars.
 	page                = $( '#site-wrapper' );
@@ -15,7 +15,9 @@
 	mainNavWrap         = page.find( '#menu-primary .wrap' );
 	primarySidebar      = page.find( '#sidebar-primary' );
 	primarySidebarWrap  = page.find( '#sidebar-primary .wrap' );
+	menuButton          = page.find( '#menu-button' );
 	menuToggle          = page.find( '.main-navigation-toggle' );
+	sidebarButton       = page.find( '#sidebar-button' );
 	sidebarToggle       = page.find( '.sidebar-primary-toggle' );
 	
 	// Preload page and fade the content.
@@ -81,7 +83,13 @@
 				$( mainNav ).removeClass( 'fadeIn' );
 				$( mainNavWrap ).removeClass( 'fadeInDown' );
 				
+				// Enable focus on toggle button.
+				menuButton.focus();
+				
 			}
+			
+			// Change button text when opening and closing the menu.
+			menuToggle.html( menuToggle.html() === screenReaderText.expandMenu ? screenReaderText.collapseMenu : screenReaderText.expandMenu );
 			
 			// If aria-expanded is false, set it to true. And vica versa.
 			$( menuToggle ).attr( 'aria-expanded', $( menuToggle ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
@@ -134,7 +142,13 @@
 				$( primarySidebarWrap ).addClass( 'fadeOutUp' );
 				$( primarySidebarWrap ).removeClass( 'fadeInDown' );
 				
+				// Enable focus on toggle button.
+				sidebarButton.focus();
+				
 			}
+			
+			// Change button text when opening and closing the sidebar.
+			sidebarToggle.html( sidebarToggle.html() === screenReaderText.expandSidebar ? screenReaderText.collapseSidebar : screenReaderText.expandSidebar );
 			
 			// If aria-expanded is false, set it to true. And vica versa.
 			$( sidebarToggle ).attr( 'aria-expanded', $( sidebarToggle ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
@@ -164,6 +178,12 @@
 				$( mainNav ).removeClass( 'fadeIn' );
 				$( mainNavWrap ).removeClass( 'fadeInDown' );
 				
+				// Change button text when closing the menu.
+				menuToggle.html( menuToggle.html() === screenReaderText.expandMenu ? screenReaderText.collapseMenu : screenReaderText.expandMenu );
+			
+				// Enable focus on toggle button.
+				menuButton.focus();
+				
 			} else if ( $( 'body' ).hasClass( 'sidebar-primary-open' ) ) {
 				$( 'html' ).removeClass( 'disable-scroll' );
 				$( 'body' ).removeClass( 'sidebar-primary-open' );
@@ -177,6 +197,12 @@
 				$( primarySidebar ).removeClass( 'fadeIn' );
 				$( primarySidebarWrap ).addClass( 'fadeOutUp' );
 				$( primarySidebarWrap ).removeClass( 'fadeInDown' );
+				
+				// Change button text when closing the sidebar.
+				sidebarToggle.html( sidebarToggle.html() === screenReaderText.expandSidebar ? screenReaderText.collapseSidebar : screenReaderText.expandSidebar );
+		
+				// Enable focus on toggle button.
+				sidebarButton.focus();
 				
 			}
 		}

@@ -69,7 +69,7 @@ msgstr ""
 msgid "Back to top"
 msgstr ""
 
-#: functions.php:54 menus/menu-primary.php:15
+#: functions.php:54 menus/menu-primary.php:13
 msgid "Primary Menu"
 msgstr ""
 
@@ -87,7 +87,23 @@ msgstr ""
 msgid "A sidebar located in the footer of the site."
 msgstr ""
 
-#: functions.php:261
+#: functions.php:217 menus/menu-primary.php:11
+msgid "Expand menu"
+msgstr ""
+
+#: functions.php:218 menus/menu-primary.php:15
+msgid "Collapse menu"
+msgstr ""
+
+#: functions.php:219 sidebar-primary.php:11
+msgid "Expand sidebar"
+msgstr ""
+
+#: functions.php:220 sidebar-primary.php:16
+msgid "Collapse sidebar"
+msgstr ""
+
+#: functions.php:267
 #. Translators: The %s is the post title shown to screen readers.
 msgid "Continue reading %s"
 msgstr ""
@@ -229,14 +245,6 @@ msgstr ""
 msgid "Page"
 msgstr ""
 
-#: menus/menu-primary.php:12
-msgid "Menu"
-msgstr ""
-
-#: menus/menu-primary.php:18
-msgid "Close Menu"
-msgstr ""
-
 #: misc/content-featured-areas.php:133
 msgid ""
 "Set Front Page Template content in the Customizer. Or <a "
@@ -256,14 +264,6 @@ msgstr ""
 
 #: search.php:15
 msgid "Search Results for: %s"
-msgstr ""
-
-#: sidebar-primary.php:12
-msgid "Sidebar"
-msgstr ""
-
-#: sidebar-primary.php:19
-msgid "Close Sidebar"
 msgstr ""
 
 #: single.php:26
@@ -432,7 +432,7 @@ msgctxt "Sidebar aria label"
 msgid "Footer Sidebar"
 msgstr ""
 
-#: sidebar-primary.php:16
+#: sidebar-primary.php:14
 msgctxt "Sidebar aria label"
 msgid "Primary Sidebar"
 msgstr ""
