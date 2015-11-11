@@ -14,6 +14,11 @@ The following resources are included within the theme package.
 * [Genericons](http://genericons.com/) by Automattic - Licensed under the [GPL, version 2 or later](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
 * [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll) by Chris Ferdinandi - Licensed under the [MIT License](http://opensource.org/licenses/MIT).
 
+The following recources are used in `style.css` for styling elements.
+* [Animate.css](http://daneden.me/animate) by Daniel Eden - Licensed under the [MIT License](http://opensource.org/licenses/MIT).
+
+* [SpinKit](https://github.com/tobiasahlin/SpinKit) by Tobias Ahlin - Licensed under the [MIT License](http://opensource.org/licenses/MIT).
+
 All other resources and theme elements are licensed under the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html), version 2 or later.
 
 2015 &copy; [Sami Keijonen](https://foxland.fi).
