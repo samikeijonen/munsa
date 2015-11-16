@@ -184,6 +184,10 @@
 				// Enable focus on toggle button.
 				menuButton.focus();
 				
+				// If aria-expanded is false, set it to true. And vica versa.
+				$( menuToggle ).attr( 'aria-expanded', $( menuToggle ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
+				$( mainNav ).attr( 'aria-expanded', $( mainNav ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
+		
 			} else if ( $( 'body' ).hasClass( 'sidebar-primary-open' ) ) {
 				$( 'html' ).removeClass( 'disable-scroll' );
 				$( 'body' ).removeClass( 'sidebar-primary-open' );
@@ -203,6 +207,10 @@
 		
 				// Enable focus on toggle button.
 				sidebarButton.focus();
+				
+				// If aria-expanded is false, set it to true. And vica versa.
+				$( sidebarToggle ).attr( 'aria-expanded', $( sidebarToggle ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
+				$( primarySidebar ).attr( 'aria-expanded', $( primarySidebar ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
 				
 			}
 		}
