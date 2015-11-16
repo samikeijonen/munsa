@@ -4,15 +4,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Munsa 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-11-10 10:19+0200\n"
-"PO-Revision-Date: 2015-11-10 10:22+0200\n"
+"POT-Creation-Date: 2015-11-16 09:45+0200\n"
+"PO-Revision-Date: 2015-11-16 09:47+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: 404.php:15
@@ -93,31 +93,28 @@ msgid "A sidebar located in the footer of the site."
 msgstr "Tähän liitetyt vimpaimet näkyvät sisällön alapuolella."
 
 #: functions.php:217 menus/menu-primary.php:11
-msgid "Expand menu"
-msgstr "Avaa valikko"
+msgid "Menu"
+msgstr "Menu"
 
-#: functions.php:218 menus/menu-primary.php:15
-msgid "Collapse menu"
-msgstr "Sulje valikko"
+#: functions.php:218 functions.php:220 menus/menu-primary.php:15
+#: sidebar-primary.php:16
+msgid "Close"
+msgstr "Sulje"
 
 #: functions.php:219 sidebar-primary.php:11
-msgid "Expand sidebar"
-msgstr "Avaa sivupalkki"
-
-#: functions.php:220 sidebar-primary.php:16
-msgid "Collapse sidebar"
-msgstr "Sulje sivupalkki"
+msgid "Info"
+msgstr "Info"
 
 #. Translators: The %s is the post title shown to screen readers.
-#: functions.php:267
+#: functions.php:289
 msgid "Continue reading %s"
 msgstr "Jatka lukemista %s"
 
-#: header.php:28
+#: header.php:31
 msgid "Site is loading"
 msgstr "Sivu latautuu"
 
-#: header.php:35
+#: header.php:40
 msgid "Skip to content"
 msgstr "Hyppää sisältöön"
 

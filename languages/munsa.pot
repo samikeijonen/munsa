@@ -88,31 +88,28 @@ msgid "A sidebar located in the footer of the site."
 msgstr ""
 
 #: functions.php:217 menus/menu-primary.php:11
-msgid "Expand menu"
+msgid "Menu"
 msgstr ""
 
-#: functions.php:218 menus/menu-primary.php:15
-msgid "Collapse menu"
+#: functions.php:218 functions.php:220 menus/menu-primary.php:15
+#: sidebar-primary.php:16
+msgid "Close"
 msgstr ""
 
 #: functions.php:219 sidebar-primary.php:11
-msgid "Expand sidebar"
+msgid "Info"
 msgstr ""
 
-#: functions.php:220 sidebar-primary.php:16
-msgid "Collapse sidebar"
-msgstr ""
-
-#: functions.php:267
+#: functions.php:289
 #. Translators: The %s is the post title shown to screen readers.
 msgid "Continue reading %s"
 msgstr ""
 
-#: header.php:28
+#: header.php:31
 msgid "Site is loading"
 msgstr ""
 
-#: header.php:35
+#: header.php:40
 msgid "Skip to content"
 msgstr ""
 
