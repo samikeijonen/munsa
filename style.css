@@ -323,13 +323,21 @@ th {
 
 .menu-sidebar-toggle:before {
 	content: '\f419';
-	font-size: 32px;
+	margin-right: 2px;
+	margin-bottom: -1px;
+	vertical-align: bottom;
 }
-.sidebar-primary-toggle.menu-sidebar-toggle:before {
-	content: '\f505';
+.sidebar-primary-toggle.menu-sidebar-toggle:not(.sidebar-primary-close):before {
+	content: '\f476';
+	margin-right: 0;
+	margin-bottom: -2px;
+	transform: rotate(90deg);
 }
+
 .open .menu-sidebar-toggle:before {
-	content: '\f405';
+	content: '\f406';
+	margin-right: 4px;
+	margin-bottom: -2px;
 }
 
 .contact-info-link:before {
@@ -431,8 +439,7 @@ h6,
 	text-transform: uppercase;	
 }
 
-h1,
-.site-title {
+h1 {
 	font-size: 28px;
 	font-size: 1.75rem;
 }
@@ -442,7 +449,8 @@ h2 {
 	font-size: 1.4375rem;
 }
 
-h3 {
+h3,
+.site-title {
 	font-size: 20px;
 	font-size: 1.25rem;
 }
@@ -454,6 +462,15 @@ h6 {
 	font-size: 1.125rem;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+}
+
+@media only screen and (min-width: 782px) {
+	
+	.site-title {
+		font-size: 28px;
+		font-size: 1.75rem;
+	}
+	
 }
 
 .entry-content h4,
@@ -1045,8 +1062,12 @@ a:active {
 }
 .js .main-navigation .wrap > .primary-menu-container {
 	display: table;
+	padding: 4em 0;
 	width: 100%;
 	height: 100%;
+}
+.js .admin-bar .main-navigation .wrap > .primary-menu-container {
+	padding-top: calc(4em + 32px);
 }
 
 .js .main-navigation ul.menu,
@@ -1083,11 +1104,12 @@ a:active {
 .menu-sidebar-toggle {
 	background: transparent;
 	color: #000;
+	font-size: 12px;
 	position: absolute;
-	top: 1.8em;
-	left: 5%;
+	top: 1.8rem;
+	left: 16px;
 	z-index: 999;
-	padding: 4px;
+	padding: 6px;
 	transition: color 100ms linear;
 }
 .js .main-navigation-open .main-navigation-close,
@@ -1096,7 +1118,7 @@ a:active {
 }
 .sidebar-primary-toggle {
 	left: auto;
-	right: 5%;
+	right: 16px;
 }
 
 .admin-bar .menu-sidebar-toggle {
@@ -1105,8 +1127,12 @@ a:active {
 
 @media screen and (max-width: 782px) {
 	
+	.menu-sidebar-toggle {
+		top: 16px
+	}
+	
 	.admin-bar .menu-sidebar-toggle {
-		top: 76px; /* Admin bar height is 46px. 30 + 46 = 76 */
+		top: 62px; /* Admin bar height is 46px. 16 + 46 = 62 */
 	}
 	
 }
@@ -1121,9 +1147,6 @@ a:active {
 .menu-sidebar-toggle:focus {
 	border: 1px solid #000;
 	outline: 0;
-}
-.menu-sidebar-toggle .genericon {
-	font-size: 32px;
 }
 
 @media screen and (min-width: 85.75em) {
@@ -1699,6 +1722,7 @@ a:active {
 
 /* Paddings and widths. */
 .site-wrapper,
+.site-header,
 .featured-area,
 .page-template-front-page .site-footer,
 .page-template-full-background-image .site-footer,
@@ -1765,15 +1789,25 @@ a:active {
 
 .site-header {
 	padding: 1.8em 0 3.6em;
-	margin: 0 70px;
 	text-align: center;
+}
+.primary-menu-sidebar-active .site-header {
+	padding: 3.6em 0;
 }
 
 .site-title {
-	margin-bottom: 1rem;
+	margin: 0 0 1rem;
 }
 .site-title a {
 	text-decoration: none;
+}
+
+@media only screen and (min-width: 782px) {
+	
+	.primary-menu-sidebar-active .site-header {
+		padding-top: 1.8em;
+	}
+	
 }
 
 .site-description {
