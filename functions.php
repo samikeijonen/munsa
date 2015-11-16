@@ -214,10 +214,10 @@ function munsa_scripts() {
 	// Enqueue theme scripts.
 	wp_enqueue_script( 'munsa-settings', get_template_directory_uri() . '/js/settings.js', array( 'jquery', 'smooth-scroll' ), '20150906', true );
 	wp_localize_script( 'munsa-settings', 'screenReaderText', array(
-		'expandMenu'      => '<span class="screen-reader-text">' . esc_html__( 'Expand menu', 'munsa' ) . '</span>',
-		'collapseMenu'    => '<span class="screen-reader-text">' . esc_html__( 'Collapse menu', 'munsa' ) . '</span>',
-		'expandSidebar'   => '<span class="screen-reader-text">' . esc_html__( 'Expand sidebar', 'munsa' ) . '</span>',
-		'collapseSidebar' => '<span class="screen-reader-text">' . esc_html__( 'Collapse sidebar', 'munsa' ) . '</span>',
+		'expandMenu'      => esc_html__( 'Menu', 'munsa' ),
+		'collapseMenu'    => esc_html__( 'Close', 'munsa' ),
+		'expandSidebar'   => esc_html__( 'Info', 'munsa' ),
+		'collapseSidebar' => esc_html__( 'Close', 'munsa' ),
 	) );
 	
 	// Enqueue skip link focus fix.
@@ -254,6 +254,28 @@ function munsa_post_class( $classes ) {
 	
 }
 add_filter( 'post_class', 'munsa_post_class' );
+
+/**
+ * Adds custom classes to the array of body classes.
+ *
+ * @param array $classes Classes for the body element.
+ * @return array
+ */
+function munsa_body_classes( $classes ) {
+	
+	// Adds a class of group-blog to blogs with more than 1 published author.
+	if ( is_multi_author() ) {
+		$classes[] = 'group-blog';
+	}
+	
+	// Adds a class of primary menu or sidebar is active.
+	if ( has_nav_menu( 'primary' ) || is_active_sidebar( 'primary' ) ) {
+		$classes[] = 'primary-menu-sidebar-active';
+	}
+
+	return $classes;
+}
+add_filter( 'body_class', 'munsa_body_classes' );
 
 /**
  * Change [...] to just "..." with screen reader text.
@@ -337,11 +359,6 @@ require get_template_directory() . '/inc/custom-background.php';
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
-
-/**
- * Custom functions that act independently of the theme templates.
- */
-require get_template_directory() . '/inc/extras.php';
 
 /**
  * Customizer additions.
