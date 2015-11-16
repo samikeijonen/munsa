@@ -22,20 +22,20 @@
 
 <body <?php body_class(); ?> <?php hybrid_attr( 'body' ); ?>>
 
-<!-- Preloader -->
-<div id="preloader" class="preloader">
-    <div id="status" class="status">
-		<span class="screen-reader-text"><?php esc_html_e( 'Site is loading', 'munsa' ); ?></span>
-		<div class="sk-three-bounce">
-			<div class="sk-child sk-bounce1"></div>
-			<div class="sk-child sk-bounce2"></div>
-			<div class="sk-child sk-bounce3"></div>
-		</div>
-	</div>
-</div>
-
 <div id="site-wrapper" class="site-wrapper">
 	<div id="page" class="site">
+	
+	<!-- Preloader -->
+	<div id="preloader" class="preloader">
+		<div id="status" class="status">
+			<span class="screen-reader-text"><?php esc_html_e( 'Site is loading', 'munsa' ); ?></span>
+			<div class="sk-three-bounce">
+				<div class="sk-child sk-bounce1"></div>
+				<div class="sk-child sk-bounce2"></div>
+				<div class="sk-child sk-bounce3"></div>
+			</div>
+		</div>
+	</div>
 		
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'munsa' ); ?></a>
 		
