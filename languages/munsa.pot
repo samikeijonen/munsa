@@ -69,38 +69,38 @@ msgstr ""
 msgid "Back to top"
 msgstr ""
 
-#: functions.php:54 menus/menu-primary.php:13
+#: functions.php:59 menus/menu-primary.php:13
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:55
+#: functions.php:60
 msgid "Social Links Menu"
 msgstr ""
 
-#: functions.php:121
+#: functions.php:126
 msgid ""
 "The main sidebar. It is displayed on the right side of the page as off "
 "canvas sidebar."
 msgstr ""
 
-#: functions.php:131
+#: functions.php:136
 msgid "A sidebar located in the footer of the site."
 msgstr ""
 
-#: functions.php:217 menus/menu-primary.php:11
+#: functions.php:222 menus/menu-primary.php:11
 msgid "Menu"
 msgstr ""
 
-#: functions.php:218 functions.php:220 menus/menu-primary.php:15
+#: functions.php:223 functions.php:225 menus/menu-primary.php:15
 #: sidebar-primary.php:16
 msgid "Close"
 msgstr ""
 
-#: functions.php:219 sidebar-primary.php:11
+#: functions.php:224 sidebar-primary.php:11
 msgid "Info"
 msgstr ""
 
-#: functions.php:289
+#: functions.php:294
 #. Translators: The %s is the post title shown to screen readers.
 msgid "Continue reading %s"
 msgstr ""
@@ -317,6 +317,95 @@ msgid ""
 "searching can help."
 msgstr ""
 
+#: theme-updater/theme-updater.php:29
+msgid "Theme License"
+msgstr ""
+
+#: theme-updater/theme-updater.php:30
+msgid "Enter your theme license key."
+msgstr ""
+
+#: theme-updater/theme-updater.php:31
+msgid "License Key"
+msgstr ""
+
+#: theme-updater/theme-updater.php:32
+msgid "License Action"
+msgstr ""
+
+#: theme-updater/theme-updater.php:33
+msgid "Deactivate License"
+msgstr ""
+
+#: theme-updater/theme-updater.php:34
+msgid "Activate License"
+msgstr ""
+
+#: theme-updater/theme-updater.php:35 theme-updater/theme-updater.php:48
+msgid "License status is unknown."
+msgstr ""
+
+#: theme-updater/theme-updater.php:36
+msgid "Renew?"
+msgstr ""
+
+#: theme-updater/theme-updater.php:37
+msgid "unlimited"
+msgstr ""
+
+#: theme-updater/theme-updater.php:38
+msgid "License key is active."
+msgstr ""
+
+#: theme-updater/theme-updater.php:39
+msgid "Expires %s."
+msgstr ""
+
+#: theme-updater/theme-updater.php:40
+msgid "Lifetime License."
+msgstr ""
+
+#: theme-updater/theme-updater.php:41
+msgid "You have %1$s / %2$s sites activated."
+msgstr ""
+
+#: theme-updater/theme-updater.php:42
+msgid "License key expired %s."
+msgstr ""
+
+#: theme-updater/theme-updater.php:43
+msgid "License key has expired."
+msgstr ""
+
+#: theme-updater/theme-updater.php:44
+msgid "License keys do not match."
+msgstr ""
+
+#: theme-updater/theme-updater.php:45
+msgid "License is inactive."
+msgstr ""
+
+#: theme-updater/theme-updater.php:46
+msgid "License key is disabled."
+msgstr ""
+
+#: theme-updater/theme-updater.php:47
+msgid "Site is inactive."
+msgstr ""
+
+#: theme-updater/theme-updater.php:49
+msgid ""
+"Updating this theme will lose any customizations you have made. 'Cancel' to "
+"stop, 'OK' to update."
+msgstr ""
+
+#: theme-updater/theme-updater.php:50
+msgid ""
+"<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" "
+"class=\"thickbox\" title=\"%4s\">Check out what's new</a> or <a "
+"href=\"%5$s\"%6$s>update now</a>."
+msgstr ""
+
 #. Theme Name of the plugin/theme
 msgid "Munsa"
 msgstr ""
@@ -367,17 +456,17 @@ msgid_plural "%1$s comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:120
+#: functions.php:125
 msgctxt "sidebar"
 msgid "Primary"
 msgstr ""
 
-#: functions.php:130
+#: functions.php:135
 msgctxt "sidebar"
 msgid "Footer"
 msgstr ""
 
-#: functions.php:160
+#: functions.php:165
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
@@ -385,7 +474,7 @@ msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:165
+#: functions.php:170
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.

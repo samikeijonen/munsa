@@ -6,6 +6,11 @@
  *
  * @package Munsa
  */
+ 
+/**
+ * The current version of the theme.
+ */
+define( 'MUNSA_VERSION', '1.0.0' );
 
 if ( ! function_exists( 'munsa_setup' ) ) :
 /**
@@ -384,3 +389,10 @@ require get_template_directory() . '/inc/widgets.php';
  * Load archive filters file.
  */
 require get_template_directory() . '/inc/archive-filters.php';
+
+/**
+ * Add theme settings for license.
+ */
+if ( is_admin() ) {
+	require_once( get_template_directory() . '/theme-updater/theme-updater.php' );
+}

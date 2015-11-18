@@ -178,6 +178,6 @@ grunt.initConfig({
 grunt.registerTask( 'default', [ 'makepot' ] );
 
 // Build task(s).
-grunt.registerTask( 'build', [ 'postcss', 'clean', 'replace:styleVersion', 'copy', 'compress' ] );
+grunt.registerTask( 'build', [ 'postcss', 'clean', 'replace', 'copy', 'compress' ] );
 
 };
