@@ -179,15 +179,18 @@ function munsa_contact_info() {
 				endif;
 				
 				if ( get_theme_mod( 'phone' ) ) :
-					echo '<li class="contact-info-link contact-info-phone"><a href="tel:' . preg_replace( '/\s+/', '', sanitize_text_field( get_theme_mod( 'phone' ) ) ) . '">' . sanitize_text_field( get_theme_mod( 'phone' ) ) . '</a></li>';
+					echo '<li class="contact-info-link contact-info-phone"><a href="tel:' . preg_replace( '/\s+/', '', esc_attr( get_theme_mod( 'phone' ) ) ) . '">' . esc_attr( get_theme_mod( 'phone' ) ) . '</a></li>';
 				endif;
 				
 				if ( get_theme_mod( 'address' ) && ! get_theme_mod( 'address_link' ) ) :
-					echo '<li class="contact-info-link contact-info-address" >' . sanitize_text_field( get_theme_mod( 'address' ) ) . '</li>';
+					echo '<li class="contact-info-link contact-info-address" >' . esc_attr( get_theme_mod( 'address' ) ) . '</li>';
 				endif;
 				
 				if ( get_theme_mod( 'address' ) && get_theme_mod( 'address_link' ) ) :
-					echo '<li class="contact-info-link contact-info-address" ><a href="' . esc_url( get_theme_mod( 'address_link' ) ) . '">' . sanitize_text_field( get_theme_mod( 'address' ) ) . '</a></li>';
+					echo '<li class="contact-info-link contact-info-address" ><a href="' . esc_url( get_theme_mod( 'address_link' ) ) . '">' . esc_attr( get_theme_mod( 'address' ) ) . '</a></li>';
+				endif;
+				if ( get_theme_mod( 'other_info' ) ) :
+					echo '<li class="contact-info-link contact-info-other-info" >' . esc_attr( get_theme_mod( 'other_info' ) ) . '</li>';
 				endif;
 			?>
 		</ul>
@@ -206,7 +209,7 @@ endif;
  */
 function munsa_has_contact_info() {
 	
-	if ( ! get_theme_mod( 'email' ) && ! get_theme_mod( 'phone' ) && ! get_theme_mod( 'address' ) ) {
+	if ( ! get_theme_mod( 'email' ) && ! get_theme_mod( 'phone' ) && ! get_theme_mod( 'address' ) && ! get_theme_mod( 'other_info' ) ) {
 		return false;
 	} else {
 		return true;
