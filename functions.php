@@ -10,7 +10,7 @@
 /**
  * The current version of the theme.
  */
-define( 'MUNSA_VERSION', '1.0.0' );
+define( 'MUNSA_VERSION', '1.0.1' );
 
 if ( ! function_exists( 'munsa_setup' ) ) :
 /**
