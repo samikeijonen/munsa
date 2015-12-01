@@ -97,6 +97,26 @@
 		)
 	);
 	
+	// Add the other info setting.
+	$wp_customize->add_setting(
+		'other_info',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'sanitize_text_field'
+		)
+	);
+	
+	// Add the other info control.
+	$wp_customize->add_control(
+		'other_info',
+		array(
+			'label'    => esc_html__( 'Other info like VAT number', 'munsa' ),
+			'section'  => 'contact',
+			'priority' => 50,
+			'type'     => 'text'
+		)
+	);
+	
 	// Hide from front page setting.
 	$wp_customize->add_setting(
 		'hide_from_front_page',
@@ -113,7 +133,7 @@
 			'label'       => esc_html__( 'Hide from Front Page Template', 'munsa' ),
 			'description' => esc_html__( 'Check this if you want to hide contact info from Front Page Template.', 'munsa' ),
 			'section'     => 'contact',
-			'priority'    => 40,
+			'priority'    => 60,
 			'type'        => 'checkbox'
 		)
 	);
@@ -134,7 +154,7 @@
 			'label'       => esc_html__( 'Hide from Contact Page Template', 'munsa' ),
 			'description' => esc_html__( 'Check this if you want to hide contact info from Contact Page Template.', 'munsa' ),
 			'section'     => 'contact',
-			'priority'    => 50,
+			'priority'    => 70,
 			'type'        => 'checkbox'
 		)
 	);

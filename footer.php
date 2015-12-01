@@ -26,11 +26,25 @@
 		
 		<footer id="colophon" class="site-footer" role="contentinfo" <?php hybrid_attr( 'footer' ); ?>>
 			
-			<div class="site-info">
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'munsa' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'munsa' ), 'WordPress' ); ?></a>
-				<span class="sep"> | </span>
-				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'munsa' ), 'Munsa', '<a href="https://foxland.fi/" rel="designer">Foxland</a>' ); ?>
-			</div><!-- .site-info -->
+			<?php if ( ! get_theme_mod( 'hide_footer_text' ) ) : ?>
+			
+				<?php 
+					if ( get_theme_mod( 'footer_text' ) ) :
+					
+						echo wp_kses_post( get_theme_mod( 'footer_text' ) ); // Echo custom footer text.
+					
+					else :
+				?>
+			
+					<div class="site-info">
+						<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'munsa' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'munsa' ), 'WordPress' ); ?></a>
+						<span class="sep"> | </span>
+						<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'munsa' ), 'Munsa', '<a href="https://foxland.fi/" rel="designer">Foxland</a>' ); ?>
+					</div><!-- .site-info -->
+					
+				<?php endif; ?>
+			
+			<?php endif; ?>
 			
 			<?php get_template_part( 'menus/menu', 'social' ); // Loads the menus/menu-social.php template. ?>
 				

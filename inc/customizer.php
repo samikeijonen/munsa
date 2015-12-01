@@ -25,6 +25,7 @@ function munsa_customize_register( $wp_customize ) {
 	require_once( get_template_directory() . '/inc/customizer/contact.php' );
 	require_once( get_template_directory() . '/inc/customizer/front-page.php' );
 	require_once( get_template_directory() . '/inc/customizer/social-menu.php' );
+	require_once( get_template_directory() . '/inc/customizer/footer.php' );
 	
 	// Use live preview on some fields.
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
@@ -58,4 +59,22 @@ function munsa_sanitize_checkbox( $input ) {
 		return '';
 	}
 
+}
+
+/**
+ * Sanitizes the footer content on the customize screen. Users with the 'unfiltered_html' cap can post 
+ * anything. For other users, wp_filter_post_kses() is ran over the setting.
+ *
+ * @since 1.0.0
+ */
+function munsa_sanitize_textarea( $setting, $object ) {
+
+	// Make sure we kill evil scripts from users without the 'unfiltered_html' cap.
+	if ( 'footer_text' == $object->id && ! current_user_can( 'unfiltered_html' ) ) {
+		$setting = stripslashes( wp_filter_post_kses( addslashes( $setting ) ) );
+	}
+
+	// Return the sanitized setting.
+	return $setting;
+	
 }

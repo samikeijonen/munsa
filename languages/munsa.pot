@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Munsa 1.0.0\n"
+"Project-Id-Version: Munsa 1.0.1\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
 "POT-Creation-Date: 2015-06-12 21:51:31+0000\n"
 "MIME-Version: 1.0\n"
@@ -53,19 +53,19 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:30
+#: footer.php:40
 msgid "https://wordpress.org/"
 msgstr ""
 
-#: footer.php:30
+#: footer.php:40
 msgid "Proudly powered by %s"
 msgstr ""
 
-#: footer.php:32
+#: footer.php:42
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: footer.php:37
+#: footer.php:51
 msgid "Back to top"
 msgstr ""
 
@@ -145,20 +145,44 @@ msgstr ""
 msgid "Enter for example Google Map link URL."
 msgstr ""
 
-#: inc/customizer/contact.php:113 inc/customizer/social-menu.php:31
+#: inc/customizer/contact.php:113
+msgid "Other info like VAT number"
+msgstr ""
+
+#: inc/customizer/contact.php:133 inc/customizer/social-menu.php:31
 msgid "Hide from Front Page Template"
 msgstr ""
 
-#: inc/customizer/contact.php:114
+#: inc/customizer/contact.php:134
 msgid "Check this if you want to hide contact info from Front Page Template."
 msgstr ""
 
-#: inc/customizer/contact.php:134
+#: inc/customizer/contact.php:154
 msgid "Hide from Contact Page Template"
 msgstr ""
 
-#: inc/customizer/contact.php:135
+#: inc/customizer/contact.php:155
 msgid "Check this if you want to hide contact info from Contact Page Template."
+msgstr ""
+
+#: inc/customizer/footer.php:12
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer/footer.php:31
+msgid "Footer text"
+msgstr ""
+
+#: inc/customizer/footer.php:32
+msgid "Replace default Footer text entering your own text."
+msgstr ""
+
+#: inc/customizer/footer.php:52
+msgid "Hide Footer Text"
+msgstr ""
+
+#: inc/customizer/footer.php:53
+msgid "Check this if you want to hide Footer text."
 msgstr ""
 
 #. Template Name of the plugin/theme

@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Munsa 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-11-18 10:16+0200\n"
-"PO-Revision-Date: 2015-11-18 10:19+0200\n"
+"POT-Creation-Date: 2015-12-01 09:48+0200\n"
+"PO-Revision-Date: 2015-12-01 09:49+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -56,19 +56,19 @@ msgstr "Uudemmat kommentit"
 msgid "Comments are closed."
 msgstr "Kommentointi on suljettu."
 
-#: footer.php:30
+#: footer.php:40
 msgid "https://wordpress.org/"
 msgstr "https://wordpress.org/"
 
-#: footer.php:30
+#: footer.php:40
 msgid "Proudly powered by %s"
 msgstr "Voimanlähteenä %s"
 
-#: footer.php:32
+#: footer.php:42
 msgid "Theme: %1$s by %2$s."
 msgstr "Teeman %1$s on tehnyt %2$s."
 
-#: footer.php:37
+#: footer.php:51
 msgid "Back to top"
 msgstr "Takaisin ylös"
 
@@ -151,21 +151,45 @@ msgstr "Osoitteen linkki"
 msgid "Enter for example Google Map link URL."
 msgstr "Kirjoita esimerkiksi linkki Googlen karttapalveluun."
 
-#: inc/customizer/contact.php:113 inc/customizer/social-menu.php:31
+#: inc/customizer/contact.php:113
+msgid "Other info like VAT number"
+msgstr "Info kuten Y-tunnus tai vastaava"
+
+#: inc/customizer/contact.php:133 inc/customizer/social-menu.php:31
 msgid "Hide from Front Page Template"
 msgstr "Piilota Etusivu-sivupohjasta"
 
-#: inc/customizer/contact.php:114
+#: inc/customizer/contact.php:134
 msgid "Check this if you want to hide contact info from Front Page Template."
 msgstr "Valitse tämä, jos et halua näyttää yhteystietoja etusivulla."
 
-#: inc/customizer/contact.php:134
+#: inc/customizer/contact.php:154
 msgid "Hide from Contact Page Template"
 msgstr "Piilota Yhteystiedot-sivupohjasta"
 
-#: inc/customizer/contact.php:135
+#: inc/customizer/contact.php:155
 msgid "Check this if you want to hide contact info from Contact Page Template."
 msgstr "Valitse tämä, jos et halua näyttää yhteystietoja Yhteystiedot-sivulla."
+
+#: inc/customizer/footer.php:12
+msgid "Footer"
+msgstr "Alapalkki"
+
+#: inc/customizer/footer.php:31
+msgid "Footer text"
+msgstr "Alapalkin teksti"
+
+#: inc/customizer/footer.php:32
+msgid "Replace default Footer text entering your own text."
+msgstr "Korvaa alapalkin tekstin omalla tekstilläsi."
+
+#: inc/customizer/footer.php:52
+msgid "Hide Footer Text"
+msgstr "Piilota alapalkin teksti"
+
+#: inc/customizer/footer.php:53
+msgid "Check this if you want to hide Footer text."
+msgstr "Valitse tämä, jos et halua näyttää alapalkin tekstiä."
 
 #. Template Name of the plugin/theme
 msgid "Front Page"
