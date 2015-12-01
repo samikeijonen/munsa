@@ -25,6 +25,11 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.0.1 - December 1, 2015
+
+* Add setting for changing or hiding footer text in the Customizer.
+* Add extra info for contact setting.
+
 ### Version 1.0.0 - November 15, 2015
 
 * Everything's new!
