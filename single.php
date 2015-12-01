@@ -23,11 +23,11 @@ get_header(); ?>
 		<?php
 			// Previous/next post navigation.
 			the_post_navigation( array(
-				'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'munsa' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Next post:', 'munsa' ) . '</span> ' .
+				'next_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Next', 'munsa' ) . '</span> ' .
+					'<span class="screen-reader-text">' . esc_html__( 'Next post:', 'munsa' ) . '</span> ' .
 					'<span class="post-title">%title</span>',
-				'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'munsa' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Previous post:', 'munsa' ) . '</span> ' .
+				'prev_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Previous', 'munsa' ) . '</span> ' .
+					'<span class="screen-reader-text">' . esc_html__( 'Previous post:', 'munsa' ) . '</span> ' .
 					'<span class="post-title">%title</span>',
 			) );
 		?>
