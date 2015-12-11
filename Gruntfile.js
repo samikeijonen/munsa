@@ -69,15 +69,11 @@ grunt.initConfig({
 	
 	// Minify files
 	uglify: {
-		responsivenav: {
-			files: {
-				'js/responsive-nav.min.js': ['js/responsive-nav.js']
-			}
-		},
 		settigns: {
 			files: {
-				'js/functions.min.js': ['js/functions.js'],
-				'js/customizer.min.js': ['js/customizer.js']
+				'js/settings.min.js': ['js/settings.js'],
+				'js/smooth-scroll.min.js': ['js/smooth-scroll.js'],
+				'js/skip-link-focus-fix.min.js': ['js/skip-link-focus-fix.js']
 			}
 		}
 	},
@@ -88,22 +84,18 @@ grunt.initConfig({
 			src: 'style.css',
 			dest: 'style.min.css'
 		},
-		genericons: {
-			src: 'fonts/genericons/genericons.css',
-			dest: 'fonts/genericons/genericons.min.css'
-		}
 	},
 	
 	postcss: {
 		options: {
-		map: true, // inline sourcemaps
+		map: false, // inline sourcemaps
 
 		processors: [
 			require('autoprefixer')({browsers: 'last 3 versions'}), // add vendor prefixes
 		]
 		},
 		dist: {
-		src: 'style.css'
+			src: 'style.css'
 		}
 	},
 
@@ -175,9 +167,9 @@ grunt.initConfig({
 });
 
 // Default task.
-grunt.registerTask( 'default', [ 'makepot' ] );
+grunt.registerTask( 'default', [ 'makepot', 'postcss', 'cssmin', 'uglify' ] );
 
 // Build task(s).
-grunt.registerTask( 'build', [ 'postcss', 'clean', 'replace', 'copy', 'compress' ] );
+grunt.registerTask( 'build', [ 'clean', 'replace', 'copy', 'compress' ] );
 
 };
