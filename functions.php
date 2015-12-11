@@ -10,7 +10,16 @@
 /**
  * The current version of the theme.
  */
-define( 'MUNSA_VERSION', '1.0.1' );
+define( 'MUNSA_VERSION', '1.0.2' );
+
+/**
+ * The suffix to use for scripts.
+ */
+if ( ( defined( 'SCRIPT_DEBUG' ) && true === SCRIPT_DEBUG ) ) {
+	define( 'MUNSA_SUFFIX', '' );
+} else {
+	define( 'MUNSA_SUFFIX', '.min' );
+}
 
 if ( ! function_exists( 'munsa_setup' ) ) :
 /**
@@ -207,17 +216,17 @@ function munsa_scripts() {
 	
 	// Enqueue parent theme styles if using child theme.
 	if ( is_child_theme() ) {
-		wp_enqueue_style( 'munsa-parent-style', trailingslashit( get_template_directory_uri() ) . 'style.css', array(), null );
+		wp_enqueue_style( 'munsa-parent-style', trailingslashit( get_template_directory_uri() ) . 'style' . MUNSA_SUFFIX . '.css', array(), null );
 	}
 	
 	// Enqueue active theme styles.
 	wp_enqueue_style( 'munsa-style', get_stylesheet_uri() );
 	
 	// Enqueue smooth scroll.
-	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/js/smooth-scroll.js', array(), '20150906', true );
+	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/js/smooth-scroll' . MUNSA_SUFFIX . '.js', array(), '20150906', true );
 	
 	// Enqueue theme scripts.
-	wp_enqueue_script( 'munsa-settings', get_template_directory_uri() . '/js/settings.js', array( 'jquery', 'smooth-scroll' ), '20150906', true );
+	wp_enqueue_script( 'munsa-settings', get_template_directory_uri() . '/js/settings' . MUNSA_SUFFIX . '.js', array( 'jquery', 'smooth-scroll' ), '20150906', true );
 	wp_localize_script( 'munsa-settings', 'screenReaderText', array(
 		'expandMenu'      => esc_html__( 'Menu', 'munsa' ),
 		'collapseMenu'    => esc_html__( 'Close', 'munsa' ),
@@ -226,7 +235,7 @@ function munsa_scripts() {
 	) );
 	
 	// Enqueue skip link focus fix.
-	wp_enqueue_script( 'munsa-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20150906', true );
+	wp_enqueue_script( 'munsa-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix' . MUNSA_SUFFIX . '.js', array(), '20150906', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
