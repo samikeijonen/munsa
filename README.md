@@ -25,6 +25,11 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.0.2 - December 11, 2015
+
+* Minify CSS and JS files for faster loading times.
+* Fix how to load theme updater.
+
 ### Version 1.0.1 - December 1, 2015
 
 * Add setting for changing or hiding footer text in the Customizer.
