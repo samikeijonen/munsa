@@ -2,56 +2,59 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Munsa 1.0.2\n"
+"Project-Id-Version: Munsa 1.0.1\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
 "POT-Creation-Date: 2015-06-12 21:51:31+0000\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: grunt-wp-i18n 0.5.0\n"
-"Language: en_US\n"
+"PO-Revision-Date: 2015-12-01 12:03+0200\n"
+"Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: da_DK\n"
 
 #: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "﻿Ups, siden du prøver at tilgå findes ikke"
 
 #: 404.php:21
 msgid ""
-"It looks like nothing was found at this location. Maybe try one of the "
-"links below or a search?"
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
 msgstr ""
+"Der ser ikke ud til at være fundet noget her. Prøv eventuelt et af linkene "
+"herunder, eller søg."
 
 #: 404.php:30
 msgid "Most Used Categories"
-msgstr ""
+msgstr "Mest Anvendte Kategorier"
 
-#: 404.php:47
 #. translators: %1$s: smiley
+#: 404.php:47
 msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
+msgstr "﻿Prøv at kigge i de månedlige arkiver. %1$s"
 
 #: comment.php:30
 msgid "Your comment is awaiting moderation."
-msgstr ""
+msgstr "Din kommentar afventer modifikation."
 
 #: comments.php:51
 msgid "Comment navigation"
-msgstr ""
+msgstr "﻿Kommentar navigation"
 
 #: comments.php:54
 msgid "Older Comments"
-msgstr ""
+msgstr "﻿Ældre Kommentarer"
 
 #: comments.php:55
 msgid "Newer Comments"
-msgstr ""
+msgstr "﻿Nyere Kommentarer"
 
 #: comments.php:70
 msgid "Comments are closed."
-msgstr ""
+msgstr "﻿Der er lukket for kommentarer."
 
 #: footer.php:40
 msgid "https://wordpress.org/"
@@ -59,131 +62,134 @@ msgstr ""
 
 #: footer.php:40
 msgid "Proudly powered by %s"
-msgstr ""
+msgstr "Understøttet af %s"
 
 #: footer.php:42
 msgid "Theme: %1$s by %2$s."
-msgstr ""
+msgstr "Tema: %1$s af %2$s"
 
 #: footer.php:51
 msgid "Back to top"
-msgstr ""
+msgstr "Tilbage til toppen"
 
-#: functions.php:68 menus/menu-primary.php:13
+#: functions.php:59 menus/menu-primary.php:13
 msgid "Primary Menu"
-msgstr ""
+msgstr "Primær Menu"
 
-#: functions.php:69
+#: functions.php:60
 msgid "Social Links Menu"
-msgstr ""
+msgstr "Sociale Links Menu"
 
-#: functions.php:135
+#: functions.php:126
 msgid ""
 "The main sidebar. It is displayed on the right side of the page as off "
 "canvas sidebar."
 msgstr ""
 
-#: functions.php:145
+#: functions.php:136
 msgid "A sidebar located in the footer of the site."
-msgstr ""
+msgstr "En sidekolonne i bunden af websitet."
 
-#: functions.php:231 menus/menu-primary.php:11
+#: functions.php:222 menus/menu-primary.php:11
 msgid "Menu"
 msgstr ""
 
-#: functions.php:232 functions.php:234 menus/menu-primary.php:15
+#: functions.php:223 functions.php:225 menus/menu-primary.php:15
 #: sidebar-primary.php:16
 msgid "Close"
-msgstr ""
+msgstr "Luk"
 
-#: functions.php:233 sidebar-primary.php:11
+#: functions.php:224 sidebar-primary.php:11
 msgid "Info"
-msgstr ""
+msgstr "Mere"
 
-#: functions.php:303
 #. Translators: The %s is the post title shown to screen readers.
+#: functions.php:294
 msgid "Continue reading %s"
-msgstr ""
+msgstr "Læs videre %s"
 
 #: header.php:31
 msgid "Site is loading"
-msgstr ""
+msgstr "Siden klargøres"
 
 #: header.php:40
 msgid "Skip to content"
-msgstr ""
+msgstr "Gå til indhold"
 
 #: inc/archive-filters.php:39
 msgid "Search results for &#8220;%s&#8221;"
-msgstr ""
+msgstr "Søgeresultater for &#8220;%s&#8221;"
 
 #. Template Name of the plugin/theme
 msgid "Contact Info"
 msgstr ""
 
 #: inc/customizer/contact.php:13
-msgid "Contact Info will be displayed in Contact Info and Front Page Templates."
+msgid ""
+"Contact Info will be displayed in Contact Info and Front Page Templates."
 msgstr ""
+"Kontakt Info vil blive vist på Contact Info og Front Page skabelonerne."
 
 #: inc/customizer/contact.php:32
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 #: inc/customizer/contact.php:52
 msgid "Phone Number"
-msgstr ""
+msgstr "Telefonnummer"
 
 #: inc/customizer/contact.php:72
 msgid "Address"
-msgstr ""
+msgstr "Adresse"
 
 #: inc/customizer/contact.php:92
 msgid "Address link URL"
-msgstr ""
+msgstr "Adresse link URL"
 
 #: inc/customizer/contact.php:93
 msgid "Enter for example Google Map link URL."
-msgstr ""
+msgstr "Tilføj f.eks. Google Map link URL"
 
 #: inc/customizer/contact.php:113
 msgid "Other info like VAT number"
-msgstr ""
+msgstr "Anden info f.eks. CVR nummer"
 
 #: inc/customizer/contact.php:133 inc/customizer/social-menu.php:31
 msgid "Hide from Front Page Template"
-msgstr ""
+msgstr "Skjul på Front Page skabelon"
 
 #: inc/customizer/contact.php:134
 msgid "Check this if you want to hide contact info from Front Page Template."
-msgstr ""
+msgstr "Marker denne hvis du vil skjule kontakt info på Front Page skabelonen."
 
 #: inc/customizer/contact.php:154
 msgid "Hide from Contact Page Template"
-msgstr ""
+msgstr "Skjul på Contact Page skabelonen"
 
 #: inc/customizer/contact.php:155
 msgid "Check this if you want to hide contact info from Contact Page Template."
 msgstr ""
+"Marker denne hvis du vil skjule kontakt info på Contact Page skabelonen."
 
 #: inc/customizer/footer.php:12
 msgid "Footer"
-msgstr ""
+msgstr "Sidefod"
 
 #: inc/customizer/footer.php:31
 msgid "Footer text"
-msgstr ""
+msgstr "Sidefod tekst"
 
 #: inc/customizer/footer.php:32
 msgid "Replace default Footer text entering your own text."
-msgstr ""
+msgstr "Erstat standard Sidefod tekst med din egen tekst."
 
 #: inc/customizer/footer.php:52
 msgid "Hide Footer Text"
-msgstr ""
+msgstr "Skjul Sidefod tekst"
 
 #: inc/customizer/footer.php:53
 msgid "Check this if you want to hide Footer text."
-msgstr ""
+msgstr "Marker denne hvis du ønsker at skjule Sidefod tekst."
 
 #. Template Name of the plugin/theme
 msgid "Front Page"
@@ -191,21 +197,21 @@ msgstr ""
 
 #: inc/customizer/front-page.php:13
 msgid "Select featured pages that will be displayed in Front Page Template."
-msgstr ""
+msgstr "Vælg fremhævede sider, som vil blive vist på Front Page skabelonen."
 
-#: inc/customizer/front-page.php:43
 #. Translators: %s stands for number. For example Select page 1.
+#: inc/customizer/front-page.php:43
 msgid "Select page %s"
-msgstr ""
+msgstr "Vælg side %s"
 
 #: inc/customizer/front-page.php:63 misc/content-featured-areas.php:69
 #: misc/content-featured-areas.php:74 misc/content-featured-areas.php:75
 msgid "Articles"
-msgstr ""
+msgstr "Artikler"
 
 #: inc/customizer/front-page.php:72
 msgid "Blog title"
-msgstr ""
+msgstr "Blog titel"
 
 #: inc/customizer/front-page.php:92
 msgid "Blog URL"
@@ -213,7 +219,7 @@ msgstr ""
 
 #: inc/customizer/front-page.php:112
 msgid "Blog URL text"
-msgstr ""
+msgstr "Blog URL tekst"
 
 #: inc/customizer/social-menu.php:12 menus/menu-social.php:11
 #: menus/menu-social.php:12
@@ -222,41 +228,43 @@ msgstr ""
 
 #: inc/customizer/social-menu.php:32
 msgid "Check this if you want to hide Social Menu from Front Page Template."
-msgstr ""
+msgstr "Marker denne hvis du vil skjule Social Menu på Front Page skabelonen."
 
 #: inc/customizer/social-menu.php:52
 msgid "Hide from Full Background Image Template"
-msgstr ""
+msgstr "Skjul på Full Background Image skabelonen"
 
 #: inc/customizer/social-menu.php:53
 msgid ""
 "Check this if you want to hide Social Menu info from Full Background Image "
 "Template."
 msgstr ""
+"Marker denne hvis du ønsker at skjule Social Menu info på Full Background "
+"Image skabelonen."
 
 #: inc/customizer.php:19
 msgid "Theme Settings"
-msgstr ""
+msgstr "Tema Indstillinger"
 
 #: inc/widgets.php:21
 msgid "Display Contact Info from the Customizer."
-msgstr ""
+msgstr "Vis Kontakt Info fra Customizeren."
 
 #: inc/widgets.php:34
 msgid "Munsa: Contact Info"
-msgstr ""
+msgstr "Munsa: Kontakt Info"
 
 #: inc/widgets.php:92
 msgid "Title:"
-msgstr ""
+msgstr "Titel:"
 
 #: index.php:48 search.php:34
 msgid "Previous page"
-msgstr ""
+msgstr "﻿Forrige side"
 
 #: index.php:49 search.php:35
 msgid "Next page"
-msgstr ""
+msgstr "﻿Næste side"
 
 #: index.php:50 pages/featured-image-left.php:32
 #: pages/featured-image-right.php:32 search.php:36
@@ -264,171 +272,183 @@ msgstr ""
 #: template-parts/content-page.php:28 template-parts/content-video.php:29
 #: template-parts/content.php:31
 msgid "Page"
-msgstr ""
+msgstr "﻿Side"
 
 #: misc/content-featured-areas.php:133
 msgid ""
-"Set Front Page Template content in the Customizer. Or <a "
-"href=\"%1$s\">publish your first post here</a>."
+"Set Front Page Template content in the Customizer. Or <a href=\"%1$s"
+"\">publish your first post here</a>."
 msgstr ""
+"Indstil Front Page skabelonen i Customizeren. Eller <a href=\"%1$s\">udgiv "
+"dit første indlæg her</a>."
 
 #: pages/featured-image-left.php:30 pages/featured-image-right.php:30
 #: template-parts/content-audio.php:27 template-parts/content-gallery.php:27
 #: template-parts/content-page.php:26 template-parts/content-video.php:27
 #: template-parts/content.php:29
 msgid "Pages:"
-msgstr ""
+msgstr "﻿Sider:"
 
 #: pages/front-page.php:35
 msgid "Scroll to Content"
-msgstr ""
+msgstr "Rul ned til Indhold"
 
 #: search.php:15
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Søge resultater for: %s"
 
 #: single.php:26
 msgid "Next"
-msgstr ""
+msgstr "Næste"
 
 #: single.php:27
 msgid "Next post:"
-msgstr ""
+msgstr "Næste artikel:"
 
 #: single.php:29
 msgid "Previous"
-msgstr ""
+msgstr "Forrige"
 
 #: single.php:30
 msgid "Previous post:"
-msgstr ""
+msgstr "Forrige artikel"
 
+#. Translators: #%s means text before category or tag.
 #: template-parts/content-audio.php:39 template-parts/content-audio.php:40
 #: template-parts/content-gallery.php:39 template-parts/content-gallery.php:40
 #: template-parts/content-video.php:39 template-parts/content-video.php:40
 #: template-parts/content.php:41 template-parts/content.php:42
-#. Translators: #%s means text before category or tag.
 msgid "#%s"
 msgstr ""
 
 #: template-parts/content-audio.php:39 template-parts/content-gallery.php:39
 #: template-parts/content-video.php:39 template-parts/content.php:41
 msgid "Categories"
-msgstr ""
+msgstr "Kategorier"
 
 #: template-parts/content-audio.php:40 template-parts/content-gallery.php:40
 #: template-parts/content-video.php:40 template-parts/content.php:42
 msgid "Tags"
-msgstr ""
+msgstr "Nøgleord"
 
 #: template-parts/content-none.php:15
 msgid "Nothing Found"
-msgstr ""
+msgstr "﻿Intet Fundet"
 
 #: template-parts/content-none.php:22
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Klar til at udgive dit første indlæg? <a href=\"%1$s\">Begynd her</a>."
 
 #: template-parts/content-none.php:27
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
+"Beklager men intet passede med dine kriterier. Prøv venligst igen med andre "
+"nøgleord."
 
 #: template-parts/content-none.php:35
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
+"Det ser ikke ud til, at vi kan finde det du søger. Søgefunktionen kan måske "
+"hjælpe."
 
 #: theme-updater/theme-updater.php:29
 msgid "Theme License"
-msgstr ""
+msgstr "Tema Licens"
 
 #: theme-updater/theme-updater.php:30
 msgid "Enter your theme license key."
-msgstr ""
+msgstr "Tilføj din tema licensnøgle."
 
 #: theme-updater/theme-updater.php:31
 msgid "License Key"
-msgstr ""
+msgstr "Licens Nøgle"
 
 #: theme-updater/theme-updater.php:32
 msgid "License Action"
-msgstr ""
+msgstr "Licens Handling"
 
 #: theme-updater/theme-updater.php:33
 msgid "Deactivate License"
-msgstr ""
+msgstr "Deaktiver Licens"
 
 #: theme-updater/theme-updater.php:34
 msgid "Activate License"
-msgstr ""
+msgstr "Aktiver Licens"
 
 #: theme-updater/theme-updater.php:35 theme-updater/theme-updater.php:48
 msgid "License status is unknown."
-msgstr ""
+msgstr "Licens status er ukendt."
 
 #: theme-updater/theme-updater.php:36
 msgid "Renew?"
-msgstr ""
+msgstr "Forny?"
 
 #: theme-updater/theme-updater.php:37
 msgid "unlimited"
-msgstr ""
+msgstr "ubegrænset"
 
 #: theme-updater/theme-updater.php:38
 msgid "License key is active."
-msgstr ""
+msgstr "Licensnøglen er aktiv."
 
 #: theme-updater/theme-updater.php:39
 msgid "Expires %s."
-msgstr ""
+msgstr "Udløber %s."
 
 #: theme-updater/theme-updater.php:40
 msgid "Lifetime License."
-msgstr ""
+msgstr "Lifetime Licens."
 
 #: theme-updater/theme-updater.php:41
 msgid "You have %1$s / %2$s sites activated."
-msgstr ""
+msgstr "Du har %1$s / %2$s websites aktiveret."
 
 #: theme-updater/theme-updater.php:42
 msgid "License key expired %s."
-msgstr ""
+msgstr "Licensnøglen udløb %s."
 
 #: theme-updater/theme-updater.php:43
 msgid "License key has expired."
-msgstr ""
+msgstr "Licensnøglen er udløbet."
 
 #: theme-updater/theme-updater.php:44
 msgid "License keys do not match."
-msgstr ""
+msgstr "Licensnøglerne passer ikke."
 
 #: theme-updater/theme-updater.php:45
 msgid "License is inactive."
-msgstr ""
+msgstr "Licensen er inaktiv."
 
 #: theme-updater/theme-updater.php:46
 msgid "License key is disabled."
-msgstr ""
+msgstr "Licensnøgle er deaktiveret."
 
 #: theme-updater/theme-updater.php:47
 msgid "Site is inactive."
-msgstr ""
+msgstr "Websitet er inaktivt."
 
 #: theme-updater/theme-updater.php:49
 msgid ""
 "Updating this theme will lose any customizations you have made. 'Cancel' to "
 "stop, 'OK' to update."
 msgstr ""
+"Opdatering af dette tema betyder, at du mister dine personlige ændringer. "
+"'Annuller' for at stoppe, 'OK' for at opdatere."
 
 #: theme-updater/theme-updater.php:50
 msgid ""
-"<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" "
-"class=\"thickbox\" title=\"%4s\">Check out what's new</a> or <a "
-"href=\"%5$s\"%6$s>update now</a>."
+"<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\" "
+"title=\"%4s\">Check out what's new</a> or <a href=\"%5$s\"%6$s>update now</"
+"a>."
 msgstr ""
+"<strong>%1$s %2$s</strong> er tilgængelig. <a href=\"%3$s\" class=\"thickbox"
+"\" title=\"%4s\">Tjek seneste nyt</a> eller <a href=\"%5$s\"%6$s>opdater nu</"
+"a>."
 
 #. Theme Name of the plugin/theme
 msgid "Munsa"
@@ -440,8 +460,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Munsa is a minimal theme for creative people like photobloggers and "
-"artists. It has a clean and fresh responsive design."
+"Munsa is a minimal theme for creative people like photobloggers and artists. "
+"It has a clean and fresh responsive design."
 msgstr ""
 
 #. Author of the plugin/theme
@@ -477,31 +497,31 @@ msgstr ""
 msgctxt "comments title"
 msgid "One comment"
 msgid_plural "%1$s comments"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "En Kommentar"
+msgstr[1] "%1$s kommentarer"
 
-#: functions.php:134
+#: functions.php:125
 msgctxt "sidebar"
 msgid "Primary"
-msgstr ""
+msgstr "Primær (sidekolonne)"
 
-#: functions.php:144
+#: functions.php:135
 msgctxt "sidebar"
 msgid "Footer"
-msgstr ""
+msgstr "Sidefod (sidekolonne)"
 
-#: functions.php:174
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
+#: functions.php:165
 msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:179
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.
+#: functions.php:170
 msgctxt "Montserrat font: on or off"
 msgid "on"
 msgstr ""
@@ -509,15 +529,15 @@ msgstr ""
 #: inc/template-tags.php:18
 msgctxt "Used before publish date."
 msgid "Posted on"
-msgstr ""
+msgstr "Udgivet den"
 
 #: inc/template-tags.php:26
 msgctxt "Used before post author name."
 msgid "Author"
-msgstr ""
+msgstr "Forfatter "
 
-#: inc/template-tags.php:63
 #. Translators: Separates tags, categories, etc. when displaying a post.
+#: inc/template-tags.php:63
 msgctxt "taxonomy terms separator"
 msgid " #"
 msgstr ""
@@ -525,24 +545,24 @@ msgstr ""
 #: searchform.php:11 searchform.php:12
 msgctxt "label"
 msgid "Search for:"
-msgstr ""
+msgstr "Søg efter:"
 
 #: searchform.php:12
 msgctxt "placeholder"
 msgid "Search &hellip;"
-msgstr ""
+msgstr "Søg &hellip;"
 
 #: searchform.php:14
 msgctxt "submit button"
 msgid "Search"
-msgstr ""
+msgstr "Søg"
 
 #: sidebar-footer.php:12
 msgctxt "Sidebar aria label"
 msgid "Footer Sidebar"
-msgstr ""
+msgstr "Sidefod Sidekolonne"
 
 #: sidebar-primary.php:14
 msgctxt "Sidebar aria label"
 msgid "Primary Sidebar"
-msgstr ""
+msgstr "Primær Sidekolonne"
