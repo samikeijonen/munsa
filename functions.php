@@ -402,6 +402,7 @@ require get_template_directory() . '/inc/archive-filters.php';
 /**
  * Add theme settings for license.
  */
-if ( is_admin() ) {
+function munsa_theme_updater() {
 	require_once( get_template_directory() . '/theme-updater/theme-updater.php' );
 }
+add_action( 'after_setup_theme', 'munsa_theme_updater' );
