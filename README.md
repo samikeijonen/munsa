@@ -2,6 +2,10 @@
 
 Munsa is a minimal theme for creative people like photobloggers and artists. It has a clean and fresh responsive design.
 
+## Documentation
+
+You can read Munsa theme documentation from [Foxland site](https://foxland.fi/documents/for/munsa/).
+
 ## Copyright and License
 
 The following resources are not included with the theme but are external resources linked to within the theme.
