@@ -2186,6 +2186,9 @@ a:active {
 	.page-template-contact-info .entry.no-content .contact-info {
 		padding-left: 0;
 	}
+	.page-template-contact-info .entry.no-content .contact-info {
+		width: 100%;
+	}
 	
 	.child-page {
 		margin-bottom: 3.6em;
