@@ -335,9 +335,9 @@ function munsa_mejs_add_container_class() {
 	(function() {
 		var settings = window._wpmejsSettings || {};
 		settings.features = settings.features || mejs.MepDefaults.features;
-		settings.features.push( 'exampleclass' );
+		settings.features.push( 'MunsaClass' );
 
-		MediaElementPlayer.prototype.buildexampleclass = function( player ) {
+		MediaElementPlayer.prototype.buildMunsaClass = function( player ) {
 			player.container.addClass( 'munsa-mejs-container' );
 		};
 	})();
