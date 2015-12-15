@@ -450,8 +450,8 @@ h1 {
 }
 
 h2 {
-	font-size: 23px;
-	font-size: 1.4375rem;
+	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 h3,
@@ -460,13 +460,19 @@ h3,
 	font-size: 1.25rem;
 }
 
-h4,
-h5,
-h6 {
+h4 {
 	font-size: 18px;
 	font-size: 1.125rem;
-	letter-spacing: 1px;
-	text-transform: uppercase;
+}
+
+h5,
+h6 {
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+h6 {
+	color: #777;
 }
 
 @media only screen and (min-width: 782px) {
@@ -476,14 +482,6 @@ h6 {
 		font-size: 1.75rem;
 	}
 	
-}
-
-.entry-content h4,
-.entry-summary h4,
-.comment-content h4,
-.textwidget h4 {
-	letter-spacing: 0.140625em;
-	text-transform: uppercase;
 }
 
 p,
