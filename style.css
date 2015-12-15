@@ -2578,6 +2578,11 @@ body .wp-playlist-tracks {
 	background: transparent;
 	top: .9em;
 }
+.munsa-mejs-container.mejs-container.mejs-video .mejs-controls {
+	background: rgba(255,255,255,0.2);
+	bottom: .9em;
+	top: auto;
+}
 .munsa-mejs-container.mejs-container .mejs-controls .mejs-button {
 	cursor: pointer;
 	display: block;
