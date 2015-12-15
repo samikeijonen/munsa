@@ -2647,6 +2647,28 @@ body .wp-playlist-item {
 	text-transform: uppercase;
 }
 
+/* Playlist dark styles. */
+body .wp-playlist.wp-playlist-dark {
+	background: #000;
+}
+body .wp-playlist-dark .wp-playlist-tracks {
+    border-top-color: #777;
+	border-bottom-color: #777;
+}
+.wp-playlist-dark .munsa-mejs-container.mejs-container .mejs-controls .mejs-button button:before,
+.wp-playlist-dark .munsa-mejs-container.mejs-container .mejs-controls .mejs-time,
+.wp-playlist-dark .wp-playlist-playing .wp-playlist-caption {
+	color: #fff;
+}
+.wp-playlist-dark .munsa-mejs-container.mejs-container .mejs-controls .mejs-time-rail .mejs-time-current {
+	background-color: #fff;
+}
+.wp-playlist-dark .munsa-mejs-container.mejs-container .mejs-controls .mejs-time-rail .mejs-time-float,
+.wp-playlist-dark .munsa-mejs-container.mejs-container .mejs-controls .mejs-time-rail .mejs-time-loaded,
+.wp-playlist-dark .munsa-mejs-container.mejs-container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+	background-color: #777;
+}
+
 
 /*--------------------------------------------------------------
 15.1 Captions
