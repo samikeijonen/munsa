@@ -2,13 +2,13 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Munsa 1.0.1\n"
+"Project-Id-Version: Munsa 1.0.2\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
 "POT-Creation-Date: 2015-06-12 21:51:31+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-12-01 12:03+0200\n"
+"PO-Revision-Date: 2015-12-11 11:45+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "X-Generator: Poedit 1.8.6\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "﻿Ups, siden du prøver at tilgå findes ikke"
+msgstr "﻿Ups! Siden du prøver at tilgå findes ikke."
 
 #: 404.php:21
 msgid ""
@@ -25,7 +25,7 @@ msgid ""
 "below or a search?"
 msgstr ""
 "Der ser ikke ud til at være fundet noget her. Prøv eventuelt et af linkene "
-"herunder, eller søg."
+"herunder eller søg."
 
 #: 404.php:30
 msgid "Most Used Categories"
@@ -66,45 +66,47 @@ msgstr "Understøttet af %s"
 
 #: footer.php:42
 msgid "Theme: %1$s by %2$s."
-msgstr "Tema: %1$s af %2$s"
+msgstr "Layout: %1$s by %2$s."
 
 #: footer.php:51
 msgid "Back to top"
 msgstr "Tilbage til toppen"
 
-#: functions.php:59 menus/menu-primary.php:13
+#: functions.php:68 menus/menu-primary.php:13
 msgid "Primary Menu"
 msgstr "Primær Menu"
 
-#: functions.php:60
+#: functions.php:69
 msgid "Social Links Menu"
 msgstr "Sociale Links Menu"
 
-#: functions.php:126
+#: functions.php:135
 msgid ""
 "The main sidebar. It is displayed on the right side of the page as off "
 "canvas sidebar."
 msgstr ""
+"Den overordnede sidekolonne. Den vises til højre som en sidekolonne, der "
+"foldes ud oven på siden."
 
-#: functions.php:136
+#: functions.php:145
 msgid "A sidebar located in the footer of the site."
 msgstr "En sidekolonne i bunden af websitet."
 
-#: functions.php:222 menus/menu-primary.php:11
+#: functions.php:231 menus/menu-primary.php:11
 msgid "Menu"
 msgstr ""
 
-#: functions.php:223 functions.php:225 menus/menu-primary.php:15
+#: functions.php:232 functions.php:234 menus/menu-primary.php:15
 #: sidebar-primary.php:16
 msgid "Close"
 msgstr "Luk"
 
-#: functions.php:224 sidebar-primary.php:11
+#: functions.php:233 sidebar-primary.php:11
 msgid "Info"
 msgstr "Mere"
 
 #. Translators: The %s is the post title shown to screen readers.
-#: functions.php:294
+#: functions.php:303
 msgid "Continue reading %s"
 msgstr "Læs videre %s"
 
@@ -122,13 +124,13 @@ msgstr "Søgeresultater for &#8220;%s&#8221;"
 
 #. Template Name of the plugin/theme
 msgid "Contact Info"
-msgstr ""
+msgstr "﻿Kontakt Info"
 
 #: inc/customizer/contact.php:13
 msgid ""
 "Contact Info will be displayed in Contact Info and Front Page Templates."
 msgstr ""
-"Kontakt Info vil blive vist på Contact Info og Front Page skabelonerne."
+"Kontakt Info vil blive vist på Kontakt Info og Forreste Side skabelonerne."
 
 #: inc/customizer/contact.php:32
 msgid "Email"
@@ -156,20 +158,21 @@ msgstr "Anden info f.eks. CVR nummer"
 
 #: inc/customizer/contact.php:133 inc/customizer/social-menu.php:31
 msgid "Hide from Front Page Template"
-msgstr "Skjul på Front Page skabelon"
+msgstr "Skjul på Forreste Side Skabelon"
 
 #: inc/customizer/contact.php:134
 msgid "Check this if you want to hide contact info from Front Page Template."
-msgstr "Marker denne hvis du vil skjule kontakt info på Front Page skabelonen."
+msgstr ""
+"Marker denne hvis du vil skjule kontakt info på Forreste Side Skabelonen."
 
 #: inc/customizer/contact.php:154
 msgid "Hide from Contact Page Template"
-msgstr "Skjul på Contact Page skabelonen"
+msgstr "Skjul på Kontakt Side Skabelonen"
 
 #: inc/customizer/contact.php:155
 msgid "Check this if you want to hide contact info from Contact Page Template."
 msgstr ""
-"Marker denne hvis du vil skjule kontakt info på Contact Page skabelonen."
+"Marker denne hvis du vil skjule kontakt info på Kontakt Side Skabelonen."
 
 #: inc/customizer/footer.php:12
 msgid "Footer"
@@ -185,19 +188,19 @@ msgstr "Erstat standard Sidefod tekst med din egen tekst."
 
 #: inc/customizer/footer.php:52
 msgid "Hide Footer Text"
-msgstr "Skjul Sidefod tekst"
+msgstr "Skjul Sidefod Tekst"
 
 #: inc/customizer/footer.php:53
 msgid "Check this if you want to hide Footer text."
-msgstr "Marker denne hvis du ønsker at skjule Sidefod tekst."
+msgstr "Marker denne hvis du vil skjule Sidefod tekst."
 
 #. Template Name of the plugin/theme
 msgid "Front Page"
-msgstr ""
+msgstr "Forreste Side"
 
 #: inc/customizer/front-page.php:13
 msgid "Select featured pages that will be displayed in Front Page Template."
-msgstr "Vælg fremhævede sider, som vil blive vist på Front Page skabelonen."
+msgstr "Vælg fremhævede sider, som vil blive vist på Forreste Side Skabelonen."
 
 #. Translators: %s stands for number. For example Select page 1.
 #: inc/customizer/front-page.php:43
@@ -224,23 +227,24 @@ msgstr "Blog URL tekst"
 #: inc/customizer/social-menu.php:12 menus/menu-social.php:11
 #: menus/menu-social.php:12
 msgid "Social Menu"
-msgstr ""
+msgstr "Social Menu"
 
 #: inc/customizer/social-menu.php:32
 msgid "Check this if you want to hide Social Menu from Front Page Template."
-msgstr "Marker denne hvis du vil skjule Social Menu på Front Page skabelonen."
+msgstr ""
+"Marker denne hvis du vil skjule Social Menu på Forreste Side Skabelonen."
 
 #: inc/customizer/social-menu.php:52
 msgid "Hide from Full Background Image Template"
-msgstr "Skjul på Full Background Image skabelonen"
+msgstr "Skjul på Fuld Baggrund Billede Skabelonen"
 
 #: inc/customizer/social-menu.php:53
 msgid ""
 "Check this if you want to hide Social Menu info from Full Background Image "
 "Template."
 msgstr ""
-"Marker denne hvis du ønsker at skjule Social Menu info på Full Background "
-"Image skabelonen."
+"Marker denne hvis du vil skjule Social Menu info på Fuld Baggrund Billede "
+"Skabelonen."
 
 #: inc/customizer.php:19
 msgid "Theme Settings"
@@ -279,8 +283,8 @@ msgid ""
 "Set Front Page Template content in the Customizer. Or <a href=\"%1$s"
 "\">publish your first post here</a>."
 msgstr ""
-"Indstil Front Page skabelonen i Customizeren. Eller <a href=\"%1$s\">udgiv "
-"dit første indlæg her</a>."
+"Indstil Forreste Side Skabelonen i Customizeren. Eller <a href=\"%1$s"
+"\">udgiv din første artikel her</a>."
 
 #: pages/featured-image-left.php:30 pages/featured-image-right.php:30
 #: template-parts/content-audio.php:27 template-parts/content-gallery.php:27
@@ -295,11 +299,11 @@ msgstr "Rul ned til Indhold"
 
 #: search.php:15
 msgid "Search Results for: %s"
-msgstr "Søge resultater for: %s"
+msgstr "Søgeresultater for: %s"
 
 #: single.php:26
 msgid "Next"
-msgstr "Næste"
+msgstr "Næste:"
 
 #: single.php:27
 msgid "Next post:"
@@ -311,7 +315,7 @@ msgstr "Forrige"
 
 #: single.php:30
 msgid "Previous post:"
-msgstr "Forrige artikel"
+msgstr "Forrige artikel:"
 
 #. Translators: #%s means text before category or tag.
 #: template-parts/content-audio.php:39 template-parts/content-audio.php:40
@@ -338,7 +342,8 @@ msgstr "﻿Intet Fundet"
 #: template-parts/content-none.php:22
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Klar til at udgive dit første indlæg? <a href=\"%1$s\">Begynd her</a>."
+msgstr ""
+"Klar til at udgive din første artikel? <a href=\"%1$s\">Begynd her</a>."
 
 #: template-parts/content-none.php:27
 msgid ""
@@ -437,8 +442,9 @@ msgid ""
 "Updating this theme will lose any customizations you have made. 'Cancel' to "
 "stop, 'OK' to update."
 msgstr ""
-"Opdatering af dette tema betyder, at du mister dine personlige ændringer. "
-"'Annuller' for at stoppe, 'OK' for at opdatere."
+"Opdatering af dette tema betyder, at du mister dine personlige ændringer "
+"(dog ikke såfremt du bruger et under tema - child theme). 'Annuller' for at "
+"stoppe, 'OK' for at opdatere."
 
 #: theme-updater/theme-updater.php:50
 msgid ""
@@ -463,6 +469,8 @@ msgid ""
 "Munsa is a minimal theme for creative people like photobloggers and artists. "
 "It has a clean and fresh responsive design."
 msgstr ""
+"Munsa er et minimalistisk tema til kreative mennesker som f.eks.foto "
+"bloggere og artister. Det har et rent og friskt responsivt design."
 
 #. Author of the plugin/theme
 msgid "Sami Keijonen"
@@ -474,19 +482,19 @@ msgstr ""
 
 #. Template Name of the plugin/theme
 msgid "Child Pages"
-msgstr ""
+msgstr "Under Sider"
 
 #. Template Name of the plugin/theme
 msgid "Featured Image on the Left"
-msgstr ""
+msgstr "Fremhævet Billede til Venstre"
 
 #. Template Name of the plugin/theme
 msgid "Featured Image on the Right"
-msgstr ""
+msgstr "Fremhævet Billede til Højre"
 
 #. Template Name of the plugin/theme
 msgid "Full Background Image"
-msgstr ""
+msgstr "Fuld Baggrund Billede"
 
 #: comment.php:25
 msgctxt "%1%s is for comment date"
@@ -497,23 +505,23 @@ msgstr ""
 msgctxt "comments title"
 msgid "One comment"
 msgid_plural "%1$s comments"
-msgstr[0] "En Kommentar"
+msgstr[0] "En kommentar"
 msgstr[1] "%1$s kommentarer"
 
-#: functions.php:125
+#: functions.php:134
 msgctxt "sidebar"
 msgid "Primary"
-msgstr "Primær (sidekolonne)"
+msgstr "Primær"
 
-#: functions.php:135
+#: functions.php:144
 msgctxt "sidebar"
 msgid "Footer"
-msgstr "Sidefod (sidekolonne)"
+msgstr "Sidefod"
 
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:165
+#: functions.php:174
 msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr ""
@@ -521,7 +529,7 @@ msgstr ""
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:170
+#: functions.php:179
 msgctxt "Montserrat font: on or off"
 msgid "on"
 msgstr ""
