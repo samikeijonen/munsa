@@ -23,7 +23,7 @@ The following recources are used in `style.css` for styling elements.
 * [Animate.css](http://daneden.me/animate) by Daniel Eden - Licensed under the [MIT License](http://opensource.org/licenses/MIT).
 * [SpinKit](https://github.com/tobiasahlin/SpinKit) by Tobias Ahlin - Licensed under the [MIT License](http://opensource.org/licenses/MIT).
 
-The following images are are used in `screenshot.png`. They are all licended under [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/).
+The following images are are used in `screenshot.png`. They are all licensed under [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/).
 
 * [Image 1](http://kaboompics.com/one_foto/1012/white-laptop-female-hand-note-pen-phone-desk#)
 * [Image 2](https://www.pexels.com/photo/people-sport-skateboard-skateboarder-2639/)
