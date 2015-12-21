@@ -35,6 +35,13 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.0.3 - December 21, 2015
+
+* Add missing social icon links in Social menu.
+* Fix Contact Info page template styling issue.
+* Better styles for dark playlist and video.
+* Adjust styles for headings.
+
 ### Version 1.0.2 - December 11, 2015
 
 * Minify CSS and JS files for faster loading times.
