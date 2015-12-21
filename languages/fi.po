@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Munsa 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-12-01 09:48+0200\n"
-"PO-Revision-Date: 2015-12-01 09:49+0200\n"
+"POT-Creation-Date: 2015-12-21 11:10+0200\n"
+"PO-Revision-Date: 2015-12-21 11:10+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -72,15 +72,15 @@ msgstr "Teeman %1$s on tehnyt %2$s."
 msgid "Back to top"
 msgstr "Takaisin ylös"
 
-#: functions.php:59 menus/menu-primary.php:13
+#: functions.php:68 menus/menu-primary.php:13
 msgid "Primary Menu"
 msgstr "Päävalikko"
 
-#: functions.php:60
+#: functions.php:69
 msgid "Social Links Menu"
 msgstr "Somevalikko"
 
-#: functions.php:126
+#: functions.php:135
 msgid ""
 "The main sidebar. It is displayed on the right side of the page as off "
 "canvas sidebar."
@@ -88,25 +88,25 @@ msgstr ""
 "Päävimpainalue. Tähän liitetyt vimpaimet näkyvät sisällön oikealla puolella "
 "(off-canvas)."
 
-#: functions.php:136
+#: functions.php:145
 msgid "A sidebar located in the footer of the site."
 msgstr "Tähän liitetyt vimpaimet näkyvät sisällön alapuolella."
 
-#: functions.php:222 menus/menu-primary.php:11
+#: functions.php:231 menus/menu-primary.php:11
 msgid "Menu"
 msgstr "Menu"
 
-#: functions.php:223 functions.php:225 menus/menu-primary.php:15
+#: functions.php:232 functions.php:234 menus/menu-primary.php:15
 #: sidebar-primary.php:16
 msgid "Close"
 msgstr "Sulje"
 
-#: functions.php:224 sidebar-primary.php:11
+#: functions.php:233 sidebar-primary.php:11
 msgid "Info"
 msgstr "Info"
 
 #. Translators: The %s is the post title shown to screen readers.
-#: functions.php:294
+#: functions.php:303
 msgid "Continue reading %s"
 msgstr "Jatka lukemista %s"
 
@@ -502,12 +502,12 @@ msgid_plural "%1$s comments"
 msgstr[0] "Yksi kommentti"
 msgstr[1] "%1$s kommenttia"
 
-#: functions.php:125
+#: functions.php:134
 msgctxt "sidebar"
 msgid "Primary"
 msgstr "Sivupalkki"
 
-#: functions.php:135
+#: functions.php:144
 msgctxt "sidebar"
 msgid "Footer"
 msgstr "Alapalkki"
@@ -515,7 +515,7 @@ msgstr "Alapalkki"
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:165
+#: functions.php:174
 msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr "alle"
@@ -523,7 +523,7 @@ msgstr "alle"
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:170
+#: functions.php:179
 msgctxt "Montserrat font: on or off"
 msgid "on"
 msgstr ""
