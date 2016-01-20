@@ -54,7 +54,7 @@ class Munsa_Contact_Info_Widget extends WP_Widget {
 		echo $sidebar['before_widget'];
 
 		// Output the widget title.
-		if ( $instance['title'] ) {
+		if ( isset( $instance['title'] ) && $instance['title'] ) {
 			echo $sidebar['before_title'] . apply_filters( 'widget_title',  $instance['title'], $instance, $this->id_base ) . $sidebar['after_title'];
 		}
 		
