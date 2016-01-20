@@ -1,14 +1,14 @@
-# Copyright (C) 2015 Sami Keijonen
+# Copyright (C) 2016 Sami Keijonen
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Munsa 1.0.3\n"
+"Project-Id-Version: Munsa 1.0.4\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
 "POT-Creation-Date: 2015-06-12 21:51:31+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.5.0\n"
@@ -190,28 +190,54 @@ msgid "Front Page"
 msgstr ""
 
 #: inc/customizer/front-page.php:13
-msgid "Select featured pages that will be displayed in Front Page Template."
+msgid ""
+"In this section you can modify Front Page Template: Set content background "
+"and color, select featured pages, and enter link and text to your blog."
 msgstr ""
 
-#: inc/customizer/front-page.php:43
+#: inc/customizer/front-page.php:33
+msgid "Content Background Color"
+msgstr ""
+
+#: inc/customizer/front-page.php:34
+msgid "Set Content Background Color for Front Page Template."
+msgstr ""
+
+#: inc/customizer/front-page.php:56
+msgid "Content Color Opacity"
+msgstr ""
+
+#: inc/customizer/front-page.php:57
+msgid "Set Content Background Opacity for Front Page Template."
+msgstr ""
+
+#: inc/customizer/front-page.php:80
+msgid "Content Color"
+msgstr ""
+
+#: inc/customizer/front-page.php:81
+msgid "Set Content Color for Front Page Template."
+msgstr ""
+
+#: inc/customizer/front-page.php:111
 #. Translators: %s stands for number. For example Select page 1.
 msgid "Select page %s"
 msgstr ""
 
-#: inc/customizer/front-page.php:63 misc/content-featured-areas.php:69
+#: inc/customizer/front-page.php:131 misc/content-featured-areas.php:69
 #: misc/content-featured-areas.php:74 misc/content-featured-areas.php:75
 msgid "Articles"
 msgstr ""
 
-#: inc/customizer/front-page.php:72
+#: inc/customizer/front-page.php:140
 msgid "Blog title"
 msgstr ""
 
-#: inc/customizer/front-page.php:92
+#: inc/customizer/front-page.php:160
 msgid "Blog URL"
 msgstr ""
 
-#: inc/customizer/front-page.php:112
+#: inc/customizer/front-page.php:180
 msgid "Blog URL text"
 msgstr ""
 
@@ -260,9 +286,9 @@ msgstr ""
 
 #: index.php:50 pages/featured-image-left.php:32
 #: pages/featured-image-right.php:32 search.php:36
-#: template-parts/content-audio.php:29 template-parts/content-gallery.php:29
-#: template-parts/content-page.php:28 template-parts/content-video.php:29
-#: template-parts/content.php:31
+#: template-parts/content-audio.php:31 template-parts/content-gallery.php:31
+#: template-parts/content-page.php:30 template-parts/content-video.php:31
+#: template-parts/content.php:33
 msgid "Page"
 msgstr ""
 
@@ -303,21 +329,21 @@ msgstr ""
 msgid "Previous post:"
 msgstr ""
 
-#: template-parts/content-audio.php:39 template-parts/content-audio.php:40
-#: template-parts/content-gallery.php:39 template-parts/content-gallery.php:40
-#: template-parts/content-video.php:39 template-parts/content-video.php:40
-#: template-parts/content.php:41 template-parts/content.php:42
+#: template-parts/content-audio.php:41 template-parts/content-audio.php:42
+#: template-parts/content-gallery.php:41 template-parts/content-gallery.php:42
+#: template-parts/content-video.php:41 template-parts/content-video.php:42
+#: template-parts/content.php:43 template-parts/content.php:44
 #. Translators: #%s means text before category or tag.
 msgid "#%s"
 msgstr ""
 
-#: template-parts/content-audio.php:39 template-parts/content-gallery.php:39
-#: template-parts/content-video.php:39 template-parts/content.php:41
+#: template-parts/content-audio.php:41 template-parts/content-gallery.php:41
+#: template-parts/content-video.php:41 template-parts/content.php:43
 msgid "Categories"
 msgstr ""
 
-#: template-parts/content-audio.php:40 template-parts/content-gallery.php:40
-#: template-parts/content-video.php:40 template-parts/content.php:42
+#: template-parts/content-audio.php:42 template-parts/content-gallery.php:42
+#: template-parts/content-video.php:42 template-parts/content.php:44
 msgid "Tags"
 msgstr ""
 

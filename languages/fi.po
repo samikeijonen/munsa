@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Munsa 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-12-21 11:10+0200\n"
-"PO-Revision-Date: 2015-12-21 11:10+0200\n"
+"POT-Creation-Date: 2016-01-20 09:17+0200\n"
+"PO-Revision-Date: 2016-01-20 09:17+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -196,28 +196,56 @@ msgid "Front Page"
 msgstr "Etusivu"
 
 #: inc/customizer/front-page.php:13
-msgid "Select featured pages that will be displayed in Front Page Template."
-msgstr "Valitse sivut, jotka haluat näkyvän etusivulle nostettuna."
+msgid ""
+"In this section you can modify Front Page Template: Set content background "
+"and color, select featured pages, and enter link and text to your blog."
+msgstr ""
+"Tässä osiossa voit muokata Etusivu-sivupohjaa. Aseta sisällön taustaväri ja "
+"väri, valitse näytettävät sivut ja kirjoita blogin linkki ja teksti."
+
+#: inc/customizer/front-page.php:33
+msgid "Content Background Color"
+msgstr "Sisällön taustaväri"
+
+#: inc/customizer/front-page.php:34
+msgid "Set Content Background Color for Front Page Template."
+msgstr "Aseta sisällön taustaväri Etusivu-sivupohjassa."
+
+#: inc/customizer/front-page.php:56
+msgid "Content Color Opacity"
+msgstr "Sisällön taustavärin läpinäkyvyys"
+
+#: inc/customizer/front-page.php:57
+msgid "Set Content Background Opacity for Front Page Template."
+msgstr "Aseta sisällön taustavärin läpinäkyvyys Etusivu-sivupohjassa."
+
+#: inc/customizer/front-page.php:80
+msgid "Content Color"
+msgstr "Sisällön väri"
+
+#: inc/customizer/front-page.php:81
+msgid "Set Content Color for Front Page Template."
+msgstr "Aseta sisällön väri Etusivu-sivupohjassa."
 
 #. Translators: %s stands for number. For example Select page 1.
-#: inc/customizer/front-page.php:43
+#: inc/customizer/front-page.php:111
 msgid "Select page %s"
 msgstr "Valitse sivu %s"
 
-#: inc/customizer/front-page.php:63 misc/content-featured-areas.php:69
+#: inc/customizer/front-page.php:131 misc/content-featured-areas.php:69
 #: misc/content-featured-areas.php:74 misc/content-featured-areas.php:75
 msgid "Articles"
 msgstr "Artikkelit"
 
-#: inc/customizer/front-page.php:72
+#: inc/customizer/front-page.php:140
 msgid "Blog title"
 msgstr "Blogisivun otsikko"
 
-#: inc/customizer/front-page.php:92
+#: inc/customizer/front-page.php:160
 msgid "Blog URL"
 msgstr "Blogisivun URL"
 
-#: inc/customizer/front-page.php:112
+#: inc/customizer/front-page.php:180
 msgid "Blog URL text"
 msgstr "Blogisivun URL-teksti"
 
@@ -268,9 +296,9 @@ msgstr "Seuraava sivu"
 
 #: index.php:50 pages/featured-image-left.php:32
 #: pages/featured-image-right.php:32 search.php:36
-#: template-parts/content-audio.php:29 template-parts/content-gallery.php:29
-#: template-parts/content-page.php:28 template-parts/content-video.php:29
-#: template-parts/content.php:31
+#: template-parts/content-audio.php:31 template-parts/content-gallery.php:31
+#: template-parts/content-page.php:30 template-parts/content-video.php:31
+#: template-parts/content.php:33
 msgid "Page"
 msgstr "Sivu"
 
@@ -314,20 +342,20 @@ msgid "Previous post:"
 msgstr "Edellinen uutinen:"
 
 #. Translators: #%s means text before category or tag.
-#: template-parts/content-audio.php:39 template-parts/content-audio.php:40
-#: template-parts/content-gallery.php:39 template-parts/content-gallery.php:40
-#: template-parts/content-video.php:39 template-parts/content-video.php:40
-#: template-parts/content.php:41 template-parts/content.php:42
+#: template-parts/content-audio.php:41 template-parts/content-audio.php:42
+#: template-parts/content-gallery.php:41 template-parts/content-gallery.php:42
+#: template-parts/content-video.php:41 template-parts/content-video.php:42
+#: template-parts/content.php:43 template-parts/content.php:44
 msgid "#%s"
 msgstr "#%s"
 
-#: template-parts/content-audio.php:39 template-parts/content-gallery.php:39
-#: template-parts/content-video.php:39 template-parts/content.php:41
+#: template-parts/content-audio.php:41 template-parts/content-gallery.php:41
+#: template-parts/content-video.php:41 template-parts/content.php:43
 msgid "Categories"
 msgstr "Kategoriat"
 
-#: template-parts/content-audio.php:40 template-parts/content-gallery.php:40
-#: template-parts/content-video.php:40 template-parts/content.php:42
+#: template-parts/content-audio.php:42 template-parts/content-gallery.php:42
+#: template-parts/content-video.php:42 template-parts/content.php:44
 msgid "Tags"
 msgstr "Avainsanat"
 
@@ -568,3 +596,6 @@ msgstr "Sivupalkki alhaalla"
 msgctxt "Sidebar aria label"
 msgid "Primary Sidebar"
 msgstr "Sivupalkki"
+
+#~ msgid "Select featured pages that will be displayed in Front Page Template."
+#~ msgstr "Valitse sivut, jotka haluat näkyvän etusivulle nostettuna."
