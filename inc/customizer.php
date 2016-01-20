@@ -78,3 +78,59 @@ function munsa_sanitize_textarea( $setting, $object ) {
 	return $setting;
 	
 }
+
+/**
+ * Check if we're on Front Page template.
+ *
+ * @since  1.04
+ *
+ * @return boolean.
+ */
+function munsa_is_front_page_template() {
+	return is_page_template( 'pages/front-page.php' );
+}
+
+/**
+ * Enqueues front-end CSS from the Customizer.
+ *
+ * @since 1.0.4
+ * @see   wp_add_inline_style()
+ */
+function munsa_customizer_css() {
+	
+	// Get content background color, opacity and color.
+	$content_bg_color             = munsa_sanitize_hex_color( get_theme_mod( 'content_background_color', apply_filters( 'munsa_content_bg_color', '#000000' ) ) );
+	$content_bg_color_opacity     = absint( get_theme_mod( 'content_background_color_opacity', absint( apply_filters( 'munsa_content_bg_opacity', 80 ) ) ) );
+	$content_bg_color_opacity_dec = $content_bg_color_opacity / 100;
+	$content_color                = munsa_sanitize_hex_color( get_theme_mod( 'content_color', apply_filters( 'munsa_content_color', '#ffffff' ) ) );
+	
+	// Convert hex color to rgba.
+	$content_bg_color_rgb = munsa_hex2rgb( $content_bg_color );
+	
+	// Content bg styles.
+	$bg_color_css = '';
+	
+	if ( '#000000' != $content_bg_color || 80 !== $content_bg_color_opacity || '#ffffff' != $content_color ) {
+			
+		$bg_color_css .= "
+			.featured-content .entry-outer {
+				background-color: rgba( {$content_bg_color_rgb['red'] }, {$content_bg_color_rgb['green']}, {$content_bg_color_rgb['blue']}, {$content_bg_color_opacity_dec});
+			}";
+			
+		$bg_color_css .= "
+			.featured-content .entry-title,
+			.featured-content .entry-outer,
+			.featured-content .entry-outer a,
+			.featured-content .entry-outer a:visited {
+				color: {$content_color};
+			}";
+				
+	}
+	
+	// Add inline styles.
+	if ( ! empty( $bg_color_css ) ) {
+		wp_add_inline_style( 'munsa-style', $bg_color_css );
+	}
+	
+}
+add_action( 'wp_enqueue_scripts', 'munsa_customizer_css' );
