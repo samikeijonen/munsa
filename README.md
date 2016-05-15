@@ -34,6 +34,10 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.0.5 - May 15, 2016
+
+* Use WordPress native logo system.
+
 ### Version 1.0.4 - January 20, 2016
 
 * Better keyboard navigation support inside full screen menu and sidebar.

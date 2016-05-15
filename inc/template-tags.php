@@ -251,6 +251,21 @@ function munsa_featured_pages() {
 }
 
 /**
+ * Displays the optional custom logo.
+ *
+ * Does nothing if the custom logo is not available.
+ *
+ * @since 1.0.5.
+ */
+function munsa_the_custom_logo() {
+	
+	if ( function_exists( 'the_custom_logo' ) ) {
+		the_custom_logo();
+	}
+	
+}
+
+/**
  * Returns true if a blog has more than 1 category.
  *
  * @return bool
