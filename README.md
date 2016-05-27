@@ -34,6 +34,12 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 
 ## Changelog
 
+### Version 1.0.6 - May 27, 2016
+
+* Remove aria-hidden="true" from focusable elements.
+* Fix accessibility issues on focus and hover styles.
+* Fix accessibility issues on dark grey links to have enough color contrast.
+
 ### Version 1.0.5 - May 15, 2016
 
 * Use WordPress native logo system.
