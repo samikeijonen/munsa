@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Munsa 1.0.5\n"
+"Project-Id-Version: Munsa 1.0.6\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
 "POT-Creation-Date: 2015-06-12 21:51:31+0000\n"
 "MIME-Version: 1.0\n"
