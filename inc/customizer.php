@@ -82,7 +82,7 @@ function munsa_sanitize_textarea( $setting, $object ) {
 /**
  * Check if we're on Front Page template.
  *
- * @since  1.04
+ * @since  1.0.4
  *
  * @return boolean.
  */
