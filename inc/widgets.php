@@ -58,8 +58,14 @@ class Munsa_Contact_Info_Widget extends WP_Widget {
 			echo $sidebar['before_title'] . apply_filters( 'widget_title',  $instance['title'], $instance, $this->id_base ) . $sidebar['after_title'];
 		}
 		
+		// Before contact info hook.
+		do_action( 'munsa_before_contact_info' );
+		
 		// Display Contact Info.
 		munsa_contact_info();
+		
+		// After contact info hook.
+		do_action( 'munsa_after_contact_info' );
 
 		// Close the after widget HTML.
 		echo $sidebar['after_widget'];
