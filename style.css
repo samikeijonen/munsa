@@ -4,7 +4,7 @@ Theme URI: https://foxland.fi/downloads/munsa/
 Author: Sami Keijonen
 Author URI: https://foxland.fi/
 Description: Munsa is a minimal theme for creative people like photobloggers and artists. It has a clean and fresh responsive design.
-Version: 1.0.6
+Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: munsa
@@ -1570,6 +1570,7 @@ a:active {
 	width: 1px;
 	overflow: hidden;
 	text-transform: uppercase;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 
 .screen-reader-text:focus {
