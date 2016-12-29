@@ -39,7 +39,7 @@
 					<div class="site-info">
 						<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'munsa' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'munsa' ), 'WordPress' ); ?></a>
 						<span class="sep"> | </span>
-						<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'munsa' ), 'Munsa', '<a href="https://foxland.fi/" rel="designer">Foxland</a>' ); ?>
+						<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'munsa' ), 'Munsa', '<a href="https://foxland.fi/">Foxland</a>' ); ?>
 					</div><!-- .site-info -->
 					
 				<?php endif; ?>
