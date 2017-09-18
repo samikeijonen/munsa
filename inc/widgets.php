@@ -17,8 +17,9 @@ class Munsa_Contact_Info_Widget extends WP_Widget {
 
 		// Set up the widget options.
 		$widget_options = array(
-			'classname'   => 'munsa-contact-info',
-			'description' => esc_html__( 'Display Contact Info from the Customizer.', 'munsa' )
+			'classname'                   => 'munsa-contact-info',
+			'description'                 => esc_html__( 'Display Contact Info from the Customizer.', 'munsa' ),
+			'customize_selective_refresh' => true,
 		);
 
 		// Set up the widget control options.
@@ -43,7 +44,7 @@ class Munsa_Contact_Info_Widget extends WP_Widget {
 	 * @since 1.0.0
 	 */
 	function widget( $sidebar, $instance ) {
-		
+
 		// Bail if there is no contact info.
 		$munsa_has_contact_info = munsa_has_contact_info();
 		if ( ! $munsa_has_contact_info ) {
@@ -57,13 +58,13 @@ class Munsa_Contact_Info_Widget extends WP_Widget {
 		if ( isset( $instance['title'] ) && $instance['title'] ) {
 			echo $sidebar['before_title'] . apply_filters( 'widget_title',  $instance['title'], $instance, $this->id_base ) . $sidebar['after_title'];
 		}
-		
+
 		// Before contact info hook.
 		do_action( 'munsa_before_contact_info' );
-		
+
 		// Display Contact Info.
 		munsa_contact_info();
-		
+
 		// After contact info hook.
 		do_action( 'munsa_after_contact_info' );
 
@@ -77,7 +78,7 @@ class Munsa_Contact_Info_Widget extends WP_Widget {
 	 * @since 1.0.0
 	 */
 	function update( $new_instance, $old_instance ) {
-		
+
 		// Strip tags from elements that don't need them.
 		$instance['title'] = strip_tags( $new_instance['title'] );
 
@@ -100,9 +101,9 @@ class Munsa_Contact_Info_Widget extends WP_Widget {
 		</p>
 
 		<div style="clear:both;">&nbsp;</div>
-		
+
 	<?php
-	
+
 	}
 
 }
