@@ -335,9 +335,8 @@ th {
 	content: '\f476';
 	margin-right: 0;
 	margin-bottom: -2px;
-	-webkit-transform: rotate(90deg);
-	    -ms-transform: rotate(90deg);
-	        transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	    transform: rotate(90deg);
 }
 
 .open .menu-sidebar-toggle:before {
@@ -1101,12 +1100,8 @@ a:active {
 .js .main-navigation ul.menu,
 .js .sidebar-primary .widget {
 	opacity: 0;
-	-webkit-transform: translateY(-25%) rotateX(35deg);
-	        transform: translateY(-25%) rotateX(35deg);
-	transition: -webkit-transform 300ms, opacity 300ms;
-	transition: opacity 300ms, -webkit-transform 300ms;
+	transform: translateY(-25%) rotateX(35deg);
 	transition: transform 300ms, opacity 300ms;
-	transition: transform 300ms, opacity 300ms, -webkit-transform 300ms;
 }
 .js .sidebar-primary .widget:first-child {
 	padding-top: 4em;
@@ -1120,8 +1115,7 @@ a:active {
 .js .main-navigation-open .main-navigation ul.menu,
 .js .sidebar-primary-open .sidebar-primary .widget {
 	opacity: 1;
-	-webkit-transform: translateY(0%) rotateX(0deg);
-	        transform: translateY(0%) rotateX(0deg);
+	transform: translateY(0%) rotateX(0deg);
 }
 
 /* Toggle menu and sidebar. */
@@ -1770,12 +1764,10 @@ a:active {
 
 /* This is to make footer sticky at the bottom when there is not much content. */
 .site {
-	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	    flex-direction: column;
 	min-height: 100vh;
 }
 .admin-bar .site {
@@ -1791,9 +1783,8 @@ a:active {
 }
 
 .site-content {
-	-webkit-flex: 1 0 auto;
-	    -ms-flex: 1 0 auto;
-	        flex: 1 0 auto;
+	-ms-flex: 1 0 auto;
+	    flex: 1 0 auto;
 }
 
 /* Paddings and widths. */
@@ -2017,7 +2008,6 @@ a:active {
 }
 .featured-pages-wrapper .entry .entry-bg-image {
    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter ….3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 	padding: 30% 0;
 	position: relative;
@@ -2031,11 +2021,9 @@ a:active {
 .featured-pages-wrapper  a:focus .entry-bg-image,
 .featured-pages-wrapper  a:active .entry-bg-image {
 	filter: none;
-	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
-	-webkit-transform: scale(1.05);
-	    -ms-transform: scale(1.05);
-	        transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	    transform: scale(1.05);
 }
 
 .entry-bg-image > .entry-header {
@@ -2043,9 +2031,8 @@ a:active {
     left: 50%;
     top: 50%;
     text-align: center;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     transition: all 0.3s ease-in-out;
 	width: 90%;
 }
@@ -2114,12 +2101,10 @@ a:active {
 .comment-navigation .nav-links ,
 .footer-wrap,
 .sidebar-footer > .wrap {
-	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .page-template-featured-image-right .post-thumbnail,
@@ -2282,9 +2267,8 @@ a:active {
 	
 	.blog-posts-wrapper .entry > .entry-header,
 	.child-page .entry-child {
-		-webkit-flex: 1;
-		    -ms-flex: 1;
-		        flex: 1; /* Take the rest of the width. */
+		-ms-flex: 1;
+		    flex: 1; /* Take the rest of the width. */
 	}
 	
 	.child-page .entry-child {
@@ -2323,9 +2307,8 @@ a:active {
 	.page-template-contact-info .entry .contact-info,
 	.blog .entry:nth-child(2n) .entry-thumbnail,
 	.archive .entry:nth-child(2n) .entry-thumbnail {
-		-webkit-order: 2;
-		    -ms-flex-order: 2;
-		        order: 2;
+		-ms-flex-order: 2;
+		    order: 2;
 	}
 	
 	.blog .entry:nth-child(2n+1) .entry-thumbnail,
@@ -2452,7 +2435,6 @@ a:active {
 @media screen and (min-width: 30em) {
 	
 	.comment-content {
-		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;
 	}
@@ -2818,9 +2800,7 @@ Copyright (c) 2015 Daniel Eden
 .scroll-to-content:hover::before,
 .scroll-to-content:active::before,
 .scroll-to-content:focus::before {
-	-webkit-animation-duration: 350ms;
 	animation-duration: 350ms;
-	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 }
 
@@ -2828,40 +2808,19 @@ Copyright (c) 2015 Daniel Eden
 .scroll-to-content:hover::before,
 .scroll-to-content:active::before,
 .scroll-to-content:focus::before {
-	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes pulse {
-  from {
-	-webkit-transform: scale3d(1, 1, 1);
-	transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-	-webkit-transform: scale3d(1.05, 1.05, 1.05);
-	transform: scale3d(1.05, 1.05, 1.05);
-  }
-
-  to {
-	-webkit-transform: scale3d(1, 1, 1);
-	transform: scale3d(1, 1, 1);
-  }
 }
 
 @keyframes pulse {
   from {
-	-webkit-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
   }
 
   50% {
-	-webkit-transform: scale3d(1.05, 1.05, 1.05);
 	transform: scale3d(1.05, 1.05, 1.05);
   }
 
   to {
-	-webkit-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
   }
 }
@@ -2870,18 +2829,7 @@ Copyright (c) 2015 Daniel Eden
 .scroll-to-content:hover::before,
 .scroll-to-content:active::before,
 .scroll-to-content:focus::before {
-	-webkit-animation-name: pulse;
 	animation-name: pulse;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-	opacity: 0;
-  }
-
-  to {
-	opacity: 1;
-  }
 }
 
 @keyframes fadeIn {
@@ -2895,51 +2843,23 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .fadeIn {
-	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
-}
-
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-	-webkit-transform: translate3d(0, -25%, 0);
-	transform: translate3d(0, -25%, 0);
-  }
-
-  to {
-	opacity: 1;
-	-webkit-transform: none;
-	transform: none;
-  }
 }
 
 @keyframes fadeInDown {
   from {
 	opacity: 0;
-	-webkit-transform: translate3d(0, -25%, 0);
 	transform: translate3d(0, -25%, 0);
   }
 
   to {
 	opacity: 1;
-	-webkit-transform: none;
 	transform: none;
   }
 }
 
 .fadeInDown {
-	-webkit-animation-name: fadeInDown;
 	animation-name: fadeInDown;
-}
-
-@-webkit-keyframes fadeOut {
-  from {
-	opacity: 1;
-  }
-
-  to {
-	opacity: 0;
-  }
 }
 
 @keyframes fadeOut {
@@ -2953,20 +2873,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .fadeOut {
-	-webkit-animation-name: fadeOut;
 	animation-name: fadeOut;
-}
-
-@-webkit-keyframes fadeOutUp {
-  from {
-	opacity: 1;
-  }
-
-  to {
-	opacity: 0;
-	-webkit-transform: translate3d(0, -20%, 0);
-	transform: translate3d(0, -20%, 0);
-  }
 }
 
 @keyframes fadeOutUp {
@@ -2976,13 +2883,11 @@ Copyright (c) 2015 Daniel Eden
 
   to {
 	opacity: 0;
-	-webkit-transform: translate3d(0, -20%, 0);
 	transform: translate3d(0, -20%, 0);
   }
 }
 
 .fadeOutUp {
-	-webkit-animation-name: fadeOutUp;
 	animation-name: fadeOutUp;
 }
 
@@ -2999,36 +2904,20 @@ Copyright (c) 2015 Daniel Eden
 	background-color: #000;
 	border-radius: 100%;
 	display: inline-block;
-    -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
 	animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
 }
 .sk-three-bounce .sk-bounce1 {
-	-webkit-animation-delay: -0.32s;
 	animation-delay: -0.32s;
 }
 .sk-three-bounce .sk-bounce2 {
-	-webkit-animation-delay: -0.16s;
 	animation-delay: -0.16s;
-}
-
-@-webkit-keyframes sk-three-bounce {
-	0%, 80%, 100% {
-	-webkit-transform: scale(0);
-		transform: scale(0);
-	}
-	40% {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	}
 }
 
 @keyframes sk-three-bounce {
 	0%, 80%, 100% {
-	-webkit-transform: scale(0);
 	transform: scale(0);
 	}
 	40% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
 	}
 }
