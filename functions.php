@@ -6,7 +6,7 @@
  *
  * @package Munsa
  */
- 
+
 /**
  * The current version of the theme.
  */
@@ -30,7 +30,7 @@ if ( ! function_exists( 'munsa_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function munsa_setup() {
-	
+
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
@@ -57,7 +57,7 @@ function munsa_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 1420, 9999, false );
-	
+
 	// Add custom image sizes.
 	add_image_size( 'munsa-medium', 920, 9999, false );
 	add_image_size( 'munsa-smaller', 125, 125, true );
@@ -79,7 +79,7 @@ function munsa_setup() {
 		'gallery',
 		'caption',
 	) );
-	
+
 	/*
 	 * Enable support for Post Formats.
 	 * See https://developer.wordpress.org/themes/functionality/post-formats/
@@ -90,25 +90,24 @@ function munsa_setup() {
 		'image',
 		'video',
 	) );
-	
+
 	// Add support for logo.
 	add_theme_support( 'custom-logo', array(
 		'height' => 192,
 		'width'  => 192,
 	) );
-	
+
 	// Add theme support for refresh widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
-	
+
 	// Add theme support for responsive videos.
 	add_theme_support( 'jetpack-responsive-videos' );
-	
+
 	// Add excerpt to pages.
 	add_post_type_support( 'page', 'excerpt' );
-	
+
 	// Add editor styles.
 	add_editor_style( array( 'css/editor-style.css', munsa_fonts_url() ) );
-	
 }
 endif; // munsa_setup
 add_action( 'after_setup_theme', 'munsa_setup' );
@@ -141,7 +140,7 @@ function munsa_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>'
 	);
-	
+
 	$sidebar_footer_args = array(
 		'id'            => 'footer',
 		'name'          => esc_html_x( 'Footer', 'sidebar', 'munsa' ),
@@ -151,7 +150,7 @@ function munsa_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>'
 	);
-	
+
 	// Register sidebars.
 	register_sidebar( $sidebar_primary_args );
 	register_sidebar( $sidebar_footer_args );
@@ -168,7 +167,7 @@ if ( ! function_exists( 'munsa_fonts_url' ) ) :
  * @return string Google fonts URL for the theme.
  */
 function munsa_fonts_url() {
-	
+
 	$fonts_url = '';
 	$fonts     = array();
 	$subsets   = 'latin,latin-ext';
@@ -210,24 +209,24 @@ add_action( 'wp_head', 'munsa_javascript_detection', 0 );
  * Enqueue scripts and styles.
  */
 function munsa_scripts() {
-	
+
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'munsa-fonts', munsa_fonts_url(), array(), null );
-	
+
 	// Add Genericons, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons/genericons.css', array(), '3.4' );
-	
+
 	// Enqueue parent theme styles if using child theme.
 	if ( is_child_theme() ) {
 		wp_enqueue_style( 'munsa-parent-style', trailingslashit( get_template_directory_uri() ) . 'style' . MUNSA_SUFFIX . '.css', array(), MUNSA_VERSION );
 	}
-	
+
 	// Enqueue active theme styles.
 	wp_enqueue_style( 'munsa-style', get_stylesheet_uri(), array(), munsa_theme_version() );
-	
+
 	// Enqueue smooth scroll.
 	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/js/smooth-scroll' . MUNSA_SUFFIX . '.js', array(), '20161229', true );
-	
+
 	// Enqueue theme scripts.
 	wp_enqueue_script( 'munsa-settings', get_template_directory_uri() . '/js/settings' . MUNSA_SUFFIX . '.js', array( 'jquery', 'smooth-scroll' ), '20161229', true );
 	wp_localize_script( 'munsa-settings', 'screenReaderText', array(
@@ -236,7 +235,7 @@ function munsa_scripts() {
 		'expandSidebar'   => esc_html__( 'Info', 'munsa' ),
 		'collapseSidebar' => esc_html__( 'Close', 'munsa' ),
 	) );
-	
+
 	// Enqueue skip link focus fix.
 	wp_enqueue_script( 'munsa-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix' . MUNSA_SUFFIX . '.js', array(), '20161229', true );
 
@@ -264,22 +263,22 @@ function munsa_theme_version() {
  * @return array
  */
 function munsa_post_class( $classes ) {
-	
+
 	// Check contact info.
 	$munsa_has_contact_info = munsa_has_contact_info();
-	
+
 	// Add 'has-contact-info' class to Contact Info page template if contact info have been set.
 	if ( is_page_template( 'pages/contact-info.php' ) && $munsa_has_contact_info && ! get_theme_mod( 'hide_from_contact_page' ) ) {
 		$classes[] = 'has-contact-info';
 	}
-	
+
 	// Add 'no-content' class to Contact Info page template if content is empty.
 	if ( is_page_template( 'pages/contact-info.php' ) && '' == trim( get_post_field( 'post_content', get_the_ID() ) ) ) {
 		$classes[] = 'no-content';
 	}
-    
+
     return $classes;
-	
+
 }
 add_filter( 'post_class', 'munsa_post_class' );
 
@@ -290,12 +289,12 @@ add_filter( 'post_class', 'munsa_post_class' );
  * @return array
  */
 function munsa_body_classes( $classes ) {
-	
+
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
 	}
-	
+
 	// Adds a class of primary menu or sidebar is active.
 	if ( has_nav_menu( 'primary' ) || is_active_sidebar( 'primary' ) ) {
 		$classes[] = 'primary-menu-sidebar-active';
@@ -364,11 +363,11 @@ function munsa_hex2rgb( $color ) {
  * @return string|void
  */
 function munsa_sanitize_hex_color( $color ) {
-	       
+
 	if ( '' === $color ) {
 		return '';
 	}
-	
+
 	// 3 or 6 hex digits, or the empty string.
 	if ( preg_match('|^#([A-Fa-f0-9]{3}){1,2}$|', $color ) ) {
 		return $color;
@@ -391,7 +390,7 @@ function munsa_sanitize_hex_color( $color ) {
  * @return void
  */
 function munsa_mejs_add_container_class() {
-	
+
 	// Check do we have media element.
 	if ( ! wp_script_is( 'mediaelement', 'done' ) ) {
 		return;
