@@ -24,7 +24,7 @@
 
 <div id="site-wrapper" class="site-wrapper">
 	<div id="page" class="site">
-	
+
 	<!-- Preloader -->
 	<div id="preloader" class="preloader">
 		<div id="status" class="status">
@@ -36,44 +36,48 @@
 			</div>
 		</div>
 	</div>
-		
+
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'munsa' ); ?></a>
-		
+
 		<?php
 			// Get Featured image.
 			$munsa_bg = munsa_get_post_thumbnail( $post_thumbnail = 'full' );
 		?>
 
-		<?php if ( is_page_template( 'pages/front-page.php' ) || is_page_template( 'pages/full-background-image.php' ) ) : ?>
+		<?php if ( is_page_template( 'pages/front-page.php' ) || is_page_template( 'pages/full-background-image.php' ) ) :
+			do_action( 'munsa_open_featured_content' );
+		?>
 			<div class="featured-content"<?php if ( has_post_thumbnail() ) echo ' style="background-image:url(' . esc_url( $munsa_bg ) . ');"' ?>>
-		<?php endif; ?>
-		
+		<?php
+		do_action( 'munsa_close_featured_content' );
+		endif; ?>
+
 		<header id="masthead" class="site-header" role="banner" <?php hybrid_attr( 'header' ); ?>>
-		
+
 			<div class="site-branding">
-			
+
 				<?php do_action( 'munsa_open_branding' ); ?>
-			
+
 				<?php munsa_the_custom_logo() ?>
-			
+
 				<?php if ( is_front_page() && is_home() ) : ?>
 					<h1 class="site-title" <?php hybrid_attr( 'site-title' ); ?>><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php else : ?>
 					<p class="site-title" <?php hybrid_attr( 'site-title' ); ?>><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php endif; ?>
-				
+
 				<p class="site-description" <?php hybrid_attr( 'site-description' ); ?>><?php bloginfo( 'description' ); ?></p>
-			
+
 				<?php do_action( 'munsa_close_branding' ); ?>
-			
+
 			</div><!-- .site-branding -->
-			
+
 		</header><!-- #masthead -->
 
 		<?php get_template_part( 'menus/menu', 'primary' ); // Loads the menus/menu-primary.php template. ?>
-		
+
 		<?php get_sidebar( 'primary' ); // Loads the sidebar-primary.php template. ?>
-		
+
 		<?php if ( get_header_image() && ! ( is_page_template( 'pages/front-page.php' ) || is_page_template( 'pages/full-background-image.php' ) ) ) : ?>
 			<div class="munsa-header-wrapper">
 				<a class="munsa-header-image" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -81,8 +85,8 @@
 				</a>
 			</div><!-- .munsa-header-wrapper -->
 		<?php endif; // End header image check. ?>
-		
+
 		<div id="content" class="site-content">
-		
+
 			<div id="primary" class="content-area">
 				<main id="main" class="site-main" role="main" <?php hybrid_attr( 'content' ); ?>>
